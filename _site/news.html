@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" news, blog, updates, release notes, announcements">
+<title>News | fmhk23.github.io</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> fmhk23.github.io</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li class="active"><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" target="_blank">Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject=fmhk23.github.io f eedback&body=I have some feedback about the News page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="News">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle"> </li>
+    
+    
+    
+    <li>
+        <a href="#">Products</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="news.html">News</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_introduction.html">Theme instructions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_landing_page.html">Product 1</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p2_landing_page.html">Product 2</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">News</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/https://github.com/fmhk23/_pages/news/news.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <div class="home">
+
+    <div class="post-list">
+        
+
+
+    <h2><a class="post-link" href="170222Seminar.html">産総研のヘルスケア・福祉セミナーに参加しました。</a></h2>
+        <span class="post-meta">Feb 22, 2017 /
+            
+                <a href="tag_ヘルスケア.html">ヘルスケア</a>
+                </span>
+        <p> 第13回AIセミナー「人工知能・IoTを活用した新たなヘルスケア・福祉」 http://www.airc.aist.go.jp/seminar/seminar_013.html 上記のセミナーに参加してきました。 仕事の都合もあり30~40分遅れでの参加になってしまったのですが、有意義な話を聞けました。 簡単なまとめと感想を書きます。 メモを見て思い出しながら書いているため、発表者の方の本当の論旨とずれている可能性がありますし、私の意見も交えていますが、ご了承願いたいです。 そういった事情があるため、この文章を元に発表者の方などに問い合わせするなどはご勘弁願います。 前半 個人間の変動を見る時代から、個人内での変動を見る時代になる。 従来の考え方だと「全体の傾向を見なければ」とか「十分な被験者数を確保しなければ」と思いがちですが、 IoTヘルケアデバイスを活用して個人内での変動を見れたらそれはそれでいいじゃん！ってことでしょう。 もちろん前者の視点も大事でしょうが、後者に新たな大きな価値があるのは直感的にも理解できることです。 治療から初期対応、予防へ このテーマ自体はわりとどの分野からでも言われることです。 治療にも使えると思いますが、いわゆるAI分野の発達に伴う予測手法の進歩などとの親和性を考えると、予防というキーワードは注目せざるを得ないと思います。 IoT技術は今まで医療の現場で使われておらず、参入障壁が低い。 参入障壁が低いというのは、いい面も悪い面もありますね。 現状でリードしていても取って代わられるリスクが有るということを認識しないといけないです。 参入障壁が低いからと行ってむやみに突っ込むと、レッドオーシャンを泳ぐ羽目になりそうです。 バブリーな発展は業界にとっていいとは思いませんので、健全に発展できる環境を整えられるかというところが焦点でしょう。 状態把握、行動変容、誘導の方法論  被験者の状態を正確に把握すること 行動の変化を検知すること 正しい方向に導くこと  これらの方法論とユースケースを持てれば強みになるはずです。 間欠性とモニタリング 間欠性とは、平均と歪度のこと。 現状のヘルケアデバイスでは、精神疾患に対して適用するのが一番向いているみたいです。 精神疾患の方は健康な方と比べて、動きに特徴があるらしく、加速度センサなどを用いれば客観的に検出できるとのこと。 （健常者は動と静がわりとキレイに別れるのに対して、疾患の方はそうではない。） わりと精度良く予測できるらしいです。 心電波形を常時モニタリングできれば精神疾患以外にもさらにいろいろなことがわかるのだが・・・といったようなことも言っていました。不整脈以外にも色々わかるのだろうか？常時高めだったら不健康気味とかそういう傾向はあるだろうけど。そこらへんは個別具体的な事例ということもありちょっとカバーしきれていないです。 やはり侵襲的な方法は積極的に使いづらく、いかに非侵襲的にできるかが技術的なブレークスルーのポイントになる気がします。 スマホとの連携 身体活動に異常が見られた時点で「誰と何をしていて気分はどうか？」みたいな情報を入力してもらい、「こういうことをしてみたらどうか」という介入を行うというアイデア。 イメージとしては、教師あり機械学習を活用しているようなものでしょう。... </p>
+
+
+
+        
+
+
+    <h2><a class="post-link" href="about_author.html">自己紹介/履歴書/職務経歴書</a></h2>
+        <span class="post-meta">Feb 21, 2017 /
+            
+                <a href="tag_about_author.html">about_author</a>
+                </span>
+        <p> 名前
+Fumihiko Kubota
+
+経歴
+京都大学農学部
+京都大学大学院生命科学研究科
+IT企業　エンジニア
+
+職務経歴・内容
+
+薬用植物からの新規有用物質の探索
+
+セキュリティに関する調査業務
+
+バイタルセンサーを用いた分析業務
+現在進行系であるため、詳細は控えます。
+元々の生物系の素地と、新たにやろうと志したIT系と分析系の技術のすべてが必要な分野なので、非常に自分向きで面白い分野だと感じます。
+
+資格
+
+英語
+TOEIC 905
+TOEFL ITP 577
+
+次はTOEFL iBTを受けます。
+
+IT技術
+基本情報技術者
+応用情報技術者
+
+次はDBスペシャリストを取ります。
+ </p>
+
+
+
+        
+
+
+    <h2><a class="post-link" href="KYOTOd1800RC500.html">京都ダート1800m(500万下) 2004-2016</a></h2>
+        <span class="post-meta">Feb 15, 2017 /
+            
+                <a href="tag_news.html">news</a>, 
+                
+                <a href="tag_getting_started.html">getting_started</a>
+                </span>
+        <p> 目的(Objective) 従来方法によるコース紹介では、脚質を主観的に分類した後に1着率、3着内率、回収率を示すのが精一杯であり、馬券構築の際の参考にはなるが決め手にはならない。 本レポートでは、機械学習により馬の脚質を分類した後、決着のパターンを集計し考察する。 これにより、例えば以下の様なことが明らかになる。  逃げ馬だけで3位以内を独占するパターンはどの程度あるのか？ その時のオッズはどの程度か？ 馬場状態による影響はあるか？  コースの特徴(一般論)  ダートコースの常識通り、先行馬有利。 1コーナーまで286m、軽いダート、4つのコーナー。 タイムが出やすい。  馬の脚質分類 分析を行うに当たり、まず機械学習(K-means法)により、逃げ馬と差し馬の分類を行った。 特徴量として、前走~4走前までの第1コーナー通過順位と、最終コーナー通過順位の合計8つの項目を用いた。 以後、逃げ馬を0、差し馬を1で表す。 なお、K-means法の特性上、逃げ馬と差し馬の数は同程度に分類される。 そのため、あくまで「どちらかといえば」の判断になる。 一般的な分類（逃げ、先行、差し、追い込み、マクリ）などとは言葉の意味が異なってくることを頭に入れておいて欲しい。 また過去の傾向のみを基準に分類しているため急に騎手が作戦を代えてきたケースについては考慮していない。 例えば今まで後ろからだった馬が当該レースでは逃げた場合には、差し馬として分類されている。 どちらにせよ馬券を買う前にはわからないことなので問題ないだろう。 脚質 どのような脚質の馬がどの程度着内に入っているかを集計する。    RaceType 数 <th... </p>
+
+
+
+        
+
+        <p><a href="feed.xml"" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe</a></p>
+
+<hr />
+        <p>See more posts from the <a href="news_archive.html">News Archive</a>. </p>
+
+
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Your company. All rights reserved. <br />
+ Site last generated: Mar 11, 2017 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>

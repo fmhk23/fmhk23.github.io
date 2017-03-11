@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description></description>
+        <link>http://localhost:4005/</link>
+        <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 11 Mar 2017 21:12:08 +0900</pubDate>
+        <lastBuildDate>Sat, 11 Mar 2017 21:12:08 +0900</lastBuildDate>
+        <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>産総研のヘルスケア・福祉セミナーに参加しました。</title>
+            <description>&lt;p&gt;第13回AIセミナー「人工知能・IoTを活用した新たなヘルスケア・福祉」
+http://www.airc.aist.go.jp/seminar/seminar_013.html&lt;/p&gt;
+
+&lt;p&gt;上記のセミナーに参加してきました。
+仕事の都合もあり30~40分遅れでの参加になってしまったのですが、有意義な話を聞けました。
+簡単なまとめと感想を書きます。&lt;br /&gt;
+メモを見て思い出しながら書いているため、発表者の方の本当の論旨とずれている可能性がありますし、私の意見も交えていますが、ご了承願いたいです。
+そういった事情があるため、この文章を元に発表者の方などに問い合わせするなどはご勘弁願います。&lt;/p&gt;
+
+&lt;h2 id=&quot;前半&quot;&gt;前半&lt;/h2&gt;
+
+&lt;h3 id=&quot;個人間の変動を見る時代から個人内での変動を見る時代になる&quot;&gt;個人間の変動を見る時代から、個人内での変動を見る時代になる。&lt;/h3&gt;
+&lt;p&gt;従来の考え方だと「全体の傾向を見なければ」とか「十分な被験者数を確保しなければ」と思いがちですが、
+IoTヘルケアデバイスを活用して個人内での変動を見れたらそれはそれでいいじゃん！ってことでしょう。&lt;br /&gt;
+もちろん前者の視点も大事でしょうが、後者に新たな大きな価値があるのは直感的にも理解できることです。&lt;/p&gt;
+
+&lt;h3 id=&quot;治療から初期対応予防へ&quot;&gt;治療から初期対応、予防へ&lt;/h3&gt;
+&lt;p&gt;このテーマ自体はわりとどの分野からでも言われることです。&lt;br /&gt;
+治療にも使えると思いますが、いわゆるAI分野の発達に伴う予測手法の進歩などとの親和性を考えると、予防というキーワードは注目せざるを得ないと思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;iot技術は今まで医療の現場で使われておらず参入障壁が低い&quot;&gt;IoT技術は今まで医療の現場で使われておらず、参入障壁が低い。&lt;/h3&gt;
+&lt;p&gt;参入障壁が低いというのは、いい面も悪い面もありますね。
+現状でリードしていても取って代わられるリスクが有るということを認識しないといけないです。
+参入障壁が低いからと行ってむやみに突っ込むと、レッドオーシャンを泳ぐ羽目になりそうです。
+バブリーな発展は業界にとっていいとは思いませんので、健全に発展できる環境を整えられるかというところが焦点でしょう。&lt;/p&gt;
+
+&lt;h3 id=&quot;状態把握行動変容誘導の方法論&quot;&gt;状態把握、行動変容、誘導の方法論&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;被験者の状態を正確に把握すること&lt;/li&gt;
+  &lt;li&gt;行動の変化を検知すること&lt;/li&gt;
+  &lt;li&gt;正しい方向に導くこと&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これらの方法論とユースケースを持てれば強みになるはずです。&lt;/p&gt;
+
+&lt;h3 id=&quot;間欠性とモニタリング&quot;&gt;間欠性とモニタリング&lt;/h3&gt;
+&lt;p&gt;間欠性とは、平均と歪度のこと。
+現状のヘルケアデバイスでは、精神疾患に対して適用するのが一番向いているみたいです。
+精神疾患の方は健康な方と比べて、動きに特徴があるらしく、加速度センサなどを用いれば客観的に検出できるとのこと。
+（健常者は動と静がわりとキレイに別れるのに対して、疾患の方はそうではない。）
+わりと精度良く予測できるらしいです。&lt;br /&gt;
+心電波形を常時モニタリングできれば精神疾患以外にもさらにいろいろなことがわかるのだが・・・といったようなことも言っていました。不整脈以外にも色々わかるのだろうか？常時高めだったら不健康気味とかそういう傾向はあるだろうけど。そこらへんは個別具体的な事例ということもありちょっとカバーしきれていないです。&lt;/p&gt;
+
+&lt;p&gt;やはり侵襲的な方法は積極的に使いづらく、いかに非侵襲的にできるかが技術的なブレークスルーのポイントになる気がします。&lt;/p&gt;
+
+&lt;h3 id=&quot;スマホとの連携&quot;&gt;スマホとの連携&lt;/h3&gt;
+&lt;p&gt;身体活動に異常が見られた時点で「誰と何をしていて気分はどうか？」みたいな情報を入力してもらい、「こういうことをしてみたらどうか」という介入を行うというアイデア。
+イメージとしては、教師あり機械学習を活用しているようなものでしょう。&lt;br /&gt;
+スマホ入力と通知って絶妙に使いづらい気がするのですが、私の勝手なイメージでしょうか。&lt;br /&gt;
+このアイデアについては、ヘルケア以外の領域でも使えますね。&lt;/p&gt;
+
+&lt;h3 id=&quot;ヘルスケア分野とビッグデータ&quot;&gt;ヘルスケア分野とビッグデータ&lt;/h3&gt;
+&lt;p&gt;ヘルスケア領域においては、とにかくデータをたくさん集めるのが難しい。というのも、ユーザーがデータの入力を途中でやめてしまったりというのが多いそうです。&lt;/p&gt;
+
+&lt;p&gt;また、データをいざ集めようと思っても、以下のような理由でボコボコのデータになったりします。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;被験者の偏り（熱がありそうな人の体温はとるが、健康な人の体温は別に取らない）&lt;/li&gt;
+  &lt;li&gt;測定機器、設備などにそもそもの格差がある&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;他にもデータに不足欠損が生じる要因はいくらでも考えられますね・・・&lt;/p&gt;
+
+&lt;p&gt;さらには、データが垂直展開（一社がデータを抱え込んでいる状態）しかされず、水平展開（複数の団体が共有する）が余り行われていません。&lt;/p&gt;
+
+&lt;h3 id=&quot;ヘルスケアとビッグデータの新時代&quot;&gt;ヘルスケアとビッグデータの新時代&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;個人が自分の意識と権限でデータを流通させる時代にする&lt;/li&gt;
+  &lt;li&gt;健康情報を産業横断的に活用する&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;健康データを活用し健康意識や行動力を高める&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;データドリブンになる&lt;/li&gt;
+  &lt;li&gt;リスク管理を目的にシステム化する&lt;/li&gt;
+  &lt;li&gt;予測的でジャストインタイムになる（ジャストインタイム：リスクが迫っているときだけ干渉する）&lt;/li&gt;
+  &lt;li&gt;新たな参入領域の可能性&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;個人の健康情報データをうまく売り物にしたいという印象をうけました。
+前項の、データが集まらない問題も、アップロードにインセンティブをつけることで改善される見込みがあります。
+それにしても、値段設定が難しそうですので（安すぎればインセンティブにならないし、高すぎると情報活用側に過剰な負担）
+単純な金銭に限らない対価を差し出す必要などがあるような気がしました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;途中からとは言えセミナーに参加してまとめたことで、今後のこの分野の見通しが自分の中で理路整然としてきた気がします。現状のモニタリングと相性がいいのは精神疾患分野って、聞いてみると当たり前だけど言われるまで気づかなかったので言葉にできて良かったです。
+他にも、このセミナーで聞いた内容は節々で思い出すことになるような気がします。&lt;/p&gt;
+
+&lt;p&gt;ヘルケア分野には解決しないと前に進めないような問題がたくさんあって、問題を解決しても後ろから抜かされる可能性が大いに有り得るようなイメージがあります。私個人にできることは限られていますが、一瞬の輝きやブームではなく、スタンダードを構築しなければ大きな価値にならないということを再認識しました。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;追記&quot;&gt;追記&lt;/h4&gt;
+
+&lt;p&gt;http://www.p.u-tokyo.ac.jp/~yamamoto/&lt;br /&gt;
+このホームページは少し情報が古いのですが、読んだことがなくて知らない情報が多かったので読んでおこうと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;後半&quot;&gt;後半&lt;/h2&gt;
+
+&lt;p&gt;人の生活をデータベース化するとか、そういった話でした。メモした要点を抜き出しておきます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;人生を楽しんでいるかどうかのグラフを作る。&lt;/li&gt;
+  &lt;li&gt;歩行経路の変化（行動パターンの変化）から、認知症の変化を探る。&lt;/li&gt;
+  &lt;li&gt;活動量の計測は人は無理なので、IoTでやる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大量の動画データを解析していて、どうやって分析を進めているのか気になったのだが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。&lt;/p&gt;
+</description>
+            <pubDate>Wed, 22 Feb 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/170222Seminar.html</link>
+            <guid isPermaLink="true">http://localhost:4005/170222Seminar.html</guid>
+            
+            <category>ヘルスケア</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>自己紹介/履歴書/職務経歴書</title>
+            <description>&lt;h3 id=&quot;名前&quot;&gt;名前&lt;/h3&gt;
+&lt;p&gt;Fumihiko Kubota&lt;/p&gt;
+
+&lt;h3 id=&quot;経歴&quot;&gt;経歴&lt;/h3&gt;
+&lt;p&gt;京都大学農学部&lt;br /&gt;
+京都大学大学院生命科学研究科&lt;br /&gt;
+IT企業　エンジニア&lt;/p&gt;
+
+&lt;h3 id=&quot;職務経歴内容&quot;&gt;職務経歴・内容&lt;/h3&gt;
+
+&lt;h4 id=&quot;薬用植物からの新規有用物質の探索&quot;&gt;薬用植物からの新規有用物質の探索&lt;/h4&gt;
+
+&lt;h4 id=&quot;セキュリティに関する調査業務&quot;&gt;セキュリティに関する調査業務&lt;/h4&gt;
+
+&lt;h4 id=&quot;バイタルセンサーを用いた分析業務&quot;&gt;バイタルセンサーを用いた分析業務&lt;/h4&gt;
+&lt;p&gt;現在進行系であるため、詳細は控えます。&lt;br /&gt;
+元々の生物系の素地と、新たにやろうと志したIT系と分析系の技術のすべてが必要な分野なので、非常に自分向きで面白い分野だと感じます。&lt;/p&gt;
+
+&lt;h3 id=&quot;資格&quot;&gt;資格&lt;/h3&gt;
+
+&lt;h4 id=&quot;英語&quot;&gt;英語&lt;/h4&gt;
+&lt;p&gt;TOEIC 905&lt;br /&gt;
+TOEFL ITP 577&lt;/p&gt;
+
+&lt;p&gt;次はTOEFL iBTを受けます。&lt;/p&gt;
+
+&lt;h4 id=&quot;it技術&quot;&gt;IT技術&lt;/h4&gt;
+&lt;p&gt;基本情報技術者&lt;br /&gt;
+応用情報技術者&lt;/p&gt;
+
+&lt;p&gt;次はDBスペシャリストを取ります。&lt;/p&gt;
+</description>
+            <pubDate>Tue, 21 Feb 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/about_author.html</link>
+            <guid isPermaLink="true">http://localhost:4005/about_author.html</guid>
+            
+            <category>about_author</category>
+            
+            
+        </item>
+        
+        <item>
+            <title>京都ダート1800m(500万下) 2004-2016</title>
+            <description>&lt;h2 id=&quot;目的objective&quot;&gt;目的(Objective)&lt;/h2&gt;
+
+&lt;p&gt;従来方法によるコース紹介では、脚質を主観的に分類した後に1着率、3着内率、回収率を示すのが精一杯であり、馬券構築の際の参考にはなるが決め手にはならない。&lt;br /&gt;
+本レポートでは、機械学習により馬の脚質を分類した後、決着のパターンを集計し考察する。&lt;br /&gt;
+これにより、例えば以下の様なことが明らかになる。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;逃げ馬だけで3位以内を独占するパターンはどの程度あるのか？&lt;/li&gt;
+  &lt;li&gt;その時のオッズはどの程度か？&lt;/li&gt;
+  &lt;li&gt;馬場状態による影響はあるか？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;コースの特徴一般論&quot;&gt;コースの特徴(一般論)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ダートコースの常識通り、先行馬有利。&lt;/li&gt;
+  &lt;li&gt;1コーナーまで286m、軽いダート、4つのコーナー。&lt;/li&gt;
+  &lt;li&gt;タイムが出やすい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;馬の脚質分類&quot;&gt;馬の脚質分類&lt;/h2&gt;
+
+&lt;p&gt;分析を行うに当たり、まず機械学習(K-means法)により、逃げ馬と差し馬の分類を行った。&lt;br /&gt;
+特徴量として、前走~4走前までの第1コーナー通過順位と、最終コーナー通過順位の合計8つの項目を用いた。&lt;br /&gt;
+以後、逃げ馬を0、差し馬を1で表す。&lt;/p&gt;
+
+&lt;p&gt;なお、K-means法の特性上、逃げ馬と差し馬の数は同程度に分類される。&lt;br /&gt;
+そのため、あくまで「どちらかといえば」の判断になる。&lt;br /&gt;
+一般的な分類（逃げ、先行、差し、追い込み、マクリ）などとは言葉の意味が異なってくることを頭に入れておいて欲しい。&lt;br /&gt;
+また過去の傾向のみを基準に分類しているため急に騎手が作戦を代えてきたケースについては考慮していない。&lt;br /&gt;
+例えば今まで後ろからだった馬が当該レースでは逃げた場合には、差し馬として分類されている。&lt;br /&gt;
+どちらにせよ馬券を買う前にはわからないことなので問題ないだろう。&lt;/p&gt;
+
+&lt;h2 id=&quot;脚質&quot;&gt;脚質&lt;/h2&gt;
+
+&lt;p&gt;どのような脚質の馬がどの程度着内に入っているかを集計する。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;RaceType&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;数&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;占有率&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;逃げ&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;差し&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;1着オッズ&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;2着オッズ&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;3着オッズ&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;逆点数&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;85&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;25.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;33&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;001&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;48&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;13.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;19&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;010&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;48&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;15&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;011&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;33&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;13.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;35&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;101&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;40&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;11.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;13.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;110&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;32&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;111&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;RaceType列は、それぞれどのような脚質の馬が1,2,3着に入線したかを示す。&lt;br /&gt;
+例えば、010は1着が逃げ馬、2着が差し馬、3着が逃げ馬であることを表す。&lt;/p&gt;
+
+&lt;p&gt;逃げ列、差し列は、その決着で決まったレースに出走していた逃げ馬、差し馬の数の平均を表す。&lt;br /&gt;
+例えば、000(すべて逃げ馬)で決まったときは、平均して逃げ馬のほうが差し馬より多かったことがわかる。&lt;br /&gt;
+馬券購入前に脚質を分類し、どのパターンの決着を狙うか検討するために計算している。&lt;/p&gt;
+
+&lt;p&gt;逆点数列は、1着のオッズが2着のオッズよりも高かったレースの数を表す。&lt;br /&gt;
+馬単、三連単の妙味は上位馬のオッズが高い時なので、この馬券を考察するために計算している。&lt;/p&gt;
+
+&lt;p&gt;なお、同着があった場合分析対象からはずしている。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;RaceType&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;良&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;稍重&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;重&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;不良&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;良(%)&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;稍重(%)&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;重(%)&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;不良(%)&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;56&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;15&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;23.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;30.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;32.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;001&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;35&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;010&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;37&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;15.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;12.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;011&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;24&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;26&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;101&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;32&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;13.4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7.1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;110&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;19&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;8.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10.7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;17&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;111&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;4.2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;0.0&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;3.6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;次に馬場状態別でのそれぞれの入選順位を集計した。&lt;/p&gt;
+</description>
+            <pubDate>Wed, 15 Feb 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/KYOTOd1800RC500.html</link>
+            <guid isPermaLink="true">http://localhost:4005/KYOTOd1800RC500.html</guid>
+            
+            <category>news</category>
+            
+            <category>getting_started</category>
+            
+            
+        </item>
+        
+    </channel>
+</rss>

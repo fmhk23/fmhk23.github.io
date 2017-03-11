@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="ヘルスケア,  Healthcare ヘルスケア　IoT 人工知能">
+<title>産総研のヘルスケア・福祉セミナーに参加しました。 | fmhk23.github.io</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> fmhk23.github.io</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="news">News</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/tomjohnson1492/documentation-theme-jekyll" target="_blank">Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank">Jekyll documentation</a></li>
+                        
+                        
+                        
+                        <li><a href="http://stackoverflow.com/questions/tagged/jekyll" target="_blank">Jekyll on Stack Overflow</a></li>
+                        
+                        
+                        
+                        <li><a href="http://idratherbewriting.com/category-jekyll/" target="_blank">Jekyll on my blog</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
+                        
+                        
+                        
+                        <li><a href="p1_landing_page.html">Product 1</a></li>
+                        
+                        
+                        
+                        <li><a href="p2_landing_page.html">Product 2</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject=fmhk23.github.io f eedback&body=I have some feedback about the 産総研のヘルスケア・福祉セミナーに参加しました。 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="産総研のヘルスケア・福祉セミナーに参加しました。">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle"> </li>
+    
+    
+    
+    <li>
+        <a href="#">Products</a>
+        <ul>
+            
+            
+            
+            <li><a href="news.html">News</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_introduction.html">Theme instructions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p1_landing_page.html">Product 1</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="p2_landing_page.html">Product 2</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">産総研のヘルスケア・福祉セミナーに参加しました。</h1>
+        <p class="post-meta"><time datetime="2017-02-22T00:00:00+09:00" itemprop="datePublished">Feb 22, 2017</time> /
+            
+            
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+
+        <p>第13回AIセミナー「人工知能・IoTを活用した新たなヘルスケア・福祉」
+http://www.airc.aist.go.jp/seminar/seminar_013.html</p>
+
+<p>上記のセミナーに参加してきました。
+仕事の都合もあり30~40分遅れでの参加になってしまったのですが、有意義な話を聞けました。
+簡単なまとめと感想を書きます。<br />
+メモを見て思い出しながら書いているため、発表者の方の本当の論旨とずれている可能性がありますし、私の意見も交えていますが、ご了承願いたいです。
+そういった事情があるため、この文章を元に発表者の方などに問い合わせするなどはご勘弁願います。</p>
+
+<h2 id="前半">前半</h2>
+
+<h3 id="個人間の変動を見る時代から個人内での変動を見る時代になる">個人間の変動を見る時代から、個人内での変動を見る時代になる。</h3>
+<p>従来の考え方だと「全体の傾向を見なければ」とか「十分な被験者数を確保しなければ」と思いがちですが、
+IoTヘルケアデバイスを活用して個人内での変動を見れたらそれはそれでいいじゃん！ってことでしょう。<br />
+もちろん前者の視点も大事でしょうが、後者に新たな大きな価値があるのは直感的にも理解できることです。</p>
+
+<h3 id="治療から初期対応予防へ">治療から初期対応、予防へ</h3>
+<p>このテーマ自体はわりとどの分野からでも言われることです。<br />
+治療にも使えると思いますが、いわゆるAI分野の発達に伴う予測手法の進歩などとの親和性を考えると、予防というキーワードは注目せざるを得ないと思います。</p>
+
+<h3 id="iot技術は今まで医療の現場で使われておらず参入障壁が低い">IoT技術は今まで医療の現場で使われておらず、参入障壁が低い。</h3>
+<p>参入障壁が低いというのは、いい面も悪い面もありますね。
+現状でリードしていても取って代わられるリスクが有るということを認識しないといけないです。
+参入障壁が低いからと行ってむやみに突っ込むと、レッドオーシャンを泳ぐ羽目になりそうです。
+バブリーな発展は業界にとっていいとは思いませんので、健全に発展できる環境を整えられるかというところが焦点でしょう。</p>
+
+<h3 id="状態把握行動変容誘導の方法論">状態把握、行動変容、誘導の方法論</h3>
+<ul>
+  <li>被験者の状態を正確に把握すること</li>
+  <li>行動の変化を検知すること</li>
+  <li>正しい方向に導くこと</li>
+</ul>
+
+<p>これらの方法論とユースケースを持てれば強みになるはずです。</p>
+
+<h3 id="間欠性とモニタリング">間欠性とモニタリング</h3>
+<p>間欠性とは、平均と歪度のこと。
+現状のヘルケアデバイスでは、精神疾患に対して適用するのが一番向いているみたいです。
+精神疾患の方は健康な方と比べて、動きに特徴があるらしく、加速度センサなどを用いれば客観的に検出できるとのこと。
+（健常者は動と静がわりとキレイに別れるのに対して、疾患の方はそうではない。）
+わりと精度良く予測できるらしいです。<br />
+心電波形を常時モニタリングできれば精神疾患以外にもさらにいろいろなことがわかるのだが・・・といったようなことも言っていました。不整脈以外にも色々わかるのだろうか？常時高めだったら不健康気味とかそういう傾向はあるだろうけど。そこらへんは個別具体的な事例ということもありちょっとカバーしきれていないです。</p>
+
+<p>やはり侵襲的な方法は積極的に使いづらく、いかに非侵襲的にできるかが技術的なブレークスルーのポイントになる気がします。</p>
+
+<h3 id="スマホとの連携">スマホとの連携</h3>
+<p>身体活動に異常が見られた時点で「誰と何をしていて気分はどうか？」みたいな情報を入力してもらい、「こういうことをしてみたらどうか」という介入を行うというアイデア。
+イメージとしては、教師あり機械学習を活用しているようなものでしょう。<br />
+スマホ入力と通知って絶妙に使いづらい気がするのですが、私の勝手なイメージでしょうか。<br />
+このアイデアについては、ヘルケア以外の領域でも使えますね。</p>
+
+<h3 id="ヘルスケア分野とビッグデータ">ヘルスケア分野とビッグデータ</h3>
+<p>ヘルスケア領域においては、とにかくデータをたくさん集めるのが難しい。というのも、ユーザーがデータの入力を途中でやめてしまったりというのが多いそうです。</p>
+
+<p>また、データをいざ集めようと思っても、以下のような理由でボコボコのデータになったりします。</p>
+<ul>
+  <li>被験者の偏り（熱がありそうな人の体温はとるが、健康な人の体温は別に取らない）</li>
+  <li>測定機器、設備などにそもそもの格差がある</li>
+</ul>
+
+<p>他にもデータに不足欠損が生じる要因はいくらでも考えられますね・・・</p>
+
+<p>さらには、データが垂直展開（一社がデータを抱え込んでいる状態）しかされず、水平展開（複数の団体が共有する）が余り行われていません。</p>
+
+<h3 id="ヘルスケアとビッグデータの新時代">ヘルスケアとビッグデータの新時代</h3>
+
+<ul>
+  <li>個人が自分の意識と権限でデータを流通させる時代にする</li>
+  <li>健康情報を産業横断的に活用する</li>
+  <li>
+    <p>健康データを活用し健康意識や行動力を高める</p>
+  </li>
+  <li>データドリブンになる</li>
+  <li>リスク管理を目的にシステム化する</li>
+  <li>予測的でジャストインタイムになる（ジャストインタイム：リスクが迫っているときだけ干渉する）</li>
+  <li>新たな参入領域の可能性</li>
+</ul>
+
+<p>個人の健康情報データをうまく売り物にしたいという印象をうけました。
+前項の、データが集まらない問題も、アップロードにインセンティブをつけることで改善される見込みがあります。
+それにしても、値段設定が難しそうですので（安すぎればインセンティブにならないし、高すぎると情報活用側に過剰な負担）
+単純な金銭に限らない対価を差し出す必要などがあるような気がしました。</p>
+
+<hr />
+
+<p>途中からとは言えセミナーに参加してまとめたことで、今後のこの分野の見通しが自分の中で理路整然としてきた気がします。現状のモニタリングと相性がいいのは精神疾患分野って、聞いてみると当たり前だけど言われるまで気づかなかったので言葉にできて良かったです。
+他にも、このセミナーで聞いた内容は節々で思い出すことになるような気がします。</p>
+
+<p>ヘルケア分野には解決しないと前に進めないような問題がたくさんあって、問題を解決しても後ろから抜かされる可能性が大いに有り得るようなイメージがあります。私個人にできることは限られていますが、一瞬の輝きやブームではなく、スタンダードを構築しなければ大きな価値にならないということを再認識しました。</p>
+
+<hr />
+
+<h4 id="追記">追記</h4>
+
+<p>http://www.p.u-tokyo.ac.jp/~yamamoto/<br />
+このホームページは少し情報が古いのですが、読んだことがなくて知らない情報が多かったので読んでおこうと思います。</p>
+
+<h2 id="後半">後半</h2>
+
+<p>人の生活をデータベース化するとか、そういった話でした。メモした要点を抜き出しておきます。</p>
+
+<ul>
+  <li>人生を楽しんでいるかどうかのグラフを作る。</li>
+  <li>歩行経路の変化（行動パターンの変化）から、認知症の変化を探る。</li>
+  <li>活動量の計測は人は無理なので、IoTでやる。</li>
+</ul>
+
+<p>大量の動画データを解析していて、どうやって分析を進めているのか気になったのだが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。</p>
+
+    </div>
+
+
+
+</article>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Your company. All rights reserved. <br />
+ Site last generated: Mar 11, 2017 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>
