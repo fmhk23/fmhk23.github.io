@@ -6,11 +6,11 @@
 
 
 {
-"title": "fmhk23.github.io",
+"title": "Far More High Kulture",
 "tags": "top_page",
 "keywords": "homepage ホームページ",
 "url": "index.html",
-"summary": "top page."
+"summary": ""
 },
 
 
@@ -596,7 +596,7 @@
 
 
 {
-"title": "News",
+"title": "アーカイブ",
 "tags": "",
 "keywords": "news, blog, updates, release notes, announcements",
 "url": "news_archive.html",
@@ -874,30 +874,20 @@
 
 
 {
-"title": "産総研のヘルスケア・福祉セミナーに参加しました。",
-"tags": "ヘルスケア",
-"keywords": "Healthcare ヘルスケア　IoT 人工知能",
-"url": "/170222Seminar.html",
+"title": "2017年2月度株式投資成績",
+"tags": "",
+"keywords": "株式投資",
+"url": "/StockReport2017Feb.html",
 "summary": ""
 }
 ,
 
 
 {
-"title": "自己紹介/履歴書/職務経歴書",
-"tags": "about_author",
-"keywords": "self_introduction 自己紹介",
-"url": "/about_author.html",
-"summary": "about author."
-}
-,
-
-
-{
-"title": "京都ダート1800m(500万下) 2004-2016",
-"tags": "newsgetting_started",
-"keywords": "",
-"url": "/KYOTOd1800RC500.html",
+"title": "産総研のヘルスケア・福祉セミナーに参加しました。",
+"tags": "ヘルスケア",
+"keywords": "Healthcare ヘルスケア　IoT 人工知能",
+"url": "/170222Seminar.html",
 "summary": ""
 }
 

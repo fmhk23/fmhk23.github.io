@@ -5,22 +5,218 @@
         <description></description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 11 Mar 2017 21:12:08 +0900</pubDate>
-        <lastBuildDate>Sat, 11 Mar 2017 21:12:08 +0900</lastBuildDate>
+        <pubDate>Mon, 20 Mar 2017 01:51:58 +0900</pubDate>
+        <lastBuildDate>Mon, 20 Mar 2017 01:51:58 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
         
         <item>
-            <title>産総研のヘルスケア・福祉セミナーに参加しました。</title>
-            <description>&lt;p&gt;第13回AIセミナー「人工知能・IoTを活用した新たなヘルスケア・福祉」
-http://www.airc.aist.go.jp/seminar/seminar_013.html&lt;/p&gt;
+            <title>2017年2月度株式投資成績</title>
+            <description>&lt;h2 id=&quot;概況&quot;&gt;概況&lt;/h2&gt;
 
-&lt;p&gt;上記のセミナーに参加してきました。
-仕事の都合もあり30~40分遅れでの参加になってしまったのですが、有意義な話を聞けました。
-簡単なまとめと感想を書きます。&lt;br /&gt;
-メモを見て思い出しながら書いているため、発表者の方の本当の論旨とずれている可能性がありますし、私の意見も交えていますが、ご了承願いたいです。
-そういった事情があるため、この文章を元に発表者の方などに問い合わせするなどはご勘弁願います。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;299499&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;325900&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;26401&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13349&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;624100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;950000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;所持銘柄&quot;&gt;所持銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;242.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;359&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11700&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;631.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;680&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4801&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;641.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;686&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;332.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;349&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;300&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9765&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;オオバ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;484.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;487&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;300&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;242&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;352&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;542&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1661&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;150&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8647&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2652&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;まんだらけ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;540&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;529&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-50&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-153&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-897&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3387&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;クリエイツレストラン&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;965&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1035&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;345&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1056&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5599&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
+
+&lt;p&gt;とりあえず自分の資金をはっきりさせるため、2月末の投資可能サイズを95万円(保有銘柄＋現金)とします。&lt;br /&gt;
+100万円で投資を始めた昨年度からざっくり5万円ほど利益をだしており、10万円を仮想通貨投資に振り向けているので差し引きして95万円です。  &lt;br /&gt;
+今後は基本的にボーナスが来るたびに資金を注入する予定です。&lt;/p&gt;
+
+&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
+&lt;p&gt;強い銘柄です。&lt;br /&gt;
+月末にかけて急騰したので、異常に上がりすぎている可能性と、既に利益確定の目標をクリアしているため200株中100株を売却しました。&lt;br /&gt;
+暫くの間、残りの100株は優待と配当をもらうための固定砲台にする予定です。&lt;/p&gt;
+
+&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
+&lt;p&gt;配当と優待が最強の銘柄だと思います。その代わりに直近の業績はあまり良くないです。(一応黒字と言った程度)&lt;br /&gt;
+以前に安めに購入して分割の際に利益を出しており、既に優待の権利も１回とっているので、余裕をもって戦えます。&lt;br /&gt;
+優待が強い株は死ににくいですし、この会社は自己資金比率もいいので下がったらナンピンして100株残して値幅を取りに行っても良いと思います。ですが、今のところナンピンしたくなるほど株価が下がらなかったり、200株以上を保有したときの優待利回りの低下を嫌って実施していません。&lt;br /&gt;
+奥さんや子供がいれば、利回りをキープしながら株数を少しでも増やせるのですが・・・&lt;/p&gt;
+
+&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
+&lt;p&gt;オリンピックなどで活況が見込める、欲しかった広告事業、業績右肩上がり、配当利回り良好という理由で購入した銘柄です。今のところ含み益なのでこの後さらに続伸してくれることを期待します。&lt;/p&gt;
+
+&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
+&lt;p&gt;機関の空売りや、大量の買い残などがあり、業績の割に低い価格で推移していると思います。&lt;br /&gt;
+信用取引自体は自分はやるつもりはないですが、機関の動きなどを見て勉強ができるのでこの銘柄を見ておくと今後の役に立つかもしれない、ということで私にとっては勉強・修行銘柄です。
+今のところ購入額からは少し上がりましたが、ウォッチし続けてもう少し欲張りたいです。
+株価が今後苦境にたっても、潰れる可能性はまずないし、いいサービスだと思うし、配当も悪くないので積極的に資金を向けたい銘柄です。&lt;/p&gt;
+
+&lt;h3 id=&quot;9765-オオバ&quot;&gt;9765 オオバ&lt;/h3&gt;
+&lt;p&gt;5月優待に向けて順張り購入しました。優待を取るか取らないかは5月の株価次第ですが、今のプランでは取る可能性が高いと見ています。
+この銘柄は枚数を増やすほど優待利回りが良くなって単価も安いので、下がってもナンピンしやすい。もちろん上がったらそれはそれでいいし、精神的に楽に立ち回れるので判断ミスしにくくていい。&lt;/p&gt;
+
+&lt;h3 id=&quot;2652-まんだらけ&quot;&gt;2652 まんだらけ&lt;/h3&gt;
+&lt;p&gt;少なくとも私にとっては優待が強い銘柄です。&lt;br /&gt;
+業務の面でもオタクグッズの鑑識眼を持っているのは十分な強みになると判断して購入しました。&lt;br /&gt;
+しかし決算が悪く、当面値上がりが見込めないこと、更に安く拾える可能性があると考えて損切しました。&lt;br /&gt;
+今のところ損切した値段から余り動いていないですが、資金を向けた他銘柄が悪くないのでいい判断だったと思います。&lt;br /&gt;
+今後大きく下げたら、優待を取りに行くかもしれないですが、お店やIR、チャートを見ているとしかしいまいち信頼できないイメージがあります。&lt;/p&gt;
+
+&lt;h3 id=&quot;3387クリエイツレストラン&quot;&gt;3387クリエイツレストラン&lt;/h3&gt;
+&lt;p&gt;決算後落ちているのを拾って優待取らずに利益確定売り抜けしました。&lt;br /&gt;
+優待をとっても良かったですが、数カ月後にレストランで使える券より現金を優先するのは当然です。 
+優待落ちで下がるのわかりきっているので、売って他の銘柄に資金向けたほうがチャンスを活かす意味でもいいでしょう。&lt;br /&gt;
+業績が悪く将来に向けてのリスクも大きいと思うので、また買うとしたら更に株価が下がってくれないと厳しいです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;3月に向けて&quot;&gt;3月に向けて&lt;/h2&gt;
+&lt;p&gt;銘柄数・枚数は増やしますが、予備資金が減る状態になってしまうので何かを売る必要があります。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;今月のレポートを描くのは大変でした・・・ R markdownに直打ちで表とか作りました。&lt;br /&gt;
+データベースとか整備して売買を管理できたら良いのですが、どういう構成にするかとか、データの登録とかは自動では厳しく思います。（証券会社はAPIとかあまり公開してないはず）
+毎月のことで効率化の優先度は高いので、少しずつでも改良したいところです。&lt;/p&gt;
+</description>
+            <pubDate>Tue, 28 Feb 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/StockReport2017Feb.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Feb.html</guid>
+            
+            
+        </item>
+        
+        <item>
+            <title>産総研のヘルスケア・福祉セミナーに参加しました。</title>
+            <description>&lt;p&gt;&lt;a href=&quot;http://www.airc.aist.go.jp/seminar/seminar_013.html&quot;&gt;第13回AIセミナー「人工知能・IoTを活用した新たなヘルスケア・福祉」&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;このセミナーに参加してきたので、簡単なまとめと感想を書きます。&lt;br /&gt;
+メモを見て思い出しながら書いているため、発表者の方の本当の論旨とずれている可能性がありますし、ところどころ私の意見も交えています。
+そのため、この文章を元に発表者の方などに問い合わせするなどはご勘弁願います。&lt;/p&gt;
 
 &lt;h2 id=&quot;前半&quot;&gt;前半&lt;/h2&gt;
+
+&lt;p&gt;仕事の都合もあり30~40分遅れでの参加になってしまったので、要旨をいまいち把握しきれていないのですが、テーマは「バイタルセンシング業界の特徴、問題、将来について」といったところでしょうか。&lt;/p&gt;
 
 &lt;h3 id=&quot;個人間の変動を見る時代から個人内での変動を見る時代になる&quot;&gt;個人間の変動を見る時代から、個人内での変動を見る時代になる。&lt;/h3&gt;
 &lt;p&gt;従来の考え方だと「全体の傾向を見なければ」とか「十分な被験者数を確保しなければ」と思いがちですが、
@@ -96,354 +292,35 @@ IoTヘルケアデバイスを活用して個人内での変動を見れたら�
 
 &lt;hr /&gt;
 
-&lt;p&gt;途中からとは言えセミナーに参加してまとめたことで、今後のこの分野の見通しが自分の中で理路整然としてきた気がします。現状のモニタリングと相性がいいのは精神疾患分野って、聞いてみると当たり前だけど言われるまで気づかなかったので言葉にできて良かったです。
+&lt;p&gt;途中からとは言えセミナーに参加してまとめたことで、今後のこの分野の見通しが自分の中で理路整然としてきた気がします。現状のモニタリングと相性がいいのは精神疾患分野だという話は、聞いてみると当たり前だが言われるまで気づかなかったので聞けて良かったです。
 他にも、このセミナーで聞いた内容は節々で思い出すことになるような気がします。&lt;/p&gt;
 
 &lt;p&gt;ヘルケア分野には解決しないと前に進めないような問題がたくさんあって、問題を解決しても後ろから抜かされる可能性が大いに有り得るようなイメージがあります。私個人にできることは限られていますが、一瞬の輝きやブームではなく、スタンダードを構築しなければ大きな価値にならないということを再認識しました。&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h4 id=&quot;追記&quot;&gt;追記&lt;/h4&gt;
+&lt;h4 id=&quot;参考&quot;&gt;参考&lt;/h4&gt;
 
-&lt;p&gt;http://www.p.u-tokyo.ac.jp/~yamamoto/&lt;br /&gt;
-このホームページは少し情報が古いのですが、読んだことがなくて知らない情報が多かったので読んでおこうと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.p.u-tokyo.ac.jp/~yamamoto/&quot;&gt;山本善春先生のページ&lt;/a&gt;&lt;br /&gt;
+知らない情報が多かったので読んでおこうと思います。&lt;/p&gt;
 
 &lt;h2 id=&quot;後半&quot;&gt;後半&lt;/h2&gt;
 
-&lt;p&gt;人の生活をデータベース化するとか、そういった話でした。メモした要点を抜き出しておきます。&lt;/p&gt;
+&lt;p&gt;バイタルセンシング、というよりは、行動や生活様式への介入を行うという話でした。&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;人生を楽しんでいるかどうかのグラフを作る。&lt;/li&gt;
+  &lt;li&gt;人生を楽しんでいるかどうかのグラフを作る。人生をデータベース化する。&lt;/li&gt;
   &lt;li&gt;歩行経路の変化（行動パターンの変化）から、認知症の変化を探る。&lt;/li&gt;
   &lt;li&gt;活動量の計測は人は無理なので、IoTでやる。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;大量の動画データを解析していて、どうやって分析を進めているのか気になったのだが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。&lt;/p&gt;
+&lt;p&gt;大量の動画データを解析していて、どうやって分析を進めているのか気になったのですが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。&lt;/p&gt;
 </description>
             <pubDate>Wed, 22 Feb 2017 00:00:00 +0900</pubDate>
             <link>http://localhost:4005/170222Seminar.html</link>
             <guid isPermaLink="true">http://localhost:4005/170222Seminar.html</guid>
             
             <category>ヘルスケア</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>自己紹介/履歴書/職務経歴書</title>
-            <description>&lt;h3 id=&quot;名前&quot;&gt;名前&lt;/h3&gt;
-&lt;p&gt;Fumihiko Kubota&lt;/p&gt;
-
-&lt;h3 id=&quot;経歴&quot;&gt;経歴&lt;/h3&gt;
-&lt;p&gt;京都大学農学部&lt;br /&gt;
-京都大学大学院生命科学研究科&lt;br /&gt;
-IT企業　エンジニア&lt;/p&gt;
-
-&lt;h3 id=&quot;職務経歴内容&quot;&gt;職務経歴・内容&lt;/h3&gt;
-
-&lt;h4 id=&quot;薬用植物からの新規有用物質の探索&quot;&gt;薬用植物からの新規有用物質の探索&lt;/h4&gt;
-
-&lt;h4 id=&quot;セキュリティに関する調査業務&quot;&gt;セキュリティに関する調査業務&lt;/h4&gt;
-
-&lt;h4 id=&quot;バイタルセンサーを用いた分析業務&quot;&gt;バイタルセンサーを用いた分析業務&lt;/h4&gt;
-&lt;p&gt;現在進行系であるため、詳細は控えます。&lt;br /&gt;
-元々の生物系の素地と、新たにやろうと志したIT系と分析系の技術のすべてが必要な分野なので、非常に自分向きで面白い分野だと感じます。&lt;/p&gt;
-
-&lt;h3 id=&quot;資格&quot;&gt;資格&lt;/h3&gt;
-
-&lt;h4 id=&quot;英語&quot;&gt;英語&lt;/h4&gt;
-&lt;p&gt;TOEIC 905&lt;br /&gt;
-TOEFL ITP 577&lt;/p&gt;
-
-&lt;p&gt;次はTOEFL iBTを受けます。&lt;/p&gt;
-
-&lt;h4 id=&quot;it技術&quot;&gt;IT技術&lt;/h4&gt;
-&lt;p&gt;基本情報技術者&lt;br /&gt;
-応用情報技術者&lt;/p&gt;
-
-&lt;p&gt;次はDBスペシャリストを取ります。&lt;/p&gt;
-</description>
-            <pubDate>Tue, 21 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/about_author.html</link>
-            <guid isPermaLink="true">http://localhost:4005/about_author.html</guid>
-            
-            <category>about_author</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>京都ダート1800m(500万下) 2004-2016</title>
-            <description>&lt;h2 id=&quot;目的objective&quot;&gt;目的(Objective)&lt;/h2&gt;
-
-&lt;p&gt;従来方法によるコース紹介では、脚質を主観的に分類した後に1着率、3着内率、回収率を示すのが精一杯であり、馬券構築の際の参考にはなるが決め手にはならない。&lt;br /&gt;
-本レポートでは、機械学習により馬の脚質を分類した後、決着のパターンを集計し考察する。&lt;br /&gt;
-これにより、例えば以下の様なことが明らかになる。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;逃げ馬だけで3位以内を独占するパターンはどの程度あるのか？&lt;/li&gt;
-  &lt;li&gt;その時のオッズはどの程度か？&lt;/li&gt;
-  &lt;li&gt;馬場状態による影響はあるか？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;コースの特徴一般論&quot;&gt;コースの特徴(一般論)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ダートコースの常識通り、先行馬有利。&lt;/li&gt;
-  &lt;li&gt;1コーナーまで286m、軽いダート、4つのコーナー。&lt;/li&gt;
-  &lt;li&gt;タイムが出やすい。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;馬の脚質分類&quot;&gt;馬の脚質分類&lt;/h2&gt;
-
-&lt;p&gt;分析を行うに当たり、まず機械学習(K-means法)により、逃げ馬と差し馬の分類を行った。&lt;br /&gt;
-特徴量として、前走~4走前までの第1コーナー通過順位と、最終コーナー通過順位の合計8つの項目を用いた。&lt;br /&gt;
-以後、逃げ馬を0、差し馬を1で表す。&lt;/p&gt;
-
-&lt;p&gt;なお、K-means法の特性上、逃げ馬と差し馬の数は同程度に分類される。&lt;br /&gt;
-そのため、あくまで「どちらかといえば」の判断になる。&lt;br /&gt;
-一般的な分類（逃げ、先行、差し、追い込み、マクリ）などとは言葉の意味が異なってくることを頭に入れておいて欲しい。&lt;br /&gt;
-また過去の傾向のみを基準に分類しているため急に騎手が作戦を代えてきたケースについては考慮していない。&lt;br /&gt;
-例えば今まで後ろからだった馬が当該レースでは逃げた場合には、差し馬として分類されている。&lt;br /&gt;
-どちらにせよ馬券を買う前にはわからないことなので問題ないだろう。&lt;/p&gt;
-
-&lt;h2 id=&quot;脚質&quot;&gt;脚質&lt;/h2&gt;
-
-&lt;p&gt;どのような脚質の馬がどの程度着内に入っているかを集計する。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;RaceType&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;数&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;占有率&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;逃げ&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;差し&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;1着オッズ&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;2着オッズ&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;3着オッズ&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;逆点数&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;000&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;85&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;25.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;8.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;8.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;33&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;001&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;48&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;19&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;010&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;48&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;15&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;011&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;33&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;35&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;101&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;40&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;11.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13.7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;24&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;110&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;32&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.8&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;111&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;8.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;RaceType列は、それぞれどのような脚質の馬が1,2,3着に入線したかを示す。&lt;br /&gt;
-例えば、010は1着が逃げ馬、2着が差し馬、3着が逃げ馬であることを表す。&lt;/p&gt;
-
-&lt;p&gt;逃げ列、差し列は、その決着で決まったレースに出走していた逃げ馬、差し馬の数の平均を表す。&lt;br /&gt;
-例えば、000(すべて逃げ馬)で決まったときは、平均して逃げ馬のほうが差し馬より多かったことがわかる。&lt;br /&gt;
-馬券購入前に脚質を分類し、どのパターンの決着を狙うか検討するために計算している。&lt;/p&gt;
-
-&lt;p&gt;逆点数列は、1着のオッズが2着のオッズよりも高かったレースの数を表す。&lt;br /&gt;
-馬単、三連単の妙味は上位馬のオッズが高い時なので、この馬券を考察するために計算している。&lt;/p&gt;
-
-&lt;p&gt;なお、同着があった場合分析対象からはずしている。&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;RaceType&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;良&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;稍重&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;重&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;不良&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;良(%)&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;稍重(%)&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;重(%)&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;不良(%)&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;000&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;56&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;15&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;23.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;30.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;32.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;28&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;001&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;35&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;010&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;37&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;15.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;12.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;22&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;011&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;24&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;26&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;5&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.9&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;101&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;32&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;13.4&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;8.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7.1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;110&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;19&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;8.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;14.3&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10.7&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;17&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;111&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;10&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;1&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;4.2&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;0.0&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;3.6&lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;次に馬場状態別でのそれぞれの入選順位を集計した。&lt;/p&gt;
-</description>
-            <pubDate>Wed, 15 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/KYOTOd1800RC500.html</link>
-            <guid isPermaLink="true">http://localhost:4005/KYOTOd1800RC500.html</guid>
-            
-            <category>news</category>
-            
-            <category>getting_started</category>
             
             
         </item>
