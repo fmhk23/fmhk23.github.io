@@ -3,11 +3,267 @@
     <channel>
         <title></title>
         <description></description>
-        <link>http://localhost:4005/</link>
-        <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 20 Mar 2017 01:51:58 +0900</pubDate>
-        <lastBuildDate>Mon, 20 Mar 2017 01:51:58 +0900</lastBuildDate>
+        <link>http://idratherbewriting.com/</link>
+        <atom:link href="http://idratherbewriting.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Tue, 04 Apr 2017 02:59:28 +0900</pubDate>
+        <lastBuildDate>Tue, 04 Apr 2017 02:59:28 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>2017年3月度株式投資成績</title>
+            <description>&lt;h2 id=&quot;概況&quot;&gt;概況&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;460457&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;503900&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;43443&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4906&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3997&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;469028&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;972928&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;22928&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;所持銘柄&quot;&gt;所持銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;242.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;446&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;20400&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2686&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ジーフット&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;765.86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;745&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-2086&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;631.99&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;762&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13001&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;699.86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;720&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2014&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;332.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;364&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;300&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9696&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ウィザス&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;392.43&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;379&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-2686&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9765&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;オオバ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;484.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;516&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3200&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2652&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;大研医器&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;823&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;840&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;75&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;231&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1308&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;641&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;687&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;225&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;691&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3598&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
+
+&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
+&lt;p&gt;一時的には400円台後半まで伸びました。ここまで上がるとは思っていなかったため、100株しか残していませんが、242円で取得しているため余裕を持って臨めます。&lt;br /&gt;
+上方修正が出ていますし、特に売る理由もないので、配当とクオカをもらってホールドし続ける予定です。&lt;/p&gt;
+
+&lt;h3 id=&quot;2686-ジーフット&quot;&gt;2686 ジーフット&lt;/h3&gt;
+&lt;p&gt;優待落ちを拾ったのですが、強い動きではないです。事実、買ったところが底ではなく、3月末の下落に巻き込まれて下がってしまっています。 
+優待と配当があるので、握っておけば大損は免れる気がしますが、あまりこの銘柄にこだわるのもよくないです。&lt;br /&gt;
+実際、店舗別の売上が良くないという情報は発表されているので、買値765を少し上回った769くらいで投げれれば上々と考えて指値を置いておいたのですが、ぎりぎり刺さらず失敗でした。&lt;br /&gt;
+確実に売るなら成り行きですが、平日は仕事をしていることが多いためタイミングを図って、とはいきません。&lt;br /&gt;
+今の仕事をしている限り、寄り、通勤時、昼休みくらいしかチャンスがなく、望まぬ形でもある程度我慢して売る、という判断を身に着けないといけないのかもしれません。&lt;/p&gt;
+
+&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
+&lt;p&gt;12月の配当金が入金されました。3000円のクオカードも来ました。この値段帯で含み益が出ていて約4000円のインカムをもらえるのは非常にありがたいです。&lt;br /&gt;
+この会社の株主総会に参加したので、後日レポートを上げる予定です。&lt;/p&gt;
+
+&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
+&lt;p&gt;株価が落ち着いて25日平均線に接近してきたため、一旦利益確定することにしました。&lt;br /&gt;
+しかしこの銘柄自体は売りたいわけでもなく、スクリーニングを行ってもここ以上にもっておきたくなる銘柄がありません。ポートフォリオのバランス的にはぜひ組み入れておくべき銘柄だと思っており、上昇気配を見せたため再度購入。今のところこの判断は正解でした。&lt;br /&gt;
+利益が出ていたし勢いが弱まってきたら売るというのは正しい戦略だと思います。しかしそれとは関係なしに持っておきたい銘柄というのもあるわけで、1単元しか持っていないと判断の難易度が上がる気がします。&lt;br /&gt;
+複数単元あれば数の調整でリスクを上げ下げできるので、やはり複数単元もてる銘柄を主力にしたいと感じました。&lt;/p&gt;
+
+&lt;h3 id=&quot;7775-大研医器&quot;&gt;7775 大研医器&lt;/h3&gt;
+&lt;p&gt;2月末からずっと欲しいと思っていた銘柄で、上がりはじめたので購入しました。一旦は860円台で安定していましたが、悪材料がでて株価は下落。本来はホールドしたかった銘柄ですが、840円付近で一旦投げることにしました。&lt;br /&gt;
+3/31時点で800円まで下がっているので、1500円程度の取り分とは言えひとまず利益確定としては悪くないのではないでしょうか。再度のエントリーは様子を見てからです。上昇前暫くの間800円程度で安定していたのと、ここ最近の地合いの悪さを考えると、軽い気持ちで取りに行く感じではないです。&lt;/p&gt;
+
+&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
+&lt;p&gt;2月末に比べて、もう一つ上のステージに上がってくれました。配当金の権利も取得できました。&lt;br /&gt;
+配当落ちがほぼなかったのは嬉しいです。&lt;/p&gt;
+
+&lt;h3 id=&quot;9696-ウィザス&quot;&gt;9696 ウィザス&lt;/h3&gt;
+&lt;p&gt;低位の高配当株でPER11倍程度、PBR0.8倍程度。392円でエントリーしました。&lt;br /&gt;
+配当落ちを喰らいましたが想定内なので今後を見守りたいです。&lt;br /&gt;
+購入するときに業務的な面から着目した点としては、&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;関西地盤
+このような塾経営では、地域密着していることが大事なのではないかという仮説を考えました。&lt;br /&gt;
+また、関西以外ではまだあまり校舎がありません。うまく手を広げられれば、それだけ売上と利益を伸ばすチャンスになります。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;従来型の塾だけでなく新規領域にも投資をしている
+従来型のサービスを提供するだけでは、業績向上は外部環境の改善に大きく依存してしまいます。&lt;br /&gt;
+少子化をもろに食らう業界のはずなので、教育という軸をしっかりもちながらの多角化は正しいはずです。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;の2つが大きな理由です。&lt;/p&gt;
+
+&lt;p&gt;実績としても、この記事を書いている時点で下記のサイトを見る限り、&lt;br /&gt;
+&lt;a href=&quot;https://www.jyukunavi.jp/rank/27.html&quot;&gt;大阪府の塾ランキング&lt;/a&gt;&lt;br /&gt;
+集団/個別、小学校〜大学受験までカバーしながら高評価を得ているのである程度信頼できると思いますし、実績が新たな生徒を呼び込む面は確実にあると思います。&lt;br /&gt;
+(他の高評価塾は、ドメインを集中させている（中学受験のみなど）)&lt;/p&gt;
+
+&lt;p&gt;2単元握っているのである程度上がったところで半分は売ってしまいたいです。&lt;br /&gt;
+単純な損切は必要ないと思いますが、何か悪材料が出るか、塾自体の評価・実績が落ち目になるなどの変化があれば
+売ることになると思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;9765-オオバ&quot;&gt;9765 オオバ&lt;/h3&gt;
+&lt;p&gt;この銘柄はじわじわ上がってくれました。日経が下がっても全く動じなかったりするため、ポートフォリオのバランスが保たれました。保持株全面安みたいなイベントは判断ミスを誘発する可能性があるためできるだけ避けたいところです。5月優待に向けてまだまだ長い目でいきたいところです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;今月は本来であれば投げたくない銘柄を２つ投げる羽目になりました。
+4767 TOWは、結果だけ見れば売らないほうが利益幅は大きかったですし、手数料も無駄になりませんでした。しかし毎度確実にトレードを決めるのは至難の業ですし、&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ある程度の利益を取れている&lt;/li&gt;
+  &lt;li&gt;その銘柄で今まで一度も売却益、配当金での実現利益を得ていない。&lt;/li&gt;
+  &lt;li&gt;株価が下降トレンドに突入し始めた（25日移動平均を目安）&lt;/li&gt;
+  &lt;li&gt;以上の条件を満たした場合売る&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;というルールをきちんと実行したことが大切なのだと思います。ちなみに移動平均は正直なんでもいいのですが、25日線は使っている人も多いだろうと考えて、大きなミスをしないために参考になると考え採用しています。このルールでは条件を満たせば移動平均に縛られない売却をする余地があるため、他の参加者と全く差別化できず弱いということもないはずです。&lt;/p&gt;
+
+&lt;p&gt;再度のエントリーは、もともとは持っていたい銘柄であったのと、とくに悪い材料があったわけではないことを確認して、さらに下降トレンドでなかったためあまり抵抗なく行えました。
+7775 大研医器に関しては100点満点じゃないけど正解でしょう。その後安くなったところでまた買うか、他の銘柄に向かうかで明暗は別れるでしょうが、少なくとも「売り」の判断は間違っていなかったはずです。&lt;/p&gt;
+
+&lt;h2 id=&quot;3月にやったこと4月に向けて&quot;&gt;3月にやったこと・4月に向けて&lt;/h2&gt;
+
+&lt;h3 id=&quot;研究&quot;&gt;研究&lt;/h3&gt;
+&lt;p&gt;3月は投資本を読みながらスクリーニングをやりました。狙いは低位・優待・高配当銘柄です。当然利益や業種、内容も吟味します。唾を付けた銘柄はいくつかあり日々ウォッチしています。
+保持銘柄ではしばらく持つつもりのオオバやTOWは配当・優待確定である5月,6月に向けて上がって欲しいですね。&lt;br /&gt;
+今は資金サイズという制限要因があるため低位・優待・高配当株へ投資をしています。これがハマるかどうかは未知数ですが、しっかり研究・経験して武器としたいです。&lt;/p&gt;
+
+&lt;h3 id=&quot;3月31日&quot;&gt;3月31日&lt;/h3&gt;
+&lt;p&gt;3月の最終日は株価が下がりやすいようです。&lt;br /&gt;
+&lt;a href=&quot;http://show1225.hatenablog.com/entry/2015/03/31/193155&quot;&gt;よくわからない年度末相場&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://kabu-news.blog.jp/archives/41844712.html&quot;&gt;3月の最終売買日は要注意！過去24年からわかる嫌な傾向&lt;/a&gt;&lt;br /&gt;
+理由は定かではありませんが、こうも傾向が出ると意識せざるを得ません。
+実際、今年の3月31日も昼まで上昇していながら後場に一気に下げて日経は18000円台でフィニッシュ。&lt;br /&gt;
+私の保持株も下がってしまいました。&lt;br /&gt;
+絶対ガチホ銘柄以外は、30日に売って31日の引けで買い戻すべきだったのかもしれません。
+3月に限らず季節の要因というのは確実にあるので、意識していきたいです。&lt;br /&gt;
+&lt;a href=&quot;http://diamond.jp/articles/-/39413&quot;&gt;9月は株を買うな！年間の値動きの法則を知って負け知らず&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;分売&quot;&gt;分売&lt;/h3&gt;
+&lt;p&gt;分売でも低位銘柄が出ていたりするので、いい条件のものがあれば狙っていきたいです。&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+            <pubDate>Fri, 31 Mar 2017 00:00:00 +0900</pubDate>
+            <link>http://idratherbewriting.com/StockReport2017Mar.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Mar.html</guid>
+            
+            
+        </item>
         
         <item>
             <title>2017年2月度株式投資成績</title>
@@ -200,8 +456,8 @@
 毎月のことで効率化の優先度は高いので、少しずつでも改良したいところです。&lt;/p&gt;
 </description>
             <pubDate>Tue, 28 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017Feb.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017Feb.html</guid>
+            <link>http://idratherbewriting.com/StockReport2017Feb.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Feb.html</guid>
             
             
         </item>
@@ -317,8 +573,8 @@ IoTヘルケアデバイスを活用して個人内での変動を見れたら�
 &lt;p&gt;大量の動画データを解析していて、どうやって分析を進めているのか気になったのですが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。&lt;/p&gt;
 </description>
             <pubDate>Wed, 22 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/170222Seminar.html</link>
-            <guid isPermaLink="true">http://localhost:4005/170222Seminar.html</guid>
+            <link>http://idratherbewriting.com/170222Seminar.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/170222Seminar.html</guid>
             
             <category>ヘルスケア</category>
             

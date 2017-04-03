@@ -29,3 +29,7 @@ entries:
     - title: 2017年2月
       url: /StockReport2017Feb.html
       output: web, pdf
+
+    - title: 2017年3月
+      url: /StockReport2017Mar.html
+      output: web, pdf
