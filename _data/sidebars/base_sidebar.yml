@@ -33,3 +33,11 @@ entries:
     - title: 2017年3月
       url: /StockReport2017Mar.html
       output: web, pdf
+
+  - title: 株主総会記録
+    output: web, pdf
+    folderitems:
+
+    - title: ブロードリーフ(2017年3月)
+      url: /170328BroadLeaf.html
+      output: web, pdf

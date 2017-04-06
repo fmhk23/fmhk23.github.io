@@ -3,10 +3,10 @@
     <channel>
         <title></title>
         <description></description>
-        <link>http://idratherbewriting.com/</link>
-        <atom:link href="http://idratherbewriting.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 04 Apr 2017 02:59:28 +0900</pubDate>
-        <lastBuildDate>Tue, 04 Apr 2017 02:59:28 +0900</lastBuildDate>
+        <link>http://localhost:4005/</link>
+        <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 07 Apr 2017 01:55:54 +0900</pubDate>
+        <lastBuildDate>Fri, 07 Apr 2017 01:55:54 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
         
         <item>
@@ -259,8 +259,137 @@
 &lt;hr /&gt;
 </description>
             <pubDate>Fri, 31 Mar 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Mar.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Mar.html</guid>
+            <link>http://localhost:4005/StockReport2017Mar.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Mar.html</guid>
+            
+            
+        </item>
+        
+        <item>
+            <title>2017年ブロードリーフ株主総会</title>
+            <description>&lt;p&gt;ブロードリーフ(東証一部、3673)の株主総会に参加してきました。&lt;br /&gt;
+場所は品川駅高輪口を出てすぐのホテル。定期券内なのでとても助かります。&lt;br /&gt;
+おみやげとして洋菓子がもらえたらしいが、人数が多すぎてもらえず、後日郵送されるそうです。&lt;/p&gt;
+
+&lt;h2 id=&quot;質疑&quot;&gt;質疑&lt;/h2&gt;
+
+&lt;h3 id=&quot;アフターマーケットとは何か&quot;&gt;アフターマーケットとは何か？&lt;/h3&gt;
+
+&lt;p&gt;アフターマーケットとは、&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;車検（整備工場）&lt;/li&gt;
+  &lt;li&gt;ガソリンスタンド&lt;/li&gt;
+  &lt;li&gt;板金工場（ぶつけた後の修理など）&lt;/li&gt;
+  &lt;li&gt;中古車販売業&lt;/li&gt;
+  &lt;li&gt;リサイクル業（廃車→輸出、スクラップ）&lt;/li&gt;
+  &lt;li&gt;部品商社、部品メーカー、卸　トヨタ・日産のような大手から、サードパーティーまで&lt;/li&gt;
+  &lt;li&gt;ガラス専業業者&lt;/li&gt;
+  &lt;li&gt;電装関係&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上場以来アフターマーケットという言葉を使っている。
+すべてが事業領域で、ブロードリーフがシステムを提供している。&lt;/p&gt;
+
+&lt;h3 id=&quot;整備工場はシュリンク縮小するか&quot;&gt;整備工場はシュリンク（縮小）するか？&lt;/h3&gt;
+&lt;p&gt;IR上でも発表しているが、シェア、主要顧客は上位層が多い。安定感がある顧客を多数抱えている。&lt;br /&gt;
+淘汰が始まると、統合のときには上下のピラミッドによって大手が残っていく&lt;br /&gt;
+もしくは専業で非常に特化した技術を持った会社が残っている。&lt;/p&gt;
+
+&lt;p&gt;→シュリンクするとは考えていない。&lt;/p&gt;
+
+&lt;h3 id=&quot;電気自動車になると部品調達の回数はどうなるか&quot;&gt;電気自動車になると部品調達の回数はどうなるか？&lt;/h3&gt;
+&lt;p&gt;電気自動車になると部品点数は減るが、その代わりに、電送の処理が非常に増える。&lt;br /&gt;
+高度な知識が欠かせなくなるため、ブロードリーフの持つ修理情報であったりデータベースの価値が非常に高まる。&lt;/p&gt;
+
+&lt;h3 id=&quot;海外への進出などの計画はあるか&quot;&gt;海外への進出などの計画はあるか？&lt;/h3&gt;
+&lt;p&gt;中国、フィリピンに会社を設立している。&lt;br /&gt;
+中国の会社は部品の流通が目的。しかし中国政府の主要部品、エンジン、足回りなどの流通を厳しく制限されている。&lt;br /&gt;
+解放される予定だったが、解放されておらず停滞している。&lt;br /&gt;
+フィリピンの会社は自動車保険最大手スタンダード保険と提携している。&lt;br /&gt;
+保険会社が調達してくる部品を取り扱う合弁会社で、非連結だが順調とのこと。&lt;/p&gt;
+
+&lt;h3 id=&quot;平均年齢が高くないかまた高齢の割に勤続年数が短い&quot;&gt;平均年齢が高くないか？また、高齢の割に勤続年数が短い。&lt;/h3&gt;
+&lt;p&gt;この会社に必要な知識は単なるウェブ系の知識ではない。&lt;br /&gt;
+技術力、自動車の知識、マネージメント力の強化のために30歳以上の社員を中途採用している。&lt;/p&gt;
+
+&lt;h3 id=&quot;配当性向を急激に上げすぎではないか高い状態で大丈夫か&quot;&gt;配当性向を急激に上げすぎではないか？高い状態で大丈夫か？&lt;/h3&gt;
+&lt;p&gt;内部留保を確保、成長路線への投資を行いながら株価上昇に努めていく。&lt;/p&gt;
+
+&lt;p&gt;資金の還元は重要事項と認識している。&lt;br /&gt;
+投資に使えるお金を確保して、企業価値の向上が行えるのであれば、積極投資を行う。&lt;br /&gt;
+バランスよく行うことを考えている。配当の継続性については約束できないが、還元重視で経営を行いたい。&lt;/p&gt;
+
+&lt;h3 id=&quot;自動運転のメリットとは&quot;&gt;自動運転のメリットとは？&lt;/h3&gt;
+&lt;p&gt;AIは自動車の色んな分野において進んでいる。要約すると、２つに分かれる。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ぶつからない、危険を避ける。安全に運転できる。&lt;/li&gt;
+  &lt;li&gt;脳と同じように考えて運転できる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;実際には、自動運転だけではなく、乗る楽しみという領域もある。&lt;br /&gt;
+２つのニーズを満たしていくことを考えると、近未来においてすべてが自動運転になる可能性は低い。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;自分で乗って運転しながらでも安全を確保できる。&lt;/li&gt;
+  &lt;li&gt;遠隔地においてドライバーが少ない、過疎地において補助的なAIが病院や買い物に連れて行ってくれる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;バスガイドを置いておくのとホログラフィックを置いておくのはどのような違いがあるか&quot;&gt;バスガイドを置いておくのと、ホログラフィックを置いておくのはどのような違いがあるか？&lt;/h3&gt;
+&lt;p&gt;過疎地、遠隔地において就職してくれるバスガイドがいない。&lt;br /&gt;
+需要を求めて一人の人件費を配置するよりもAIなどに任せるほうが経済的メリットが大きい。&lt;br /&gt;
+国土交通省もこのようなことを考えている。&lt;/p&gt;
+
+&lt;h3 id=&quot;700名の労使関係労働時間どういうレベルにあるか&quot;&gt;700名の労使関係、労働時間　どういうレベルにあるか？&lt;/h3&gt;
+&lt;h3 id=&quot;働きがい仕事ぶり知的産業なので労働時間で換算するような領域ではないのではないか&quot;&gt;働きがい。仕事ぶり。知的産業なので労働時間で換算するような領域ではないのではないか？&lt;/h3&gt;
+&lt;p&gt;労組なし。良好な関係。&lt;br /&gt;
+労働時間の問題：深夜労働禁止、休日出勤も禁止。有給は計画取得。長時間労働者への注意喚起、ノー残業デー&lt;br /&gt;
+心配になるような事項はないが、今後も守る。&lt;/p&gt;
+
+&lt;h3 id=&quot;アプリケーションの開発内製比率事業に対する知識を蓄えるための内製比率&quot;&gt;アプリケーションの開発、内製比率　事業に対する知識を蓄えるための内製比率。&lt;/h3&gt;
+&lt;p&gt;詳細の内製比率はライバル会社の関係で非開示。&lt;br /&gt;
+考え方としては、ノウハウを持っている会社なので、ノウハウを最大限活かすためにコア、データベースの作成、データの収集は社内で行っている。&lt;br /&gt;
+外部にノウハウが流出しないような形で外部に発注している。&lt;br /&gt;
+内容がノウハウにかかわらない部分では、外注が多い。&lt;br /&gt;
+コアはすべて内製、それ以外の単純な画面設計などは外注。&lt;/p&gt;
+
+&lt;h3 id=&quot;競合他社を含むポジショニングシェア&quot;&gt;競合他社を含むポジショニング　シェア&lt;/h3&gt;
+&lt;p&gt;ブロードリーフの事業領域すべてをカバーしている会社はない。&lt;br /&gt;
+単一領域については、競合他社があるもののすべての領域で、シェア一位。&lt;/p&gt;
+
+&lt;p&gt;他社の状況としては、&lt;br /&gt;
+タジマ：買収の基本合意　内容精査中&lt;br /&gt;
+3位DIC： 売上15億程度&lt;br /&gt;
+4位（名前聞き取れず）どこかの上場子会社 8-9億円&lt;br /&gt;
+という状況で圧倒的販売売上高を誇る。売上換算は難しいが、ポジションとしてはブロードリーフが大多数を持っていて、他者が分ける形になっている。&lt;/p&gt;
+
+&lt;h3 id=&quot;中長期的な目標と数字&quot;&gt;中長期的な目標と数字&lt;/h3&gt;
+&lt;p&gt;2018年迄の開示はIRに。&lt;br /&gt;
+目標は新規クラウドシステムの開発と人材確保。&lt;/p&gt;
+
+&lt;h3 id=&quot;配当性向のせいで成長ができなくなっているのではないか&quot;&gt;配当性向のせいで成長ができなくなっているのではないか？&lt;/h3&gt;
+&lt;p&gt;キャッシュが溜まりやすい会社でありキャッシュフローは非常に良い。&lt;br /&gt;
+PLBSだけを見るとわかりにくいが、キャッシュはプラス。開発会社なので、新しい商品の開発をすると営業利益にヒットする。&lt;br /&gt;
+新しいものを随時改良しながら作っていく。&lt;br /&gt;
+PLだけを見て投資をされていると、営業利益減っているのではないかとなるが、キャッシュフローが良いので成長しているといえる。&lt;/p&gt;
+
+&lt;h3 id=&quot;中期経営計画が欲しい業績未達のケースが多い&quot;&gt;中期経営計画が欲しい。業績未達のケースが多い。&lt;/h3&gt;
+&lt;p&gt;技術革新、車自体の変化が大きいため、2年ごとに情報を開示しながら、という方針。&lt;br /&gt;
+中長期的な方針がほしいという目標は、内部的に考えているが、世の中がドラスティックに変わっていくためミスリードをしないためにも迅速な開示を行っていきたい。&lt;/p&gt;
+
+&lt;h3 id=&quot;キャッシュがどんどん増えて何に使うのか&quot;&gt;キャッシュがどんどん増えて、何に使うのか？&lt;/h3&gt;
+&lt;p&gt;キャッシュが積み上がったものを、株主に還元分配する。成長が鈍化したということは考えていない。&lt;br /&gt;
+キャッシュポジションを見れば無理をして配当を増やしたとはいえないことはすぐに分かる。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;総会後は展示や動画による紹介があった。&lt;br /&gt;
+&lt;a href=&quot;https://innophys.jp/product/stand-alone/&quot;&gt;イノフィスのマッスルスーツ&lt;/a&gt;&lt;br /&gt;
+上記製品の説明と展示。説明は聞いてこなかったのでブロードリーフとの関係はよくわからない・・・。&lt;/p&gt;
+</description>
+            <pubDate>Tue, 28 Mar 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/170328BroadLeaf.html</link>
+            <guid isPermaLink="true">http://localhost:4005/170328BroadLeaf.html</guid>
+            
+            <category>株主総会</category>
             
             
         </item>
@@ -456,8 +585,8 @@
 毎月のことで効率化の優先度は高いので、少しずつでも改良したいところです。&lt;/p&gt;
 </description>
             <pubDate>Tue, 28 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Feb.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Feb.html</guid>
+            <link>http://localhost:4005/StockReport2017Feb.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Feb.html</guid>
             
             
         </item>
@@ -573,8 +702,8 @@ IoTヘルケアデバイスを活用して個人内での変動を見れたら�
 &lt;p&gt;大量の動画データを解析していて、どうやって分析を進めているのか気になったのですが、現状は人海戦術で進めているらしいです。自分も動画データを扱う事があるのでなんとか効率化したいのですが、なかなか糸口はつかめないです。&lt;/p&gt;
 </description>
             <pubDate>Wed, 22 Feb 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/170222Seminar.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/170222Seminar.html</guid>
+            <link>http://localhost:4005/170222Seminar.html</link>
+            <guid isPermaLink="true">http://localhost:4005/170222Seminar.html</guid>
             
             <category>ヘルスケア</category>
             
