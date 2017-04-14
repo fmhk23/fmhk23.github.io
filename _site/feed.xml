@@ -5,9 +5,45 @@
         <description></description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 07 Apr 2017 01:55:54 +0900</pubDate>
-        <lastBuildDate>Fri, 07 Apr 2017 01:55:54 +0900</lastBuildDate>
+        <pubDate>Sat, 15 Apr 2017 03:57:33 +0900</pubDate>
+        <lastBuildDate>Sat, 15 Apr 2017 03:57:33 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>Mac OS XでPostgreSQLをセットアップ</title>
+            <description>&lt;p&gt;PostgreSQLのインストール手順をメモ。&lt;/p&gt;
+
+&lt;h3 id=&quot;ダウンロードインストール&quot;&gt;ダウンロード&amp;amp;インストール&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.postgresql.org/download/macosx/&quot;&gt;https://www.postgresql.org/download/macosx/&lt;/a&gt;&lt;br /&gt;
+今回はインストーラーを落としてきて普通にインストールする。(Homebrewを使う方法などもあるらしい。)&lt;/p&gt;
+
+&lt;h3 id=&quot;psqlのパスを通す&quot;&gt;psqlのパスを通す&lt;/h3&gt;
+&lt;p&gt;パスを通さないとpsqlコマンドが使えない。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dba.stackexchange.com/questions/3005/how-to-run-psql-on-mac-os-x&quot;&gt;How to run psql on Mac OS X?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;好きなエディタを使って編集する。&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo emacs .bash_profile&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;下記を書き足して保存。&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PATH=&quot;/Library/PostgreSQL/9.6/bin/:${PATH}&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;上記パスはMacにおけるデフォルトなので、変更がなければバージョン変更だけですむはず。
+ちなみにemacsの終了は C-x C-c。(Control + x、Control + c)&lt;/p&gt;
+
+&lt;h3 id=&quot;postgresapp&quot;&gt;Postgres.app&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://postgresapp.com/&quot;&gt;postgres.app&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;まだインストールしただけだが、このツールも便利そう。&lt;/p&gt;
+</description>
+            <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/PostgresonMac.html</link>
+            <guid isPermaLink="true">http://localhost:4005/PostgresonMac.html</guid>
+            
+            <category>PostgreSQL</category>
+            
+            
+        </item>
         
         <item>
             <title>2017年3月度株式投資成績</title>

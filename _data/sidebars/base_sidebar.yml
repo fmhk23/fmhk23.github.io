@@ -14,6 +14,14 @@ entries:
       url: /news_archive.html
       output: web, pdf
 
+  - title: データベース/SQL
+    output: web, pdf
+    folderitems:
+
+      - title: Mac OS XでPostgreSQLをセットアップ
+        url: /PostgresonMac.html
+        output: web, pdf
+
   - title: セミナー参加記録
     output: web, pdf
     folderitems:

@@ -186,6 +186,21 @@
         
     
     <li>
+        <a href="#">データベース/SQL</a>
+        <ul>
+            
+            
+            
+            <li><a href="PostgresonMac.html">Mac OS XでPostgreSQLをセットアップ</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
         <a href="#">セミナー参加記録</a>
         <ul>
             
@@ -278,6 +293,42 @@
         
 
 
+    <h2><a class="post-link" href="PostgresonMac.html">Mac OS XでPostgreSQLをセットアップ</a></h2>
+        <span class="post-meta">Apr 15, 2017 /
+            
+                <a href="tag_PostgreSQL.html">PostgreSQL</a>
+                </span>
+        <p> PostgreSQLのインストール手順をメモ。
+
+ダウンロード&amp;インストール
+https://www.postgresql.org/download/macosx/
+今回はインストーラーを落としてきて普通にインストールする。(Homebrewを使う方法などもあるらしい。)
+
+psqlのパスを通す
+パスを通さないとpsqlコマンドが使えない。
+
+How to run psql on Mac OS X?
+
+好きなエディタを使って編集する。
+sudo emacs .bash_profile
+
+下記を書き足して保存。
+PATH="/Library/PostgreSQL/9.6/bin/:${PATH}"
+
+上記パスはMacにおけるデフォルトなので、変更がなければバージョン変更だけですむはず。
+ちなみにemacsの終了は C-x C-c。(Control + x、Control + c)
+
+Postgres.app
+postgres.app
+
+まだインストールしただけだが、このツールも便利そう。
+ </p>
+
+
+
+        
+
+
     <h2><a class="post-link" href="StockReport2017Mar.html">2017年3月度株式投資成績</a></h2>
         <span class="post-meta">Mar 31, 2017 /
             </span>
@@ -344,7 +395,7 @@
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: Apr 7, 2017 <br />
+ Site last generated: Apr 15, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
