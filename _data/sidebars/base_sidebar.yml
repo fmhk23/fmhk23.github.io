@@ -42,6 +42,10 @@ entries:
       url: /StockReport2017Mar.html
       output: web, pdf
 
+    - title: 2017年4月
+      url: /StockReport2017Apr.html
+      output: web, pdf
+
   - title: 株主総会記録
     output: web, pdf
     folderitems:

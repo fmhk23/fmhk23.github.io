@@ -1,0 +1,151 @@
+---
+title: "2017年4月度株式投資成績"
+date: "2017/4/30"
+output: rmarkdown::html_vignette
+sidebar: base_sidebar
+permalink: StockReport2017Apr.html
+keywords: 株式投資
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## 概況
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+options(digits = 7)
+suppressMessages(library(data.table))
+suppressMessages(library(dplyr))
+suppressMessages(library(stringr))
+suppressMessages(library(quantmod))
+
+#保有
+myStock <- data.frame(
+  `コード` = c(1726,3673,4767,8410,9696),
+  `名前` = c("BRHD", "ブロードリーフ", "TOW", "セブン銀行","ウィザス"),
+  `取得単価` = c(242,631.99,699.86,354.715,392.43),
+  `月末単価` = c(392,723,793,374,376),
+  `数量` = c(100,100,100,400,200)
+) 
+myStock$`利益` <- (myStock$`取得単価` - myStock$`月末単価`) * myStock$`数量` * -1
+
+Result = data.frame(
+  `投資金額` = sum(myStock$`取得単価` * myStock$`数量`),
+  `保有総額` = sum(myStock$`月末単価` * myStock$`数量`),
+  `含み益` = sum(myStock$`利益`)
+)
+```
+
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#売却
+Sold <- data.frame(
+  `コード` = c(8410,2686,9765),
+  `名前` = c("セブン銀行","ジーフット","オオバ"),
+  `取得単価` = c(332,765.86,484),
+  `売却額` = c(360,734,495),
+  `地方税` = c(135,-165,50),
+  `国税` = c(415,-504,115),
+  `手数料` = c(86, 86,86),
+  `数量` = c(100,100,100)
+) %>% dplyr::arrange(`コード`)
+Sold$`利益` <- (Sold$`取得単価` - Sold$`売却額`) * Sold$`数量` * -1 - Sold$`地方税` -Sold$`国税` -Sold$`手数料`
+
+#Soldの現金化
+Obtained_money <- Sold %>% purrr::by_row(function(x){
+  return(x$`取得単価` * x$`数量` + x$`利益`)
+}) %>% dplyr::rename(total = .out)
+Sold_money<- sum(as.numeric(Obtained_money$total))
+
+Result$`利益確定` <- sum(Sold$`利益`)
+Result$`配当/優待` <- 0
+Result$`現金` <- 469028 - 75486 + Sold_money
+Result$`総資産` = Result$`保有総額` + Result$`現金`
+Result$`前月比` = Result$`総資産` - 972928
+knitr::kable(Result, align = "l")
+```
+
+## 所持銘柄
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#DT::datatable(myStock)
+knitr::kable(myStock, align = "l")
+```
+
+## 売却銘柄
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#DT::datatable(Sold)
+knitr::kable(Sold, align = "l")
+```
+
+## 個別銘柄レビュー
+
+### 1726 BRHD
+既に利幅をとっていますし悪い景色も見えていません。  
+ガチホールド、放置。
+
+### 2686 ジーフット
+下げトレンドと、前年比の売上がなかなか振るわないので損切りしました。  
+
+### 3673 ブロードリーフ
+開示と4月で全体的に相場が振るわなかったこともあり大きくさげました。  
+この銘柄はまだまだホールドする予定なので100円程度下がってもどうということはないのですが、反省点は買い増しできなかったことです。  
+優待と配当だけで値幅取れる銘柄なのですが、業績がめちゃくちゃいいわけでもないので強気の投資、という訳にはいきませんでした。 
+買値以下には下がらなかったことも、リスクを取りたくない気持ちを増大させてしまいました。
+
+### 4767 TOW
+今月は特別好調なのはこの銘柄くらいでした。  
+利幅はそこそことれているので売りたい気持ちに駆られますが、少なくとも次の配当まではホールドしたいです。  
+もともとは6月の配当に向けて上がっていくだろうという考えもあり購入したのでそろそろ売るのも悪くないので、どちらにするかは力を入れて検討したいところです。  
+
+### 8410 セブン銀行
+利益が出ていて株数も確保できていたので一度100株だけ利確売り。  
+でもやっぱりこの銘柄に投資したいとの考えから200株をより高値で買い増し。  
+一応これを書いている時点で利益はでていますが、他の投資のほうが儲かったのは確かだし、そもそも動きに一貫性がなく反省です。  
+ただし売った銘柄を買い増すリスクを許容する動きができたのは良かったとも思います。  
+
+### 9696 ウィザス
+何らかの特別悪い材料が出るか、買値＋アルファを取れるまで凍結するつもりです。
+
+### 9765 オオバ
+下げトレンドなので何らかの銘柄を減らそうという考えに至り、
+
+- 利益がぎりぎり確保できていた
+- 正直買う前の調査不足があった
+
+以上の理由から売りました。  
+もっと下で拾い直せればハッピーだったのですが、うまくいきませんでした。  
+まあ似たようなケースは今後もあると思うので再度チャレンジします。  
+
+--- 
+
+## 4月にやったこと・5月に向けて
+
+### インプット
+
+主な活動として本を2冊読みました。今は冊数を増やすよりも同じ本を何度も読んでいます。
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=2323k-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4939103579&linkId=5bb9c387ef62d2771aec837778507257&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+    </iframe>
+
+主に投資心理面。何度も読み返したり重要だと思われる点を書き写しています。  
+この本に書いてあることをきちんと習得することが大事だと思うので、習熟度を上げてレビューを書きたいと思います。
+    
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=2323k-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4478100713&linkId=0ef02d730ed5973af35dc24aef75fab8&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+    </iframe>
+
+購入した理由はより深いレベルで企業の分析をしたいと思ったから。  
+この本に書いてあるようなことをきちんとやるのは当然として、早くやることが大事だなあと思います。  
+理解するとかそういうレベルではなく自動でできるようにしないといけないです。
+
+### 仮想通貨
+このページではあえて仮想通貨のことは書いていないのですが、4月は投資していたコインが猛烈な上昇を見せました。  
+株式は5000円程度のマイナスでしたがそんなの全く気にならないくらい・・
+
+もちろん、きちんと先行リスクをとっていたので利益を取れたというのはあるのですが、運が良かったというのも多分にあるので、このラッキーをきちんと活かして資産形成を進めていきたいです。  
+今後も跳ね上がるチャンスがありえると考えて、できるだけ仮想通貨の数量を減らさず裁定取引で原資を回収します。  
+日本円で利確するのも良いですが、税金のこともケアしながら基本的にBTCで増やしたいです。（ここらへんは本当にシビア・・・）
+
+---
