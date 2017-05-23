@@ -5,9 +5,123 @@
         <description></description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 12 May 2017 02:19:01 +0900</pubDate>
-        <lastBuildDate>Fri, 12 May 2017 02:19:01 +0900</lastBuildDate>
+        <pubDate>Wed, 24 May 2017 02:15:09 +0900</pubDate>
+        <lastBuildDate>Wed, 24 May 2017 02:15:09 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>CentOS7でR環境構築</title>
+            <description>&lt;h3 id=&quot;ページを作成した理由&quot;&gt;ページを作成した理由&lt;/h3&gt;
+&lt;p&gt;AWS上のCentOS7に最新バージョンでないRをインストールする必要があった。それなりに苦労したので、手順を残しておく。&lt;br /&gt;
+基本的なことだが、管理者権限が必要になるであろう部分が多いが省略していることに注意。&lt;/p&gt;
+
+&lt;h3 id=&quot;一般的な方法&quot;&gt;一般的な方法&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install R
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;なのだが、yumでRが見つからないと言われてしまった。またやや古いバージョンをインストールする必要があるため、ソースコードからビルドすることにした。&lt;/p&gt;
+
+&lt;h3 id=&quot;ソースコードの入手&quot;&gt;ソースコードの入手&lt;/h3&gt;
+
+&lt;p&gt;CRANからtar.gzをwgetする。&lt;br /&gt;
+https://cran.ism.ac.jp/src/base/&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;x.xを適宜かえること。&lt;/p&gt;
+
+&lt;h3 id=&quot;ビルドインストール&quot;&gt;ビルド/インストール&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tar.gzの解凍&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar.zxvf R-3.x.x.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;インストール&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上記コマンドだけなのだが、いくつか頻出のエラーがある模様。&lt;/p&gt;
+
+&lt;h4 id=&quot;with-xyes問題&quot;&gt;–with x=yes問題&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;configure: error: --with-x=yes (default) and X11 headers/libs are not available 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;様々な質問サイトやブログなどを見ても、このエラーは結構多い感じ。
+with-xとは、X Windows Syetemのこと。これがないとMarkdownでのPDFやhtmlの生成などに差し障るらしい。&lt;br /&gt;
+yesではなく、noのオプションを付ければこのエラーを解消できる。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure --with-x=no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;私はMarkdown使わないし解決策と言われていることをしてもうまく行かなかったのでnoでインストールすることにした。一応、自分の動かしたかったコードを問題なく実行できている。&lt;/p&gt;
+
+&lt;p&gt;–with-readlineのエラーが出た場合は、下記のコマンドでインストールを推奨。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install readline-devel
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;いろいろ足りないと言われる問題&quot;&gt;いろいろ足りないと言われる問題&lt;/h4&gt;
+&lt;p&gt;都度エラーメッセージを見ながらインストールするしかない。環境によって何が足りないかは変わるだろうが、一例で自分の遭遇したリストを記載。開発用パッケージ-develをインストールしないとエラーが解消されないようだったので、開発用も入れた。（むしろ開発用だけでもいいのかな？）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bzip2&lt;/li&gt;
+  &lt;li&gt;bzip2-devel&lt;/li&gt;
+  &lt;li&gt;xz(liblzmaがないと言われたらこれ)&lt;/li&gt;
+  &lt;li&gt;xz-devel&lt;/li&gt;
+  &lt;li&gt;libcurl&lt;/li&gt;
+  &lt;li&gt;libcurl-devel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;最後に、PATHが通っていなかったら通す。これでRコマンドが使えるようになる。&lt;br /&gt;
+.RProfileファイルは、ユーザーのホーム画面に置いておけば読み込んでくれる。&lt;/p&gt;
+
+&lt;h3 id=&quot;余談&quot;&gt;余談&lt;/h3&gt;
+
+&lt;p&gt;Rのインストール前にpythonをアップデートしていたため、yumが動かない問題に遭遇し時間を食ってしまった。&lt;br /&gt;
+新しいバージョンのpythonインストール完了後、古いpythonを使うようyumの設定ファイルに記載しないといけないというのは知っていた。(yumはpythonを使っており、どのpythonを使うか指定しないとうまく動作しない。あまり詳しくないが依存関係がある模様。)&lt;br /&gt;
+しかしurlgrabberがないというエラーが出てyumが動かず困ってしまった。yum updateやyum installなどの主要な機能が軒並み使えない。&lt;br /&gt;
+調べてもなかなか解決策にたどり着けなかったが、urlgrabberの設定ファイルを確認してpythonのバージョン指定を古いpythonにしたらエラーが解消された。&lt;/p&gt;
+
+&lt;p&gt;CentOSの環境構築を行う場合、pythonのアップデートはできるだけ後回しにしたほうが問題は少ないかもしれないと思った。yumが動かないまま放置するわけにはいかないので、いずれ解決しないといけないけど、環境構築でハマり続けると精神的にも(進捗/時間)的にも辛い。だからハマるのは避けたいし、万が一ハマるとしても他が終わった後のほうがいい。&lt;/p&gt;
+
+&lt;h3 id=&quot;参考になりそうなurl集&quot;&gt;参考になりそうなURL集&lt;/h3&gt;
+
+&lt;p&gt;英語&lt;br /&gt;
+&lt;a href=&quot;http://stackoverflow.com/questions/17473547/error-with-readline-yes-default-and-headers-libs-are-not-available&quot;&gt;error: –with-readline=yes (default) and headers/libs are not available&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;日本語&lt;br /&gt;
+&lt;a href=&quot;http://www.okadajp.org/RWiki/?R%20%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB#if8c08b4&quot;&gt;Rのインストール&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stat.biopapyrus.net/dev/r-install.html&quot;&gt;Rインストール&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/tomotagwork/items/9e86d2fc67a7c7b644d5&quot;&gt;オフラインでのR環境構築 on RHEL&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Sun, 21 May 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/RonCentOS7.html</link>
+            <guid isPermaLink="true">http://localhost:4005/RonCentOS7.html</guid>
+            
+            
+        </item>
         
         <item>
             <title>2017年4月度株式投資成績</title>

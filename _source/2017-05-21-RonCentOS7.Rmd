@@ -1,0 +1,111 @@
+---
+title: "CentOS7でR環境構築"
+date: "2017/5/21"
+output: rmarkdown::html_vignette
+sidebar: base_sidebar
+permalink: RonCentOS7.html
+keywords: R
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+### ページを作成した理由
+AWS上のCentOS7に最新バージョンでないRをインストールする必要があった。それなりに苦労したので、手順を残しておく。  
+基本的なことだが、管理者権限が必要になるであろう部分が多いが省略していることに注意。  
+
+### 一般的な方法
+
+```
+yum install R
+make
+make install
+```
+
+なのだが、yumでRが見つからないと言われてしまった。またやや古いバージョンをインストールする必要があるため、ソースコードからビルドすることにした。
+
+### ソースコードの入手
+
+CRANからtar.gzをwgetする。  
+https://cran.ism.ac.jp/src/base/
+
+```
+wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz
+```
+x.xを適宜かえること。
+
+### ビルド/インストール
+
+- tar.gzの解凍
+
+```
+tar.zxvf R-3.x.x.tar.gz
+```
+
+- インストール
+
+```
+./configure
+make
+make install
+```
+
+上記コマンドだけなのだが、いくつか頻出のエラーがある模様。  
+
+#### --with x=yes問題
+
+```
+configure: error: --with-x=yes (default) and X11 headers/libs are not available 
+```
+様々な質問サイトやブログなどを見ても、このエラーは結構多い感じ。
+with-xとは、X Windows Syetemのこと。これがないとMarkdownでのPDFやhtmlの生成などに差し障るらしい。  
+yesではなく、noのオプションを付ければこのエラーを解消できる。   
+
+```
+./configure --with-x=no
+```
+
+私はMarkdown使わないし解決策と言われていることをしてもうまく行かなかったのでnoでインストールすることにした。一応、自分の動かしたかったコードを問題なく実行できている。  
+
+--with-readlineのエラーが出た場合は、下記のコマンドでインストールを推奨。
+
+```
+yum install readline-devel
+```
+
+#### いろいろ足りないと言われる問題
+都度エラーメッセージを見ながらインストールするしかない。環境によって何が足りないかは変わるだろうが、一例で自分の遭遇したリストを記載。開発用パッケージ-develをインストールしないとエラーが解消されないようだったので、開発用も入れた。（むしろ開発用だけでもいいのかな？）  
+
+- bzip2
+- bzip2-devel
+- xz(liblzmaがないと言われたらこれ)
+- xz-devel
+- libcurl
+- libcurl-devel
+
+---
+
+最後に、PATHが通っていなかったら通す。これでRコマンドが使えるようになる。  
+.RProfileファイルは、ユーザーのホーム画面に置いておけば読み込んでくれる。
+
+### 余談
+
+Rのインストール前にpythonをアップデートしていたため、yumが動かない問題に遭遇し時間を食ってしまった。  
+新しいバージョンのpythonインストール完了後、古いpythonを使うようyumの設定ファイルに記載しないといけないというのは知っていた。(yumはpythonを使っており、どのpythonを使うか指定しないとうまく動作しない。あまり詳しくないが依存関係がある模様。)  
+しかしurlgrabberがないというエラーが出てyumが動かず困ってしまった。yum updateやyum installなどの主要な機能が軒並み使えない。  
+調べてもなかなか解決策にたどり着けなかったが、urlgrabberの設定ファイルを確認してpythonのバージョン指定を古いpythonにしたらエラーが解消された。
+
+CentOSの環境構築を行う場合、pythonのアップデートはできるだけ後回しにしたほうが問題は少ないかもしれないと思った。yumが動かないまま放置するわけにはいかないので、いずれ解決しないといけないけど、環境構築でハマり続けると精神的にも(進捗/時間)的にも辛い。だからハマるのは避けたいし、万が一ハマるとしても他が終わった後のほうがいい。
+
+### 参考になりそうなURL集
+
+英語  
+[error: --with-readline=yes (default) and headers/libs are not available](http://stackoverflow.com/questions/17473547/error-with-readline-yes-default-and-headers-libs-are-not-available)
+
+日本語  
+[Rのインストール](http://www.okadajp.org/RWiki/?R%20%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB#if8c08b4)
+
+[Rインストール](https://stat.biopapyrus.net/dev/r-install.html)
+
+[オフラインでのR環境構築 on RHEL](http://qiita.com/tomotagwork/items/9e86d2fc67a7c7b644d5)

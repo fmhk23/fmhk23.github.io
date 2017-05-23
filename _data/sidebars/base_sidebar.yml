@@ -14,6 +14,14 @@ entries:
       url: /news_archive.html
       output: web, pdf
 
+  - title: Rプログラミング
+    output: web, pdf
+    folderitems:
+
+      - title: CentOS7でR環境構築
+        url: /RonCentOS7.html
+        output: web, pdf
+
   - title: データベース/SQL
     output: web, pdf
     folderitems:
