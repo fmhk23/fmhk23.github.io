@@ -216,6 +216,21 @@
         
     
     <li>
+        <a href="#">暗号通貨(仮想通貨)</a>
+        <ul>
+            
+            
+            
+            <li><a href="NEM_MultiSig.html">NEMのWalletと二段階認証、MultiSigについて</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
         <a href="#">セミナー参加記録</a>
         <ul>
             
@@ -312,6 +327,18 @@
   <div class="home">
 
     <div class="post-list">
+        
+
+
+    <h2><a class="post-link" href="NEM_MultiSig.html">NEMのWalletと二段階認証、MultiSigについて</a></h2>
+        <span class="post-meta">May 25, 2017 /
+            
+                <a href="tag_NEM.html">NEM</a>
+                </span>
+        <p> NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみた。 結論から言うと、いわゆる普通の二段階認証はない。マルチシグを使えば似たようなことができる。 Why no 2FA option on the nano wallet? このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてある。 これを読めばもう長々と語ることはないのだが、できるだけ周辺知識も含めて日本語でまとめよう。 MultiSigって何？ MultiSigについては、日本語だとこのサイトがわかりやすいと思う。 Multisig(マルチシグ)って何？ 特徴としては  秘密鍵がひとつではなく複数に分割される。 複数の鍵の署名が揃うとトランザクションが発行される。つまり、送金できる。 2-of-3に分割した場合、3つのうち2つの鍵の署名があればいい。（この数字の関係は調整可能）  この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできない。 もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しい。 NEMチュートリアルのMultiSigのページを読む NanoWallet Guide 5.1にMultiSigについて記載がある。そんなに長い文章ではないので、そのまま転載すると  The more advanced and most secure way of securing your funds is multi-signature.... </p>
+
+
+
         
 
 
@@ -437,7 +464,7 @@ postgres.app
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: May 24, 2017 <br />
+ Site last generated: May 30, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

@@ -36,7 +36,7 @@ MultiSigについては、日本語だとこのサイトがわかりやすいと
 NEM's multisig is supported by all NEM wallets including NCC, Android, iOS, Nano, and NEMpay. Multisig accounts are as easy to set up as a few clicks and even have push notifications sent to your mobile or desktop wallet notifying you to sign.
 If you are interested in multi-signature accounts, you can read more about it here. And you can watch a series of demo videos here.
 
-M-of-NとN-of-Nの2つの実装があるようだ。
+M-of-NとN-of-Nの2つの実装があるようだ。  
 M-of-Nは、N個の鍵のうちM個の署名があればトランザクションが発行可能、  
 N-of-Nは、N個の鍵のうちすべての署名が必要。
 多少の操作は必要だが、いろいろなウォレット（NCC, Android, iOS, Nano, and NEMpay）で使える。

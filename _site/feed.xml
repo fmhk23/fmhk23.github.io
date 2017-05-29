@@ -5,9 +5,82 @@
         <description></description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 24 May 2017 02:15:09 +0900</pubDate>
-        <lastBuildDate>Wed, 24 May 2017 02:15:09 +0900</lastBuildDate>
+        <pubDate>Tue, 30 May 2017 02:46:30 +0900</pubDate>
+        <lastBuildDate>Tue, 30 May 2017 02:46:30 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>NEMのWalletと二段階認証、MultiSigについて</title>
+            <description>&lt;p&gt;NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみた。&lt;br /&gt;
+結論から言うと、いわゆる普通の二段階認証はない。マルチシグを使えば似たようなことができる。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/nem/comments/6amxdn/why_no_2fa_option_on_the_nano_wallet/&quot;&gt;Why no 2FA option on the nano wallet?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてある。&lt;br /&gt;
+これを読めばもう長々と語ることはないのだが、できるだけ周辺知識も含めて日本語でまとめよう。&lt;/p&gt;
+
+&lt;h3 id=&quot;multisigって何&quot;&gt;MultiSigって何？&lt;/h3&gt;
+&lt;p&gt;MultiSigについては、日本語だとこのサイトがわかりやすいと思う。&lt;br /&gt;
+&lt;a href=&quot;http://coinandpeace.hatenablog.com/entry/what_is_multisig&quot;&gt;Multisig(マルチシグ)って何？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;特徴としては&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;秘密鍵がひとつではなく複数に分割される。&lt;/li&gt;
+  &lt;li&gt;複数の鍵の署名が揃うとトランザクションが発行される。つまり、送金できる。&lt;/li&gt;
+  &lt;li&gt;2-of-3に分割した場合、3つのうち2つの鍵の署名があればいい。（この数字の関係は調整可能）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできない。&lt;br /&gt;
+もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しい。&lt;/p&gt;
+
+&lt;h3 id=&quot;nemチュートリアルのmultisigのページを読む&quot;&gt;NEMチュートリアルのMultiSigのページを読む&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.nem.io/nanowallet-tutorial/&quot;&gt;NanoWallet Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;5.1にMultiSigについて記載がある。そんなに長い文章ではないので、そのまま転載すると&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The more advanced and most secure way of securing your funds is multi-signature. NEM’s current implementation of multisig is “M-of-N”, meaning M can be any number equal to or less than N, i.e., 1-of-4, 2-of-3, 4-of-9, 11-of-12 and so on. NEM also allows “N-of-N” accounts, i.e., 1-of-1, 2-of-2, 5-of-5, 10-of-10 and so on.
+NEM’s multisig is supported by all NEM wallets including NCC, Android, iOS, Nano, and NEMpay. Multisig accounts are as easy to set up as a few clicks and even have push notifications sent to your mobile or desktop wallet notifying you to sign.
+If you are interested in multi-signature accounts, you can read more about it here. And you can watch a series of demo videos here.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;M-of-NとN-of-Nの2つの実装があるようだ。&lt;br /&gt;
+M-of-Nは、N個の鍵のうちM個の署名があればトランザクションが発行可能、&lt;br /&gt;
+N-of-Nは、N個の鍵のうちすべての署名が必要。
+多少の操作は必要だが、いろいろなウォレット（NCC, Android, iOS, Nano, and NEMpay）で使える。&lt;/p&gt;
+
+&lt;h3 id=&quot;どうやって運用する&quot;&gt;どうやって運用する？&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ocknamo.com/entry/2016/11/11/040226&quot;&gt;NEM MobileWalletによるマルチシグの実行方法&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;上記サイトにMobileWalletのマルチシグについて記載がある。&lt;/p&gt;
+
+&lt;p&gt;NanoWalletについては、サービスから各種設定ができる。&lt;/p&gt;
+
+&lt;p&gt;実際の運用では、&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;NanoWallet
+メインのアカウント。マルチシグアカウントにはしない。&lt;br /&gt;
+マルチシグネチャを設定、下記2つの公開鍵を設定し、2-of-3でトランザクションを発行できるようにする。&lt;/li&gt;
+  &lt;li&gt;MobileWallet
+マルチシグアカウント。スマホで、二段階認証アプリのような役割を果たす。&lt;/li&gt;
+  &lt;li&gt;NanoWallet(2)
+マルチシグアカウント。上記のNanoWalletとは別の安全なストレージに保存しておく。&lt;br /&gt;
+2-of-2だと、スマホを盗られたりなくした時詰むのでバックアップ用として想定。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;それぞれのウォレットに少量のXEMを送ったり（全くないと不便なので）、マルチシグ宣言するのにもXEMが必要だったりと、塵も積もれば山となる形式でそこそこの量のXEMが必要。&lt;br /&gt;
+現在、XEMの送金手数料が割高に感じるのと、メインウォレットにそこまでの堅牢性を求めていないとの理由から上記構成は試していない。&lt;br /&gt;
+自分としては手数料は今後安くなるような方策が取られるんじゃないかと踏んでいるので、その際に試してみたいと思う。&lt;br /&gt;
+（というわけで上の構成の確認はしていないので、間違いがあれば修正します。Twitterアカウントを今後作る予定なのでそこから教えていただければ。）&lt;/p&gt;
+</description>
+            <pubDate>Thu, 25 May 2017 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/NEM_MultiSig.html</link>
+            <guid isPermaLink="true">http://localhost:4005/NEM_MultiSig.html</guid>
+            
+            <category>NEM</category>
+            
+            
+        </item>
         
         <item>
             <title>CentOS7でR環境構築</title>

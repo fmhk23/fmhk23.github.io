@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://localhost:4005/NEM_MultiSig.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4005/RonCentOS7.html</loc>
   </url>
   
