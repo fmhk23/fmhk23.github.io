@@ -30,6 +30,14 @@ entries:
         url: /PostgresonMac.html
         output: web, pdf
 
+  - title: 暗号通貨(仮想通貨)
+    output: web, pdf
+    folderitems:
+
+      - title: NEMのWalletと二段階認証、MultiSigについて
+        url: /NEM_MultiSig.html
+        output: web, pdf
+
   - title: セミナー参加記録
     output: web, pdf
     folderitems:
