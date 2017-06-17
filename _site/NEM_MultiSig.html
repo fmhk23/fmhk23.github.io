@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content="NEM,  NEM XEM cryptocurrency MultiSig">
-<title>NEMのWalletと二段階認証、MultiSigについて | Far More High Kulture</title>
+<title>NanoWalletと二段階認証、MultiSigについて | Far More High Kulture</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -130,7 +130,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="NEMのWalletと二段階認証、MultiSigについて">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="NanoWalletと二段階認証、MultiSigについて">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -216,21 +216,6 @@
         
     
     <li>
-        <a href="#">暗号通貨(仮想通貨)</a>
-        <ul>
-            
-            
-            
-            <li class="active"><a href="NEM_MultiSig.html">NEMのWalletと二段階認証、MultiSigについて</a></li>
-            
-            
-            
-            
-        </ul>
-        
-        
-    
-    <li>
         <a href="#">セミナー参加記録</a>
         <ul>
             
@@ -246,7 +231,37 @@
         
     
     <li>
-        <a href="#">月間株式投資成績</a>
+        <a href="#">暗号通貨に関する情報</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="NEM_MultiSig.html">NanoWalletと二段階認証、MultiSigについて</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">暗号通貨への投資</a>
+        <ul>
+            
+            
+            
+            <li><a href="WhyCC.html">なぜ暗号通貨投資をするのか</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">株式への投資</a>
         <ul>
             
             
@@ -313,7 +328,7 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">NEMのWalletと二段階認証、MultiSigについて</h1>
+        <h1 class="post-title" itemprop="name headline">NanoWalletと二段階認証、MultiSigについて</h1>
         <p class="post-meta"><time datetime="2017-05-25T00:00:00+09:00" itemprop="datePublished">May 25, 2017</time> /
             
             
@@ -330,16 +345,18 @@
 
         
 
-        <p>NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみた。<br />
-結論から言うと、いわゆる普通の二段階認証はない。マルチシグを使えば似たようなことができる。</p>
+        <p><em>このページの情報は古いものです。最新情報はForum等を確認してください。</em></p>
+
+<p>NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみました。<br />
+結論から言うと、いわゆる普通の二段階認証はありません。マルチシグを使えば似たようなことができます。</p>
 
 <p><a href="https://www.reddit.com/r/nem/comments/6amxdn/why_no_2fa_option_on_the_nano_wallet/">Why no 2FA option on the nano wallet?</a></p>
 
-<p>このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてある。<br />
-これを読めばもう長々と語ることはないのだが、できるだけ周辺知識も含めて日本語でまとめよう。</p>
+<p>このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてあります。<br />
+これを読めばもう長々と語ることはないのですが、できるだけ周辺知識も含めて日本語でまとめます。</p>
 
 <h3 id="multisigって何">MultiSigって何？</h3>
-<p>MultiSigについては、日本語だとこのサイトがわかりやすいと思う。<br />
+<p>MultiSigについては、日本語だとこのサイトがわかりやすいと思います。<br />
 <a href="http://coinandpeace.hatenablog.com/entry/what_is_multisig">Multisig(マルチシグ)って何？</a></p>
 
 <p>特徴としては</p>
@@ -349,13 +366,13 @@
   <li>2-of-3に分割した場合、3つのうち2つの鍵の署名があればいい。（この数字の関係は調整可能）</li>
 </ul>
 
-<p>この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできない。<br />
-もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しい。</p>
+<p>この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできません。<br />
+もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しいです。</p>
 
 <h3 id="nemチュートリアルのmultisigのページを読む">NEMチュートリアルのMultiSigのページを読む</h3>
 <p><a href="https://blog.nem.io/nanowallet-tutorial/">NanoWallet Guide</a></p>
 
-<p>5.1にMultiSigについて記載がある。そんなに長い文章ではないので、そのまま転載すると</p>
+<p>5.1にMultiSigについて記載があります。そんなに長い文章ではないので、そのまま転載すると</p>
 
 <blockquote>
   <p>The more advanced and most secure way of securing your funds is multi-signature. NEM’s current implementation of multisig is “M-of-N”, meaning M can be any number equal to or less than N, i.e., 1-of-4, 2-of-3, 4-of-9, 11-of-12 and so on. NEM also allows “N-of-N” accounts, i.e., 1-of-1, 2-of-2, 5-of-5, 10-of-10 and so on.
@@ -363,17 +380,16 @@ NEM’s multisig is supported by all NEM wallets including NCC, Android, iOS, Na
 If you are interested in multi-signature accounts, you can read more about it here. And you can watch a series of demo videos here.</p>
 </blockquote>
 
-<p>M-of-NとN-of-Nの2つの実装があるようだ。<br />
+<p>M-of-NとN-of-Nの2つの実装があるようです。<br />
 M-of-Nは、N個の鍵のうちM個の署名があればトランザクションが発行可能、<br />
 N-of-Nは、N個の鍵のうちすべての署名が必要。
-多少の操作は必要だが、いろいろなウォレット（NCC, Android, iOS, Nano, and NEMpay）で使える。</p>
+多少の操作は必要ですが、いろいろなウォレット（NCC, Android, iOS, Nano, and NEMpay）で使えます。</p>
 
 <h3 id="どうやって運用する">どうやって運用する？</h3>
 <p><a href="http://www.ocknamo.com/entry/2016/11/11/040226">NEM MobileWalletによるマルチシグの実行方法</a></p>
 
-<p>上記サイトにMobileWalletのマルチシグについて記載がある。</p>
-
-<p>NanoWalletについては、サービスから各種設定ができる。</p>
+<p>上記サイトにMobileWalletのマルチシグについて記載があります。<br />
+NanoWalletについては、サービスから各種設定ができます。</p>
 
 <p>実際の運用では、</p>
 <ul>
@@ -387,10 +403,9 @@ N-of-Nは、N個の鍵のうちすべての署名が必要。
 2-of-2だと、スマホを盗られたりなくした時詰むのでバックアップ用として想定。</li>
 </ul>
 
-<p>それぞれのウォレットに少量のXEMを送ったり（全くないと不便なので）、マルチシグ宣言するのにもXEMが必要だったりと、塵も積もれば山となる形式でそこそこの量のXEMが必要。<br />
-現在、XEMの送金手数料が割高に感じるのと、メインウォレットにそこまでの堅牢性を求めていないとの理由から上記構成は試していない。<br />
-自分としては手数料は今後安くなるような方策が取られるんじゃないかと踏んでいるので、その際に試してみたいと思う。<br />
-（というわけで上の構成の確認はしていないので、間違いがあれば修正します。Twitterアカウントを今後作る予定なのでそこから教えていただければ。）</p>
+<p>それぞれのウォレットに少量のXEMを送ったり（全くないと不便なので）、マルチシグ宣言するのにもXEMが必要だったりと、塵も積もれば山となる形式でそこそこの量のXEMが必要です。<br />
+現在、XEMの送金手数料が割高に感じるのと、メインウォレットにそこまでの堅牢性を求めていないとの理由から上記構成は試していません。<br />
+自分としては手数料は今後安くなるような方策が取られるんじゃないかと踏んでいるので、その際に試してみたいと思います。</p>
 
     </div>
 
@@ -406,7 +421,7 @@ N-of-Nは、N個の鍵のうちすべての署名が必要。
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: Jun 12, 2017 <br />
+ Site last generated: Jun 18, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
