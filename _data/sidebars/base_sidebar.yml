@@ -54,6 +54,10 @@ entries:
       url: /WhyCC.html
       output: web, pdf
 
+    - title: 暗号通貨投資のMy鉄則
+      url: /InvestingCCRule.html
+      output: web, pdf
+
   - title: 株式への投資
     output: web, pdf
     folderitems:
