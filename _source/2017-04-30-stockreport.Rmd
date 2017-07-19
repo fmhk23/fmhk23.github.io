@@ -60,9 +60,9 @@ Sold_money<- sum(as.numeric(Obtained_money$total))
 
 Result$`利益確定` <- sum(Sold$`利益`)
 Result$`配当/優待` <- 0
-Result$`現金` <- 469028 - 75486 + Sold_money
+Result$`現金` <- 477931 - 75486 + Sold_money + Result$`配当/優待`
 Result$`総資産` = Result$`保有総額` + Result$`現金`
-Result$`前月比` = Result$`総資産` - 972928
+Result$`前月比` = Result$`総資産` - 981831
 knitr::kable(Result, align = "l")
 ```
 

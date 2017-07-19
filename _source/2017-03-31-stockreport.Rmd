@@ -54,7 +54,7 @@ Sold$`利益` <- (Sold$`取得単価` - Sold$`売却額`) * Sold$`数量` * -1 -
 
 Result$`利益確定` <- sum(Sold$`利益`)
 Result$`配当/優待` <- 997 + 3000
-Result$`現金` <- 624100 - 765.86*100 - 392.43*200
+Result$`現金` <- 624100 - 765.86*100 - 392.43*200 + Result$`利益確定` + Result$`配当/優待`
 Result$`総資産` = Result$`保有総額` + Result$`現金`
 Result$`前月比` = Result$`総資産` - 950000
 knitr::kable(Result, align = "l")

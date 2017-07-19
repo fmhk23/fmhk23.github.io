@@ -60,9 +60,10 @@ Sold_money<- sum(as.numeric(Obtained_money$total))
 
 Result$`利益確定` <- sum(Sold$`利益`)
 Result$`配当/優待` <- 0
-Result$`現金` <- 552138 - 77286 + Sold_money #買いは変数に入れていないので手入力
-Result$`総資産` = Result$`保有総額` + Result$`現金` - 80000 #8万を暗号通貨にまわした
-Result$`前月比` = Result$`総資産` - 967738
+Result$`現金` <- 561041 - 77286 + Sold_money + Result$`配当/優待` - 80000
+#買いは変数に入れていないので手入力 #8万を暗号通貨にまわした
+Result$`総資産` = Result$`保有総額` + Result$`現金`  
+Result$`前月比` = Result$`総資産` - 976641
 knitr::kable(Result, align = "l")
 ```
 
