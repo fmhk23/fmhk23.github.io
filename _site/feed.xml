@@ -3,11 +3,239 @@
     <channel>
         <title></title>
         <description></description>
-        <link>http://localhost:4005/</link>
-        <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 24 Aug 2017 01:20:25 +0900</pubDate>
-        <lastBuildDate>Thu, 24 Aug 2017 01:20:25 +0900</lastBuildDate>
+        <link>http://idratherbewriting.com/</link>
+        <atom:link href="http://idratherbewriting.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 11 Sep 2017 01:06:01 +0900</pubDate>
+        <lastBuildDate>Mon, 11 Sep 2017 01:06:01 +0900</lastBuildDate>
         <generator>Jekyll v3.3.1</generator>
+        
+        <item>
+            <title>2017年8月度株式投資成績</title>
+            <description>&lt;h2 id=&quot;概況所持銘柄&quot;&gt;概況/所持銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;284314&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;323700&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;39386&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;20385.5&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;347050&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;670750&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-216236&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;現金205179円を引き出し(採掘機器購入のため)&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;242.000&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;413&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;17100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;631.990&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;818&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18601&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;417&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12457&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9324&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;安田倉庫&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;722.860&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;769&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4614&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9980&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;マルコ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;536.860&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;403&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-13386&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/b446b2224298f67274aa5e5a7ca3aefe/unnamed-chunk-4-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-4&quot; /&gt;&lt;img src=&quot;/figure/b446b2224298f67274aa5e5a7ca3aefe/unnamed-chunk-4-2.png&quot; alt=&quot;plot of chunk unnamed-chunk-4&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;699.860&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;874&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1276&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3909&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12143.0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;438&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8242.5&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;セブン銀行の税金はTOWと合算&lt;/p&gt;
+
+&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
+
+&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
+&lt;p&gt;値段が上がってきました。&lt;br /&gt;
+これは優待の効果が大きいでしょうか。&lt;br /&gt;
+どちらにせよガチホールドですし、またQUOカードと本の小銭程度とはいえ配当がもらえるので放っておきましょう。
+決算に対する値段の急反応はありませんでした。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v4.eir-parts.net/v4Contents/View.aspx?cat=tdnet&amp;amp;sid=1506639&quot;&gt;決算短信&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://v4.eir-parts.net/v4Contents/View.aspx?cat=yuho_pdf&amp;amp;sid=2572183&quot;&gt;第１四半期報告書&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
+&lt;p&gt;決算の発表がありました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://v4.eir-parts.net/v4Contents/View.aspx?template=ir_material_for_fiscal_ym&amp;amp;sid=40320&amp;amp;code=3673&quot;&gt;	2017年12月期第2四半期決算説明資料（ノート付き）&lt;/a&gt;&lt;br /&gt;
+買収した競合他社、タジマの連結業績への貢献による予想の底上げや、配当予想の据え置きなどが好感されたようで、800円を超えて含み益が増大しました。&lt;br /&gt;
+タジマの買収に関する件は以前から織り込み済みと思っていましたが、実際に上方修正が出ると強いということでしょうか。&lt;br /&gt;
+ブロードリーフの進捗自体も悪くないようですしね。&lt;br /&gt;
+配当に関しては、優待も含めて他と比べて出しすぎなのではという意見が根強いようで、ここがクリアになれば買いたいと思う人は多いようです。&lt;/p&gt;
+
+&lt;p&gt;あとはAR/VR活用の思惑で買われている部分もあると思います。幸い、仕事柄この分野の情報は手に入れやすいので、気にしておく必要はあります。&lt;br /&gt;
+どちらにせよ思惑が外れようと当たろうと売り圧力になるでしょうし、ここの影響が大きいようならば一旦の手放し戦略もなくはないです。まだまだ先の話でしょうが・・・&lt;/p&gt;
+
+&lt;p&gt;本筋ではありませんが、この会社は決算の動画説明が公開されているなど、IRに力を入れているのが伝わってきて良いです。&lt;br /&gt;
+現在の株価から見て安価で一番効率の良い100株投資をできたので、今後もホールドです。&lt;/p&gt;
+
+&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
+&lt;p&gt;現金が必要だったこともあり、決算持ち越しのリスクを無理に背負う必要はないと考えて売りました。&lt;br /&gt;
+その後、決算がやや期待はずれで地合いも悪く株価が100円近く下がりました。&lt;br /&gt;
+この売却は成功と言っていいでしょう。ただ難しいのは再度エントリーをするかどうかです。&lt;br /&gt;
+値段的には、一旦底を抜けたように思います。&lt;br /&gt;
+ただし値段としてははじめに購入したときよりもだいぶ高くなっており、また今回の底を上手く拾えなかったため無理にエントリーする必要はないと思います。&lt;br /&gt;
+売った株にこだわるのではなく、次の銘柄を探すべきです。より正しくは、調べておくべきでした。&lt;br /&gt;
+この銘柄に関してはもしも値段が下がってきたら再度検討しましょう。&lt;/p&gt;
+
+&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
+&lt;p&gt;1枚、TOWと同じタイミングで手放しました。&lt;br /&gt;
+これもなんだかんだ高値付近で売却できました。これで残りは200株です。&lt;br /&gt;
+今買えば少し得ですが、再度エントリーしたくなるほど安くはなっていないというのが実際の感覚です。&lt;br /&gt;
+さらにここでセブン銀行買い増しはバランスがセブン銀行に偏ります。&lt;br /&gt;
+今のところ、私は株式の集中投資による資産の急成長を強く期待しているわけではないです。その役割は暗号通貨にあります。&lt;br /&gt;
+値上がってきたセブン銀行で集中投資をするのは悪手にも思えるので、ここの再エントリーもしばらくはないでしょう。&lt;br /&gt;
+残りはしばらくホールドすると思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;9324-安田倉庫&quot;&gt;9324 安田倉庫&lt;/h3&gt;
+&lt;p&gt;値動きは安定です。若干下がったか。&lt;br /&gt;
+右肩上がりに上がっていくことを期待している銘柄ではなく、資産防衛、バランス確保のための銘柄なので気にするものでもありません。&lt;br /&gt;
+ただ今月は株への資金を減らしてもはやバランスを確保も何もなくない？といった状態が近づいてきているので、逆指値による利益確保をしようと思います。&lt;br /&gt;
+含み損でもかまわないと思っていましたが、ポートフォリオ内での役割が薄いのならば薄い利益でも確保して手放してもいいと思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;9980マルコ&quot;&gt;9980　マルコ&lt;/h3&gt;
+
+&lt;p&gt;値段がかなり下がってしまいました。&lt;br /&gt;
+ライザップグループの盛り上がりが一旦落ち着いたこと、増資などが原因でしょう。&lt;br /&gt;
+ここで苦しいのはやはり先月の取得単価を上げてしまったミス。&lt;br /&gt;
+当初の予定では9月にリリースの予定でしたが、優待をもらって耐えるという方策に切り替えも必要かもしれません・・・&lt;br /&gt;
+9月は売るチャンスを伺いながらも、本当に保持していいのか考えます。&lt;br /&gt;
+ダメとなれば値段にかかわらず売るしかないでしょう。&lt;br /&gt;
+どちらにせよ９月末にはとった戦略の根拠をここに書けるようになっていないと駄目です。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;8月にやったこと9月に向けて&quot;&gt;8月にやったこと・9月に向けて&lt;/h2&gt;
+&lt;p&gt;ゾーンの新刊の日本語訳がでていました。&lt;br /&gt;
+ゾーンは読んで非常に感銘を受けた本でしたので、迷わず購入。&lt;br /&gt;
+まだ途中までしか読んでいませんが、既に役に立つことを学べている気がします。&lt;br /&gt;
+この本を読んで、まだまだ勉強しないといけないことが多いなあと感じる次第です。&lt;/p&gt;
+
+&lt;h4 id=&quot;暗号通貨投資&quot;&gt;暗号通貨投資&lt;/h4&gt;
+
+&lt;p&gt;暗号通貨は好調。&lt;br /&gt;
+これ以上現金は投入できませんが、９月からはマイニングもしないといけないです。&lt;br /&gt;
+マイニングはトレードと組み合わせてこそ力を120%発揮できると思っています。&lt;br /&gt;
+トレードを上手く仕掛けられるよう準備をしないといけません。&lt;br /&gt;
+あとは投資基準を結構替えないといけないと考え直しました。&lt;br /&gt;
+環境変化、ポジションの変化、情報収集などを経ての判断です。&lt;br /&gt;
+こちらも頭の中ではある程度固まっているので、早めにアップデートしたいですね。&lt;br /&gt;
+6月に書いた基準がある意味恥ずかしくなるというのは、自分で自分の間違いを認めて成長できているということでもあるので悪くない気もします。&lt;br /&gt;
+次の基準が少しでも正解に近づいていることを信じたい。&lt;/p&gt;
+
+&lt;h4 id=&quot;現金が全然ない問題&quot;&gt;現金が全然ない問題&lt;/h4&gt;
+
+&lt;p&gt;それにしても現金が34万円程度あることになっていますが、実は現物で外貨（旅行用）とかで持っている額が多くて機動性に欠ける（こういうの両替して株買うとか、結構追い込まれてますよね。）とか、  生活資金が来年の予定のクレジット払いで結構削れていたりだとか、あんまり健全な状況じゃないです。&lt;br /&gt;
+楽天銀行のランクも落ちて結構困っています。&lt;br /&gt;
+こんなんじゃ下がっても買い増しする精神状態になれない！&lt;br /&gt;
+やはり現金のバックグラウンドは必要です。。。&lt;/p&gt;
+</description>
+            <pubDate>Thu, 31 Aug 2017 00:00:00 +0900</pubDate>
+            <link>http://idratherbewriting.com/StockReport2017Jul.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Jul.html</guid>
+            
+            
+        </item>
         
         <item>
             <title>2017年7月度株式投資成績</title>
@@ -233,8 +461,8 @@
 —&lt;/p&gt;
 </description>
             <pubDate>Mon, 31 Jul 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017Jul.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017Jul.html</guid>
+            <link>http://idratherbewriting.com/StockReport2017Jul.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Jul.html</guid>
             
             
         </item>
@@ -509,8 +737,8 @@
 &lt;hr /&gt;
 </description>
             <pubDate>Fri, 30 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017Jun.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017Jun.html</guid>
+            <link>http://idratherbewriting.com/StockReport2017Jun.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Jun.html</guid>
             
             
         </item>
@@ -634,8 +862,8 @@ ASICは中国から輸入するのが入手経路の基本になるため、日�
 &lt;p&gt;&lt;a href=&quot;https://zaif.jp?ac=f7ujnq95ac&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_728x90.png?ac=f7ujnq95ac&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
             <pubDate>Sat, 17 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/InvestingCCRule.html</link>
-            <guid isPermaLink="true">http://localhost:4005/InvestingCCRule.html</guid>
+            <link>http://idratherbewriting.com/InvestingCCRule.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/InvestingCCRule.html</guid>
             
             <category>暗号通貨</category>
             
@@ -685,8 +913,8 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 &lt;/ul&gt;
 </description>
             <pubDate>Fri, 16 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/WhyCC.html</link>
-            <guid isPermaLink="true">http://localhost:4005/WhyCC.html</guid>
+            <link>http://idratherbewriting.com/WhyCC.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/WhyCC.html</guid>
             
             <category>暗号通貨</category>
             
@@ -895,8 +1123,8 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 &lt;hr /&gt;
 </description>
             <pubDate>Wed, 31 May 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017May.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017May.html</guid>
+            <link>http://idratherbewriting.com/StockReport2017May.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017May.html</guid>
             
             
         </item>
@@ -966,8 +1194,8 @@ NanoWalletについては、サービスから各種設定ができます。&lt;
 自分としては手数料は今後安くなるような方策が取られるんじゃないかと踏んでいるので、その際に試してみたいと思います。&lt;/p&gt;
 </description>
             <pubDate>Thu, 25 May 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/NEM_MultiSig.html</link>
-            <guid isPermaLink="true">http://localhost:4005/NEM_MultiSig.html</guid>
+            <link>http://idratherbewriting.com/NEM_MultiSig.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/NEM_MultiSig.html</guid>
             
             <category>NEM</category>
             
@@ -1082,8 +1310,8 @@ yesではなく、noのオプションを付ければこのエラーを解消で
 &lt;p&gt;&lt;a href=&quot;http://qiita.com/tomotagwork/items/9e86d2fc67a7c7b644d5&quot;&gt;オフラインでのR環境構築 on RHEL&lt;/a&gt;&lt;/p&gt;
 </description>
             <pubDate>Sun, 21 May 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/RonCentOS7.html</link>
-            <guid isPermaLink="true">http://localhost:4005/RonCentOS7.html</guid>
+            <link>http://idratherbewriting.com/RonCentOS7.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/RonCentOS7.html</guid>
             
             
         </item>
@@ -1302,8 +1530,8 @@ yesではなく、noのオプションを付ければこのエラーを解消で
 &lt;hr /&gt;
 </description>
             <pubDate>Sun, 30 Apr 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017Apr.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017Apr.html</guid>
+            <link>http://idratherbewriting.com/StockReport2017Apr.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Apr.html</guid>
             
             
         </item>
@@ -1336,266 +1564,10 @@ yesではなく、noのオプションを付ければこのエラーを解消で
 &lt;p&gt;まだインストールしただけだが、このツールも便利そう。&lt;/p&gt;
 </description>
             <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/PostgresonMac.html</link>
-            <guid isPermaLink="true">http://localhost:4005/PostgresonMac.html</guid>
+            <link>http://idratherbewriting.com/PostgresonMac.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/PostgresonMac.html</guid>
             
             <category>PostgreSQL</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>2017年3月度株式投資成績</title>
-            <description>&lt;h2 id=&quot;概況&quot;&gt;概況&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;460457&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;503900&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;43443&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4906&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3997&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;477931&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;981831&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;31831&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;所持銘柄&quot;&gt;所持銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;242.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;446&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;20400&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2686&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ジーフット&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;765.86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;745&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-2086&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;631.99&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;762&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;13001&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;699.86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;720&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2014&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;332.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;364&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9600&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9696&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ウィザス&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;392.43&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;379&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-2686&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9765&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;オオバ&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;484.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;516&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3200&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2652&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;大研医器&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;823&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;840&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;75&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;231&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;1308&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;641&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;687&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;225&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;691&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3598&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
-
-&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
-&lt;p&gt;一時的には400円台後半まで伸びました。ここまで上がるとは思っていなかったため、100株しか残していませんが、242円で取得しているため余裕を持って臨めます。&lt;br /&gt;
-上方修正が出ていますし、特に売る理由もないので、配当とクオカをもらってホールドし続ける予定です。&lt;/p&gt;
-
-&lt;h3 id=&quot;2686-ジーフット&quot;&gt;2686 ジーフット&lt;/h3&gt;
-&lt;p&gt;優待落ちを拾ったのですが、強い動きではないです。事実、買ったところが底ではなく、3月末の下落に巻き込まれて下がってしまっています。 
-優待と配当があるので、握っておけば大損は免れる気がしますが、あまりこの銘柄にこだわるのもよくないです。&lt;br /&gt;
-実際、店舗別の売上が良くないという情報は発表されているので、買値765を少し上回った769くらいで投げれれば上々と考えて指値を置いておいたのですが、ぎりぎり刺さらず失敗でした。&lt;br /&gt;
-確実に売るなら成り行きですが、平日は仕事をしていることが多いためタイミングを図って、とはいきません。&lt;br /&gt;
-今の仕事をしている限り、寄り、通勤時、昼休みくらいしかチャンスがなく、望まぬ形でもある程度我慢して売る、という判断を身に着けないといけないのかもしれません。&lt;/p&gt;
-
-&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
-&lt;p&gt;12月の配当金が入金されました。3000円のクオカードも来ました。この値段帯で含み益が出ていて約4000円のインカムをもらえるのは非常にありがたいです。&lt;br /&gt;
-この会社の株主総会に参加したので、後日レポートを上げる予定です。&lt;/p&gt;
-
-&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
-&lt;p&gt;株価が落ち着いて25日平均線に接近してきたため、一旦利益確定することにしました。&lt;br /&gt;
-しかしこの銘柄自体は売りたいわけでもなく、スクリーニングを行ってもここ以上にもっておきたくなる銘柄がありません。ポートフォリオのバランス的にはぜひ組み入れておくべき銘柄だと思っており、上昇気配を見せたため再度購入。今のところこの判断は正解でした。&lt;br /&gt;
-利益が出ていたし勢いが弱まってきたら売るというのは正しい戦略だと思います。しかしそれとは関係なしに持っておきたい銘柄というのもあるわけで、1単元しか持っていないと判断の難易度が上がる気がします。&lt;br /&gt;
-複数単元あれば数の調整でリスクを上げ下げできるので、やはり複数単元もてる銘柄を主力にしたいと感じました。&lt;/p&gt;
-
-&lt;h3 id=&quot;7775-大研医器&quot;&gt;7775 大研医器&lt;/h3&gt;
-&lt;p&gt;2月末からずっと欲しいと思っていた銘柄で、上がりはじめたので購入しました。一旦は860円台で安定していましたが、悪材料がでて株価は下落。本来はホールドしたかった銘柄ですが、840円付近で一旦投げることにしました。&lt;br /&gt;
-3/31時点で800円まで下がっているので、1500円程度の取り分とは言えひとまず利益確定としては悪くないのではないでしょうか。再度のエントリーは様子を見てからです。上昇前暫くの間800円程度で安定していたのと、ここ最近の地合いの悪さを考えると、軽い気持ちで取りに行く感じではないです。&lt;/p&gt;
-
-&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
-&lt;p&gt;2月末に比べて、もう一つ上のステージに上がってくれました。配当金の権利も取得できました。&lt;br /&gt;
-配当落ちがほぼなかったのは嬉しいです。&lt;/p&gt;
-
-&lt;h3 id=&quot;9696-ウィザス&quot;&gt;9696 ウィザス&lt;/h3&gt;
-&lt;p&gt;低位の高配当株でPER11倍程度、PBR0.8倍程度。392円でエントリーしました。&lt;br /&gt;
-配当落ちを喰らいましたが想定内なので今後を見守りたいです。&lt;br /&gt;
-購入するときに業務的な面から着目した点としては、&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;関西地盤
-このような塾経営では、地域密着していることが大事なのではないかという仮説を考えました。&lt;br /&gt;
-また、関西以外ではまだあまり校舎がありません。うまく手を広げられれば、それだけ売上と利益を伸ばすチャンスになります。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;従来型の塾だけでなく新規領域にも投資をしている
-従来型のサービスを提供するだけでは、業績向上は外部環境の改善に大きく依存してしまいます。&lt;br /&gt;
-少子化をもろに食らう業界のはずなので、教育という軸をしっかりもちながらの多角化は正しいはずです。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;の2つが大きな理由です。&lt;/p&gt;
-
-&lt;p&gt;実績としても、この記事を書いている時点で下記のサイトを見る限り、&lt;br /&gt;
-&lt;a href=&quot;https://www.jyukunavi.jp/rank/27.html&quot;&gt;大阪府の塾ランキング&lt;/a&gt;&lt;br /&gt;
-集団/個別、小学校〜大学受験までカバーしながら高評価を得ているのである程度信頼できると思いますし、実績が新たな生徒を呼び込む面は確実にあると思います。&lt;br /&gt;
-(他の高評価塾は、ドメインを集中させている（中学受験のみなど）)&lt;/p&gt;
-
-&lt;p&gt;2単元握っているのである程度上がったところで半分は売ってしまいたいです。&lt;br /&gt;
-単純な損切は必要ないと思いますが、何か悪材料が出るか、塾自体の評価・実績が落ち目になるなどの変化があれば
-売ることになると思います。&lt;/p&gt;
-
-&lt;h3 id=&quot;9765-オオバ&quot;&gt;9765 オオバ&lt;/h3&gt;
-&lt;p&gt;この銘柄はじわじわ上がってくれました。日経が下がっても全く動じなかったりするため、ポートフォリオのバランスが保たれました。保持株全面安みたいなイベントは判断ミスを誘発する可能性があるためできるだけ避けたいところです。5月優待に向けてまだまだ長い目でいきたいところです。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;今月は本来であれば投げたくない銘柄を２つ投げる羽目になりました。
-4767 TOWは、結果だけ見れば売らないほうが利益幅は大きかったですし、手数料も無駄になりませんでした。しかし毎度確実にトレードを決めるのは至難の業ですし、&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ある程度の利益を取れている&lt;/li&gt;
-  &lt;li&gt;その銘柄で今まで一度も売却益、配当金での実現利益を得ていない。&lt;/li&gt;
-  &lt;li&gt;株価が下降トレンドに突入し始めた（25日移動平均を目安）&lt;/li&gt;
-  &lt;li&gt;以上の条件を満たした場合売る&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;というルールをきちんと実行したことが大切なのだと思います。ちなみに移動平均は正直なんでもいいのですが、25日線は使っている人も多いだろうと考えて、大きなミスをしないために参考になると考え採用しています。このルールでは条件を満たせば移動平均に縛られない売却をする余地があるため、他の参加者と全く差別化できず弱いということもないはずです。&lt;/p&gt;
-
-&lt;p&gt;再度のエントリーは、もともとは持っていたい銘柄であったのと、とくに悪い材料があったわけではないことを確認して、さらに下降トレンドでなかったためあまり抵抗なく行えました。
-7775 大研医器に関しては100点満点じゃないけど正解でしょう。その後安くなったところでまた買うか、他の銘柄に向かうかで明暗は別れるでしょうが、少なくとも「売り」の判断は間違っていなかったはずです。&lt;/p&gt;
-
-&lt;h2 id=&quot;3月にやったこと4月に向けて&quot;&gt;3月にやったこと・4月に向けて&lt;/h2&gt;
-
-&lt;h3 id=&quot;研究&quot;&gt;研究&lt;/h3&gt;
-&lt;p&gt;3月は投資本を読みながらスクリーニングをやりました。狙いは低位・優待・高配当銘柄です。当然利益や業種、内容も吟味します。唾を付けた銘柄はいくつかあり日々ウォッチしています。
-保持銘柄ではしばらく持つつもりのオオバやTOWは配当・優待確定である5月,6月に向けて上がって欲しいですね。&lt;br /&gt;
-今は資金サイズという制限要因があるため低位・優待・高配当株へ投資をしています。これがハマるかどうかは未知数ですが、しっかり研究・経験して武器としたいです。&lt;/p&gt;
-
-&lt;h3 id=&quot;3月31日&quot;&gt;3月31日&lt;/h3&gt;
-&lt;p&gt;3月の最終日は株価が下がりやすいようです。&lt;br /&gt;
-&lt;a href=&quot;http://show1225.hatenablog.com/entry/2015/03/31/193155&quot;&gt;よくわからない年度末相場&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://kabu-news.blog.jp/archives/41844712.html&quot;&gt;3月の最終売買日は要注意！過去24年からわかる嫌な傾向&lt;/a&gt;&lt;br /&gt;
-理由は定かではありませんが、こうも傾向が出ると意識せざるを得ません。
-実際、今年の3月31日も昼まで上昇していながら後場に一気に下げて日経は18000円台でフィニッシュ。&lt;br /&gt;
-私の保持株も下がってしまいました。&lt;br /&gt;
-絶対ガチホ銘柄以外は、30日に売って31日の引けで買い戻すべきだったのかもしれません。
-3月に限らず季節の要因というのは確実にあるので、意識していきたいです。&lt;br /&gt;
-&lt;a href=&quot;http://diamond.jp/articles/-/39413&quot;&gt;9月は株を買うな！年間の値動きの法則を知って負け知らず&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;分売&quot;&gt;分売&lt;/h3&gt;
-&lt;p&gt;分売でも低位銘柄が出ていたりするので、いい条件のものがあれば狙っていきたいです。&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
-            <pubDate>Fri, 31 Mar 2017 00:00:00 +0900</pubDate>
-            <link>http://localhost:4005/StockReport2017Mar.html</link>
-            <guid isPermaLink="true">http://localhost:4005/StockReport2017Mar.html</guid>
             
             
         </item>
