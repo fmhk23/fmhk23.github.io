@@ -3,7 +3,7 @@ title: "2017年8月度株式投資成績"
 date: "2017/8/31"
 output: rmarkdown::html_vignette
 sidebar: base_sidebar
-permalink: StockReport2017Jul.html
+permalink: StockReport2017Aug.html
 keywords: 株式投資
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
