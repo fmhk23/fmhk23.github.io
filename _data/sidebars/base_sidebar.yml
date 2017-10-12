@@ -97,3 +97,11 @@ entries:
     - title: ブロードリーフ(2017年3月)
       url: /170328BroadLeaf.html
       output: web, pdf
+
+  -  - title: 競馬
+      output: web, pdf
+      folderitems:
+
+      - title: 競馬解析アプリ開発日誌
+        url: /horse_app_develop.html
+        output: web, pdf
