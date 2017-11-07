@@ -1,0 +1,197 @@
+---
+title: "2017年9月度株式投資成績"
+date: "2017/9/30"
+output: rmarkdown::html_vignette
+sidebar: base_sidebar
+permalink: StockReport2017Sep.html
+keywords: 株式投資
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## 概況/所持銘柄
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+options(digits = 7)
+suppressMessages(library(data.table))
+suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
+suppressMessages(library(stringr))
+suppressMessages(library(purrr))
+suppressMessages(library(purrrlyr))
+suppressMessages(library(quantmod))
+
+#保有
+myStock <- data.frame(
+  `コード` = c(1726,3673,8410,9324,9980),
+  `名前` = c("BRHD", "ブロードリーフ", "セブン銀行","安田倉庫","マルコ"),
+  `取得単価` = c(242,631.99,354.715,722.86,536.86),
+  `月末単価` = c(399,967,406,904,393),
+  `数量` = c(100,100,200,100,100)
+) 
+myStock$`利益` <- (myStock$`取得単価` - myStock$`月末単価`) * myStock$`数量` * -1
+
+Result = data.frame(
+  `投資金額` = sum(myStock$`取得単価` * myStock$`数量`),
+  `保有総額` = sum(myStock$`月末単価` * myStock$`数量`),
+  `含み益` = sum(myStock$`利益`)
+)
+
+```
+
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#売却
+Sold <- data.frame(
+  `コード` = c(0),
+  `名前` = c("なし"),
+  `取得単価` = c(0),
+  `売却額` = c(0),
+  `地方税` = c(0),
+  `国税` = c(0),
+  `手数料` = c(0),
+  `数量` = c(0)
+) %>% dplyr::arrange(`コード`)
+Sold$`利益` <- (Sold$`取得単価` - Sold$`売却額`) * Sold$`数量` * -1 - Sold$`地方税` -Sold$`国税` -Sold$`手数料`
+
+#Soldの現金化
+Obtained_money <- Sold %>% by_row(function(x){
+  return(x$`取得単価` * x$`数量` + x$`利益`)
+}) %>% dplyr::rename(total = .out)
+Sold_money<- sum(as.numeric(Obtained_money$total)) #平均取得単価＋利益（損失）　の合計
+
+Result$`利益確定` <- sum(Sold$`利益`)
+Result$`配当/優待` <- 1036 # TOW
+Result$`現金` <- 347050 + Sold_money + Result$`配当/優待` #買いは変数に入れていないので手入力
+Result$`総資産` = Result$`保有総額` + Result$`現金` 
+Result$`前月比` = Result$`総資産` - 670750	
+knitr::kable(Result, align = "l")
+
+```
+
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#DT::datatable(myStock)
+knitr::kable(myStock, align = "l")
+```
+
+```{r, echo=FALSE, fig.width=4.50 , fig.height= 4.50}
+pie_total_df <- data.frame(
+  group = c("Stock", "JPY"),
+  value = c(Result$`保有総額`, Result$`現金`) / 10000
+  )
+
+bp <- ggplot(pie_total_df, aes(x ="", y = value, fill = group)) + 
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start = 0) + 
+  ggtitle("JPY/Stock Ratio") +
+  xlab("") +
+  ylab("") +
+  theme_minimal()
+
+print(bp)
+
+pie_each_df <- data.frame(
+  group = as.character(myStock$`コード`), #名前に変えたいが？
+  value = myStock$`月末単価` * myStock$`数量` / 10000 
+)
+
+bp2 <- ggplot(pie_each_df, aes(x ="", y = value, fill = group)) + 
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start = 0) + 
+  ggtitle("Stock Portfolio") +
+  xlab("") +
+  ylab("") +
+  theme_minimal()
+
+print(bp2)
+
+```
+
+## 売却銘柄
+
+```{r, echo=FALSE, error=FALSE, warning=FALSE}
+#DT::datatable(Sold)
+knitr::kable(Sold, align = "l")
+```
+
+
+## 個別銘柄レビュー
+
+### 1726 BRHD
+微妙に値段が下がっていますが、やはり気にするような展開ではないです。  
+この銘柄に関してはもう毎月こんな感じですが、とりあえず優待配当取りで放置です。  
+
+### 3673 ブロードリーフ
+爆進してついに1000円をうかがう勢いです。  
+配当/優待利回りを考えると1000円でも何の不思議もないのですが、持続性に疑問を持つのは当然です。  
+今回の上げは少なくとも年末の優待が維持されるのがほぼ確定になったことが大きな要因でしょう。  
+BRHDと合わせて、鉄板ガチホですね。  
+
+### 8410 セブン銀行
+若干落ちていますが、先月１枚処分していますし、特に苦しい展開ではないです。  
+
+### 9324 安田倉庫
+伸びて900円台に到達しました。  
+倉庫株自体は結構全体的に上がっているようです。  
+安田倉庫は若干で遅れた気がしないでもないですが、きちんと上がってくれて良かったです。  
+横浜に良い不動産を持っているというのはなかなか強いですね。  
+株式を購入するときはその会社の持っている不動産をきちんと評価することでより正確な判断ができそうです。  
+
+しかしながら、値段が上がるということは購入時に決めた売却水準に近づいているということでもあります。  
+
+[2017年6月度株式投資成績](https://fmhk23.github.io/StockReport2017Jun.html)  
+
+> 出口戦略  
+> 売り時は2つを考えています。  
+>   
+> 株価が4桁突入  
+> 以前の株価を考えると、調子が良い時は4桁、悪いときは600円程度と考えて良さそうです。  
+> ここまで値段が上がれば業績関わらず利益確定で売ってしまって良いと思います。  
+  
+高値圏に突入しつつあるので4桁にこだわらず、降りどきを間違えないようにしたいです。  
+
+### 9980　マルコ
+先月から売るか持ち続けるか迷っていたのですが、結局持つことにしました。  
+理由は以下のとおりです。
+
+- 年2回優待をもらえるため粘りやすい。
+- 優待に額面通りの価値は明らかにないけれども、個人的にもらいたいものがある。
+- 低位株で、ここから損をしたとしてもたかが知れている。  
+- 10月以降のCMなど、まだ待っている材料がある。  
+- 株の保有金額がかなり少なくなっており、維持したい。
+
+--- 
+
+## 8月にやったこと・9月に向けて
+ゾーンの新刊を読み進めました。  
+なんだか以前と同じことが書いてあるだけのような気がしないでもないです。  
+
+---
+
+チャートの分析の勉強を本格的に始めました。  
+ファンダメンタルズ重視で、テクニカルは二の次というスタンスで始めた株式投資ですが、暗号通貨で生き残るために必要と感じたからです。  
+6月と言っていることが違いますが、(参考 [暗号通貨投資のMy鉄則](https://fmhk23.github.io/InvestingCCRule.html))考えを改めました。  
+テクニカルをきちんとやることで良いトレードができる可能性が上がると感じています。  
+そして、株への適用と暗号通貨への適用とで、チューニングこそ必要ですが基本は同じなので勉強すると一石二鳥です。  
+まずは入門としてこの本を読んでいます。  
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=2323k-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4798142697&linkId=3747a79d7062672efe02c0564253343f&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+    </iframe>
+
+勉強の戦略としてはまず基本を固めまくるつもりです。基礎固めの速さと正確さこそ自分の強みなので、ここを活かします。  
+  
+---
+  
+また、購入できる銘柄がないか調べてはいるのですが、日経平均自体が高値圏にあることもありなかなかこれはと思うものがありません。  
+しかし切り売りしてきて保有銘柄が減ってきていますし、余剰利益があるので年末に向けてもう一勝負するチャンスがあります。  
+しかし半端な銘柄ではやる意義が薄いので、自分が勝負に出る価値があると信じられる銘柄を探り当てなければなりません。  
+
+#### 暗号通貨投資
+
+いよいよASICによるマイニングを開始しました。 
+これについては別のページで書きたいですが、秘密にしておきたいとっておきの内容などもあり書くかはわかりません。  
+実はチャート分析をしなければならないと感じたのはマイニングを開始したからなので、そういう意味でもマイニングを始めた価値はあったのかな？と思います。  
+
