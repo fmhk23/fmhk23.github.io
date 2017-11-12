@@ -37,7 +37,7 @@ https://blockchair.com/
 BTC用のElectrumを用いていると上書きされてしまうなどの不具合があるようですが、私は初めて使うので問題ないためこれにしました。  
 もし以前にElectrumを使ったことがある場合は他のWalletを使うほうが安全かもしれません。  
 
-https://electroncash.org/
+[https://electroncash.org/](https://electroncash.org/)
 
 ダウンロード後、実行前に必ずハッシュを確認します！  
 ハッシュとは非常に簡単に言えばファイルが同一のものかを判別するための仕組みです。  
@@ -45,17 +45,17 @@ https://electroncash.org/
 ファイルが悪意ある書き換えなく、発行元のオリジナルと差異がないことを確認するためにハッシュを比較します。  
 
 ハッシュを比較する方法は複数あり、環境によって確認方法も多岐にわたるため方法は各自Googleで調べていただければと思います。  
-https://www.google.co.jp/search?q=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5+%E6%AF%94%E8%BC%83&oq=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%80%80%E6%AF%94%E8%BC%83&aqs=chrome..69i57j0l5.2295j0j7&sourceid=chrome&ie=UTF-8  
+[Google参考検索結果](https://www.google.co.jp/search?q=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5+%E6%AF%94%E8%BC%83&oq=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%80%80%E6%AF%94%E8%BC%83&aqs=chrome..69i57j0l5.2295j0j7&sourceid=chrome&ie=UTF-8)  
 暗号化方式はSHA-1を使っているようなので、アルゴリズムにはSHA-1を指定するのがポイントです。  
 確認したハッシュが、下記のGithubにある該当のハッシュと同一ならば、ひとまず大丈夫ですので実行・インストールを行います。  
 
-https://github.com/fyookball/keys-n-hashes/tree/master/sigs-and-sums
+[https://github.com/fyookball/keys-n-hashes/tree/master/sigs-and-sums](https://github.com/fyookball/keys-n-hashes/tree/master/sigs-and-sums)
 
 ### IndieSquareの秘密鍵を確認
 IndieSquare Walletの秘密鍵を確認します。  
 当然ですが、他の人に秘密鍵が割れてしまうとウォレットの資産を取られてしまうので、ここからの作業は確実に一人で行います。  
 
-https://wallet.counterwallet.io/
+[https://wallet.counterwallet.io/](https://wallet.counterwallet.io/)
 
 上記サイトにアクセスし、IndieSquareのseedの単語を12個入力します。  
 seedはIndieSquareのアプリのmenu > 設定 > 復元パスフレーズで確認できます。  
