@@ -751,11 +751,10 @@ $('#toc').on('click', 'a', function() {
 
 <p>Add the following information to your configuration file to declare your collection:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>collections:
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>collections:
   tooltips:
     output: false
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>In your Jekyll project’s root directory, create a new folder called “_tooltips” and put every page that you want to be part of that tooltips collection inside that folder.</p>
 
@@ -765,9 +764,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>Inside the _data folder, create a YAML file called something like definitions.yml. Add the definitions for each of your tooltips here like this:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">basketball</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Basketball</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">sport</span><span class="nv"> </span><span class="s">involving</span><span class="nv"> </span><span class="s">two</span><span class="nv"> </span><span class="s">teams</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">five</span><span class="nv"> </span><span class="s">players</span><span class="nv"> </span><span class="s">each</span><span class="nv"> </span><span class="s">competing</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">put</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">ball</span><span class="nv"> </span><span class="s">through</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">small</span><span class="nv"> </span><span class="s">circular</span><span class="nv"> </span><span class="s">rim</span><span class="nv"> </span><span class="s">10</span><span class="nv"> </span><span class="s">feet</span><span class="nv"> </span><span class="s">above</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">ground.</span><span class="nv"> </span><span class="s">Basketball</span><span class="nv"> </span><span class="s">requires</span><span class="nv"> </span><span class="s">players</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">top</span><span class="nv"> </span><span class="s">physical</span><span class="nv"> </span><span class="s">condition,</span><span class="nv"> </span><span class="s">since</span><span class="nv"> </span><span class="s">they</span><span class="nv"> </span><span class="s">spend</span><span class="nv"> </span><span class="s">most</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">game</span><span class="nv"> </span><span class="s">running</span><span class="nv"> </span><span class="s">back</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">forth</span><span class="nv"> </span><span class="s">along</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">94-foot-long</span><span class="nv"> </span><span class="s">floor."</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">basketball</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Basketball</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">sport</span><span class="nv"> </span><span class="s">involving</span><span class="nv"> </span><span class="s">two</span><span class="nv"> </span><span class="s">teams</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">five</span><span class="nv"> </span><span class="s">players</span><span class="nv"> </span><span class="s">each</span><span class="nv"> </span><span class="s">competing</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">put</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">ball</span><span class="nv"> </span><span class="s">through</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">small</span><span class="nv"> </span><span class="s">circular</span><span class="nv"> </span><span class="s">rim</span><span class="nv"> </span><span class="s">10</span><span class="nv"> </span><span class="s">feet</span><span class="nv"> </span><span class="s">above</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">ground.</span><span class="nv"> </span><span class="s">Basketball</span><span class="nv"> </span><span class="s">requires</span><span class="nv"> </span><span class="s">players</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">top</span><span class="nv"> </span><span class="s">physical</span><span class="nv"> </span><span class="s">condition,</span><span class="nv"> </span><span class="s">since</span><span class="nv"> </span><span class="s">they</span><span class="nv"> </span><span class="s">spend</span><span class="nv"> </span><span class="s">most</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">game</span><span class="nv"> </span><span class="s">running</span><span class="nv"> </span><span class="s">back</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">forth</span><span class="nv"> </span><span class="s">along</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">94-foot-long</span><span class="nv"> </span><span class="s">floor."</span>
+</code></pre></div></div>
 
 <p>The definition of basketball is stored this data file so that you can re-use it in other parts of the help as well. You’ll likely want the definition to appear not only in the tooltip in the UI, but also in the regular documentation as well.</p>
 
@@ -779,8 +777,8 @@ $('#toc').on('click', 'a', function() {
 
 <figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="err">```</span><span class="s">liquid</span>
 <span class="nn">---</span>
-<span class="s">id</span><span class="pi">:</span> <span class="s">basketball</span>
-<span class="s">product</span><span class="pi">:</span> <span class="s">mydoc</span>
+<span class="na">id</span><span class="pi">:</span> <span class="s">basketball</span>
+<span class="na">product</span><span class="pi">:</span> <span class="s">mydoc</span>
 <span class="nn">---</span>
 
 <span class="pi">{{</span><span class="nv">site.data.definitions.basketball</span><span class="pi">}}</span>
@@ -796,7 +794,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Inside your project’s pages directory (e.g., mydoc), add a file called “tooltips.json.” (You can use whatever name you want.) Add the following to your JSON file:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>---
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: none
 search: exclude
 ---
@@ -813,35 +811,33 @@ search: exclude
 <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 ]
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Change “mydoc” to the product name you used in each of the tooltip files. The template here will only include content in the JSON file if it meets the <code class="highlighter-rouge">product</code> attribute requirements. We need this <code class="highlighter-rouge">if</code> statement to prevent tooltips from other products from being included in the JSON file.</p>
 
 <p>This code will loop through all pages in the tooltips collection and insert the <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">body</code> into key-value pairs for the JSON code. Here’s an example of what that looks like after it’s processed by Jekyll in the site build:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"baseball"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Baseball is considered America's pasttime sport, though that may be more of a historical term than a current one. There's a lot more excitement about football than baseball. A baseball game is somewhat of a snooze to watch, for the most part."</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basketball"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Basketball is a sport involving two teams of five players each competing to put a ball through a small circular rim 10 feet above the ground. Basketball requires players to be in top physical condition, since they spend most of the game running back and forth along a 94-foot-long floor."</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"football"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No doubt the most fun sport to watch, football also manages to accrue the most injuries with the players. From concussions to blown knees, football players have short sport lives."</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"soccer"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"If there's one sport that dominates the world landscape, it's soccer. However, US soccer fans are few and far between. Apart from the popularity of soccer during the World Cup, most people don't even know the name of the professional soccer organization in their area."</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "entries": [
+    {
+      "id": "baseball",
+      "body": "Baseball is considered America's pasttime sport, though that may be more of a historical term than a current one. There's a lot more excitement about football than baseball. A baseball game is somewhat of a snooze to watch, for the most part."
+    },
+    {
+      "id": "basketball",
+      "body": "Basketball is a sport involving two teams of five players each competing to put a ball through a small circular rim 10 feet above the ground. Basketball requires players to be in top physical condition, since they spend most of the game running back and forth along a 94-foot-long floor."
+    },
+    {
+      "id": "football",
+      "body": "No doubt the most fun sport to watch, football also manages to accrue the most injuries with the players. From concussions to blown knees, football players have short sport lives."
+    },
+    {
+      "id": "soccer",
+      "body": "If there's one sport that dominates the world landscape, it's soccer. However, US soccer fans are few and far between. Apart from the popularity of soccer during the World Cup, most people don't even know the name of the professional soccer organization in their area."
+    }
+  ]
+}
+</code></pre></div></div>
 
 <p>You can also view the same JSON file here: <a target="_blank" href="tooltips.json">tooltips.json</a>.</p>
 
@@ -869,9 +865,8 @@ search: exclude
 
 <p>If your server setup allows htaccess files to override general server permissions, create an .htaccess file and add the following:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Header set Access-Control-Allow-Origin "*"
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Header set Access-Control-Allow-Origin "*"
+</code></pre></div></div>
 
 <p>Store this in the same directory as your project. This is what I’ve done in a directory on my web host (bluehost.com). Inside http://idratherassets.com/wp-content/apidemos/, I uploaded a file called “.htaccess” with the preceding code.</p>
 
@@ -879,30 +874,27 @@ search: exclude
 
 <p>To test whether your server permissions are set correctly, open a terminal and run the following curl command pointing to your tooltips.json file:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>curl -I http://idratherassets.com/wp-content/apidemos/tooltips.json
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -I http://idratherassets.com/wp-content/apidemos/tooltips.json
+</code></pre></div></div>
 
 <p>The <code class="highlighter-rouge">-I</code> command tells cURL to return the request header only.</p>
 
 <p>If the server permissions are set correctly, you should see the following line somewhere in the response:</p>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code>Access-Control-Allow-Origin: *
-</code></pre>
-</div>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Access-Control-Allow-Origin: *
+</code></pre></div></div>
 
 <p>If you don’t see this response, CORS isn’t allowed for the file.</p>
 
 <p>If you have an AWS S3 bucket, you can supposedly add a CORS configuration to the bucket permissions. Log into AWS S3 and click your bucket. On the right, in the Permissions section, click <strong>Add CORS Configuration</strong>. In that space, add the following policy:</p>
 
-<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;CORSConfiguration&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;CORSConfiguration&gt;</span>
  <span class="nt">&lt;CORSRule&gt;</span>
    <span class="nt">&lt;AllowedOrigin&gt;</span>*<span class="nt">&lt;/AllowedOrigin&gt;</span>
    <span class="nt">&lt;AllowedMethod&gt;</span>GET<span class="nt">&lt;/AllowedMethod&gt;</span>
  <span class="nt">&lt;/CORSRule&gt;</span>
 <span class="nt">&lt;/CORSConfiguration&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>(Although this should work, in my experiment it doesn’t. And I’m not sure why…)</p>
 
@@ -916,13 +908,13 @@ search: exclude
 
 <p>Developers can access the help using the <code class="highlighter-rouge">.get</code> method from jQuery, among other methods. Here’s an example of how to get a page with the ID of <code class="highlighter-rouge">basketball</code>:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
 <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 
 <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">"mydoc_tooltips_source.json"</span><span class="p">;</span>
 
 
-<span class="nx">$</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span> <span class="nx">url</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">data</span> <span class="p">)</span> <span class="p">{</span>
+<span class="nx">$</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span> <span class="nx">url</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">data</span> <span class="p">)</span> <span class="p">{</span>
 
         <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">entries</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">page</span><span class="p">)</span> <span class="p">{</span>
             <span class="k">if</span> <span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">id</span> <span class="o">==</span> <span class="s2">"basketball"</span><span class="p">)</span> <span class="p">{</span>
@@ -934,8 +926,7 @@ search: exclude
 
 <span class="p">});</span>
 <span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
-</span></code></pre>
-</div>
+</span></code></pre></div></div>
 
 <p>View the <a target="_blank" href="tooltips.html" class="noCrossRef">tooltip demo</a> for a demonstration.</p>
 
@@ -949,15 +940,14 @@ search: exclude
 
 <p>Here’s the section on the page where the popover is inserted:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;p&gt;Basketball &lt;span class="glyphicon glyphicon-info-sign" id="basketball" data-toggle="popover"&gt;&lt;/span&gt;&lt;/p&gt;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Basketball &lt;span class="glyphicon glyphicon-info-sign" id="basketball" data-toggle="popover"&gt;&lt;/span&gt;&lt;/p&gt;
+</code></pre></div></div>
 
 <p>Notice that I just have <code class="highlighter-rouge">id="basketball"</code> added to this popover element. Developers merely need to add a unique ID to each tooltip they want to pull in the help content. Either you tell developers the unique ID they should add, or ask them what IDs they added (or just tell them to use an ID that matches the field’s name).</p>
 
 <p>In order to use jQuery and Bootstrap, you’ll need to add the appropriate references in the head tags of your page:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"</span><span class="o">&gt;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
 </span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
 </span>
@@ -968,8 +958,7 @@ search: exclude
         <span class="na">trigger</span><span class="p">:</span> <span class="s1">'hover'</span><span class="p">,</span>
         <span class="na">html</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">});</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Again, see the <a class="noCrossRef" href="/tooltips">Tooltip Demo</a> for a demo of the full code.</p>
 
@@ -985,7 +974,7 @@ search: exclude
 
 <p>Here’s how you would reuse the content:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h2&gt;</span>Reuse Demo<span class="nt">&lt;/h2&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2&gt;</span>Reuse Demo<span class="nt">&lt;/h2&gt;</span>
 
 
 <span class="nt">&lt;table&gt;</span>
@@ -1018,8 +1007,7 @@ search: exclude
 <span class="nt">&lt;/tr&gt;</span>
 <span class="nt">&lt;/tbody&gt;</span>
 <span class="nt">&lt;/table&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>And here’s the code:</p>
 
@@ -1090,7 +1078,7 @@ search: exclude
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

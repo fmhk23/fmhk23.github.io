@@ -241,6 +241,13 @@
             
             
             
+            
+            
+            <li><a href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></li>
+            
+            
+            
+            
         </ul>
         
         
@@ -313,6 +320,20 @@
             
             
             
+            
+            
+            <li><a href="StockReport2017Aug.html">2017年8月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Sep.html">2017年9月</a></li>
+            
+            
+            
+            
         </ul>
         
         
@@ -324,6 +345,21 @@
             
             
             <li><a href="170328BroadLeaf.html">ブロードリーフ(2017年3月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">競馬</a>
+        <ul>
+            
+            
+            
+            <li><a href="horse_app_develop.html">競馬解析アプリ開発日誌</a></li>
             
             
             
@@ -370,6 +406,36 @@
   <div class="home">
 
     <div class="post-list">
+        
+
+
+    <h2><a class="post-link" href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></h2>
+        <span class="post-meta">Nov 12, 2017 /
+            </span>
+        <p> ここ数日、圧倒的勢いでビットコインキャッシュ（BCH）が値上がりしています。 そこで気になるのが分裂後特に気にもせず各種ウォレットに放置されているBCHたち。 8月の時点でBCHの価値向上や値上がりを予想していた人は少なかったと思いますので、放置されたBCHは多いのではないかと思います。 私も、IndieSquareというウォレットに8月の分裂当時0.1 BTC入れていましたが、額が少ないこともあり気にしていませんでした。 しかしながら、今現在の価値で計算すると0.1 BTCでも数万円、ちょっと無視したくない金額です。 そもそも、IndieSquareにはBCHが表示されないので、画面だけ見ていると本当にBCHがあるのかよくわかりません。（あとで説明しますが、ちゃんとあります！） まずはそのあたりから調べてみましょう。そして他のウォレットに送金できるところまで確認しましょう。 今回はIndieSquareを使って説明しますが、他のウォレットでも基本的な考え方は同じですので、調べる際の参考にでもなればと思います。 IndieSquare発行アドレスのBCHを確認する BlockChairというサイトで、アドレスのBCH保持量を確認できます。このサイトにIndieSquareのアドレスを入力して、BCHがあることを確認しましょう。 https://blockchair.com/ 私のウォレット  大体0.098 BCHがあることが確認できました。確かに0.1 BTC入れて、多少送金手数料で使ったので、このアドレスにはこの程度入れていたはずです！ このアドレスにBCHがあることがわかりましたが、IndieSquareアプリからBCHを送金することはできません。 次は他のウォレットを使い送金できるようにしましょう。 Electrumに秘密鍵をインポートする Electrum Cashをダウンロードする 私はBCH用WalletにElectrum Cashを使うことにしました。 BTC用のElectrumを用いていると上書きされてしまうなどの不具合があるようですが、私は初めて使うので問題ないためこれにしました。 もし以前にElectrumを使ったことがある場合は他のWalletを使うほうが安全かもしれません。 https://electroncash.org/ ダウンロード後、実行前に必ずハッシュを確認します！ ハッシュとは非常に簡単に言えばファイルが同一のものかを判別するための仕組みです。 秘密鍵をインポートする以上、使うのは信頼できるソフトウェアである必要があります。 ファイルが悪意ある書き換えなく、発行元のオリジナルと差異がないことを確認するためにハッシュを比較します。 ハッシュを比較する方法は複数あり、環境によって確認方法も多岐にわたるため方法は各自Googleで調べていただければと思います。 <a... </p>
+
+
+
+        
+
+
+    <h2><a class="post-link" href="horse_app_develop.html">競馬解析アプリ開発日誌</a></h2>
+        <span class="post-meta">Nov 4, 2017 /
+            </span>
+        <p> アプリ開発の経緯 2016年度、競馬に関する研究をぼちぼちやっておりました。 しかしながら11月から始まったトランプラリー、翌年には暗号通貨への投資も始め、全く競馬に回せるリソース（資金と時間）がなくなりました。 これ自体は正しい選択でした。株でも暗号通貨でも、多くのお金を得ることができました。 競馬ではかなり望み薄の金額ですし、ひょっとしたら失っていたかもしれません。 だが、研究成果を無駄にして良いものか？きちんとエッジとなる強みは見つけていました。 これはあまり他の人が気づいていない傾向のような気がします。 そう思っているときは得てして危ないのが投資の世界ですが、知ってしまった以上やってみたくなるのが性です。 資金をきちんと用意して、己の戦略を信じて馬券を購入し続ければプラス収支にできるのではないか？ そもそも競馬は楽しい。馬と人間たちのドラマがある。今年は推しの2歳馬も出走する。 ということで、以前の研究成果をブラッシュアップして馬券を買ってみたいと思います。 今まではR Studio上でデータを手でいじって色々見ていましたが、流石にその方法は限界です。 去年までと違うのは、Webアプリを開発する経験を積み、DB周りの知識も多少なりとも増強したところです。 要件を整理し、ポチポチ操作で自分の知りたい情報を取れるアプリケーションを作成しましょう。 俺専用馬柱 対象レースを指定すると、自分の欲しい情報（エッジ）を整理して一覧表示してくれる機能です。 これに関してはひとまず、早急に作れるR Shiny Appを作ります。データは簡便のためファイルで済ませます。 その後DBをきちんと定義し、Djangoに移植します。 分析のブラッシュアップ、バックテストの充実 これに関しては一旦後回しとしたいと思います。 10/12  Rからpythonを叩く機能の実装 レース情報の取得→ファイル保存 レースに出走する馬情報の取得→ファイル保存  Rとpython間のデータのやり取りは効率的ではないので、ファイルにいちいち保存します。 これも効率的とは言い難いですが、早急に作る必要があるためこの方針を取ります。 昔書いた資材を出来ればR6クラス化、パッケージ化したいですが、期限内にやるのは難しそうです。 source()を用いて対応するつもりです。 いずれはやらないとDjango化するときに困りますね。分析も全部pythonで書けよという話ですが・・・ 10/14  以前作成したソースコードの確認 ソースコードをShinyアプリケーション用にmodify  ソース修正の際に以下の壁にぶつかりました。 小ネタ：Rでパッケージ読み込み時に日本語のメッセージを出す Shinyアプリはパッケージではないだろう？とも思いますが、同じエラーが出るので修正する必要があります。... </p>
+
+
+
+        
+
+
+    <h2><a class="post-link" href="StockReport2017Sep.html">2017年9月度株式投資成績</a></h2>
+        <span class="post-meta">Sep 30, 2017 /
+            </span>
+        <p> 概況/所持銘柄    投資金額 保有総額 含み益 利益確定 配当/優待 現金 総資産 前月比     284314 347500 63186 0 1036 <td style="text-align:... </p>
+
+
+
         
 
 
@@ -487,62 +553,6 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 
         
 
-
-    <h2><a class="post-link" href="RonCentOS7.html">CentOS7でR環境構築</a></h2>
-        <span class="post-meta">May 21, 2017 /
-            </span>
-        <p> ページを作成した理由 AWS上のCentOS7に最新バージョンでないRをインストールする必要があった。それなりに苦労したので、手順を残しておく。 基本的なことだが、管理者権限が必要になるであろう部分が多いが省略していることに注意。 一般的な方法 yum install R make make install   なのだが、yumでRが見つからないと言われてしまった。またやや古いバージョンをインストールする必要があるため、ソースコードからビルドすることにした。 ソースコードの入手 CRANからtar.gzをwgetする。 https://cran.ism.ac.jp/src/base/ wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz   x.xを適宜かえること。 ビルド/インストール  tar.gzの解凍  tar.zxvf R-3.x.x.tar.gz    インストール  ./configure make make install... </p>
-
-
-
-        
-
-
-    <h2><a class="post-link" href="StockReport2017Apr.html">2017年4月度株式投資成績</a></h2>
-        <span class="post-meta">Apr 30, 2017 /
-            </span>
-        <p> 概況    投資金額 保有総額 含み益 利益確定 配当/優待 現金 総資産 前月比     377757 415600 37843 410 0 <td style="text-align:... </p>
-
-
-
-        
-
-
-    <h2><a class="post-link" href="PostgresonMac.html">Mac OS XでPostgreSQLをセットアップ</a></h2>
-        <span class="post-meta">Apr 15, 2017 /
-            
-                <a href="tag_PostgreSQL.html">PostgreSQL</a>
-                </span>
-        <p> PostgreSQLのインストール手順をメモ。
-
-ダウンロード&amp;インストール
-https://www.postgresql.org/download/macosx/
-今回はインストーラーを落としてきて普通にインストールする。(Homebrewを使う方法などもあるらしい。)
-
-psqlのパスを通す
-パスを通さないとpsqlコマンドが使えない。
-
-How to run psql on Mac OS X?
-
-好きなエディタを使って編集する。
-sudo emacs .bash_profile
-
-下記を書き足して保存。
-PATH="/Library/PostgreSQL/9.6/bin/:${PATH}"
-
-上記パスはMacにおけるデフォルトなので、変更がなければバージョン変更だけですむはず。
-ちなみにemacsの終了は C-x C-c。(Control + x、Control + c)
-
-Postgres.app
-postgres.app
-
-まだインストールしただけだが、このツールも便利そう。
- </p>
-
-
-
-        
-
         <p><a href="feed.xml"" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe</a></p>
 
 <hr />
@@ -566,7 +576,7 @@ postgres.app
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: Sep 11, 2017 <br />
+ Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

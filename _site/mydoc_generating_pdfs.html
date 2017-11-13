@@ -746,26 +746,25 @@ $('#toc').on('click', 'a', function() {
 
 <p>The PDF configuration file will build on the settings in the regular configuration file but will some additional fields. Here’s the configuration file for the mydoc product within this theme. This configuration file is located in the pdfconfigs folder.</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">destination</span><span class="pi">:</span> <span class="s">_site/</span>
-<span class="s">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://127.0.0.1:4010"</span>
-<span class="s">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/mydoc-pdf"</span>
-<span class="s">port</span><span class="pi">:</span> <span class="s">4010</span>
-<span class="s">output</span><span class="pi">:</span> <span class="s">pdf</span>
-<span class="s">product</span><span class="pi">:</span> <span class="s">mydoc</span>
-<span class="s">print_title</span><span class="pi">:</span> <span class="s">Jekyll theme for documentation — mydoc product</span>
-<span class="s">print_subtitle</span><span class="pi">:</span> <span class="s">version 5.0</span>
-<span class="s">output</span><span class="pi">:</span> <span class="s">pdf</span>
-<span class="s">defaults</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">destination</span><span class="pi">:</span> <span class="s">_site/</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">http://127.0.0.1:4010"</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/mydoc-pdf"</span>
+<span class="na">port</span><span class="pi">:</span> <span class="s">4010</span>
+<span class="na">output</span><span class="pi">:</span> <span class="s">pdf</span>
+<span class="na">product</span><span class="pi">:</span> <span class="s">mydoc</span>
+<span class="na">print_title</span><span class="pi">:</span> <span class="s">Jekyll theme for documentation — mydoc product</span>
+<span class="na">print_subtitle</span><span class="pi">:</span> <span class="s">version 5.0</span>
+<span class="na">output</span><span class="pi">:</span> <span class="s">pdf</span>
+<span class="na">defaults</span><span class="pi">:</span>
   <span class="pi">-</span>
-    <span class="s">scope</span><span class="pi">:</span>
-      <span class="s">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
-      <span class="s">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pages"</span>
-    <span class="s">values</span><span class="pi">:</span>
-      <span class="s">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page_print"</span>
-      <span class="s">comments</span><span class="pi">:</span> <span class="s">true</span>
-      <span class="s">search</span><span class="pi">:</span> <span class="s">true</span>
-</code></pre>
-</div>
+    <span class="na">scope</span><span class="pi">:</span>
+      <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pages"</span>
+    <span class="na">values</span><span class="pi">:</span>
+      <span class="na">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">page_print"</span>
+      <span class="na">comments</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">search</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Although you’re creating a PDF, you must still build an HTML web target before running Prince. Prince will pull from the HTML files and from the file-list for the TOC.</div>
 
@@ -786,20 +785,19 @@ $('#toc').on('click', 'a', function() {
 
 <p>These pages should appear in your sidebar YML file (in this product, mydoc_sidebar.yml):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>  <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span>
-    <span class="s">output</span><span class="pi">:</span> <span class="s">pdf</span>
-    <span class="s">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
-    <span class="s">folderitems</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span>
-      <span class="s">url</span><span class="pi">:</span> <span class="s">/titlepage/</span>
-      <span class="s">output</span><span class="pi">:</span> <span class="s">pdf</span>
-      <span class="s">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
-    <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span>
-      <span class="s">url</span><span class="pi">:</span> <span class="s">/tocpage/</span>
-      <span class="s">output</span><span class="pi">:</span> <span class="s">pdf</span>
-      <span class="s">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span>
+    <span class="na">output</span><span class="pi">:</span> <span class="s">pdf</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
+    <span class="na">folderitems</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span>
+      <span class="na">url</span><span class="pi">:</span> <span class="s">/titlepage/</span>
+      <span class="na">output</span><span class="pi">:</span> <span class="s">pdf</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
+    <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span>
+      <span class="na">url</span><span class="pi">:</span> <span class="s">/tocpage/</span>
+      <span class="na">output</span><span class="pi">:</span> <span class="s">pdf</span>
+      <span class="na">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
+</code></pre></div></div>
 
 <p>Leave these pages here in your sidebar. (The <code class="highlighter-rouge">output: pdf</code> property means they won’t appear in your online TOC because the conditional logic of the sidebar.html checks whether <code class="highlighter-rouge">web</code> is equal to <code class="highlighter-rouge">pdf</code> or not before including the item in the web version of the content.)</p>
 
@@ -817,85 +815,76 @@ $('#toc').on('click', 'a', function() {
 
 <p>This style creates a page reference for a link:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span><span class="nd">::after</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span><span class="nd">::after</span> <span class="p">{</span>
     <span class="nl">content</span><span class="p">:</span> <span class="s1">" (page "</span> <span class="n">target-counter</span><span class="p">(</span><span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">),</span> <span class="n">page</span><span class="p">)</span> <span class="s1">")"</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You don’t want cross references for any link that doesn’t reference another page, so this style specifies that the content after should be blank:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s1">"mailto"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">data-toggle</span><span class="o">=</span><span class="s1">"tooltip"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span><span class="nc">.noCrossRef</span><span class="nd">::after</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s1">"mailto"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">data-toggle</span><span class="o">=</span><span class="s1">"tooltip"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">]</span><span class="nc">.noCrossRef</span><span class="nd">::after</span> <span class="p">{</span>
     <span class="nl">content</span><span class="p">:</span> <span class="s1">""</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If you have a link to a file download, or some other link that shouldn’t have a cross reference (such as link used in JavaScript for navtabs or collapsible sections, for example, add <code class="highlighter-rouge">noCrossRef</code> as a class to the link to avoid having it say “page 0” in the cross reference.</div>
 
 <p>This style specifies that after links to web resources, the URL should be inserted instead of the page number:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"http:"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"https:"</span><span class="o">]</span><span class="nd">::after</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"http:"</span><span class="o">]</span><span class="nd">::after</span><span class="o">,</span> <span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"https:"</span><span class="o">]</span><span class="nd">::after</span> <span class="p">{</span>
     <span class="nl">content</span><span class="p">:</span> <span class="s1">" ("</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s1">")"</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This style sets the page margins:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@page</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@page</span> <span class="p">{</span>
     <span class="nl">margin</span><span class="p">:</span> <span class="m">60pt</span> <span class="m">90pt</span> <span class="m">60pt</span> <span class="m">90pt</span><span class="p">;</span>
     <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
     <span class="nl">font-style</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>
     <span class="nl">color</span><span class="p">:</span> <span class="no">gray</span><span class="p">;</span>
 
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>To set a specific style property for a particular page, you have to name the page. This allows Prince to identify the page.</p>
 
 <p>First you add frontmatter to the page that specifies the type. For the titlepage.html, here’s the frontmatter:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
-<span class="s">type</span><span class="pi">:</span> <span class="s">title</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">title</span>
 <span class="nn">---</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>For the tocpage, here’s the frontmatter:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
-<span class="s">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">frontmatter</span>
 <span class="nn">---</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>For the index.html page, we have this type tag (among others):</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
-<span class="s">type</span><span class="pi">:</span> <span class="s">first_page</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">first_page</span>
 <span class="nn">---</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The default_print.html layout will change the class of the <code class="highlighter-rouge">body</code> element based on the type value in the page’s frontmatter:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>&lt;body class="<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"title"</span><span class="p">%}</span>title<span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"frontmatter"</span><span class="w"> </span><span class="p">%}</span>frontmatter<span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"first_page"</span><span class="w"> </span><span class="p">%}</span>first_page<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span> print"&gt;
-</code></pre>
-</div>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;body class="<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"title"</span><span class="p">%}</span>title<span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"frontmatter"</span><span class="w"> </span><span class="p">%}</span>frontmatter<span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"first_page"</span><span class="w"> </span><span class="p">%}</span>first_page<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span> print"&gt;
+</code></pre></div></div>
 
 <p>Now in the css/printstyles.css file, you can assign a page name based on a specific class:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.title</span> <span class="p">{</span> <span class="nl">page</span><span class="p">:</span> <span class="n">title</span> <span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.title</span> <span class="p">{</span> <span class="nl">page</span><span class="p">:</span> <span class="n">title</span> <span class="p">}</span>
+</code></pre></div></div>
 
 <p>This means that for content inside of <code class="highlighter-rouge">body class="title"</code>, we can style this page in our stylesheet using <code class="highlighter-rouge">@page title</code>.</p>
 
 <p>Here’s how that title page is styled:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@page</span> <span class="n">title</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@page</span> <span class="n">title</span> <span class="p">{</span>
     <span class="k">@top-left</span> <span class="p">{</span>
         <span class="nl">content</span><span class="p">:</span> <span class="s1">" "</span><span class="p">;</span>
     <span class="p">}</span>
@@ -909,14 +898,13 @@ $('#toc').on('click', 'a', function() {
         <span class="nl">content</span><span class="p">:</span> <span class="s1">" "</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>As you can see, we don’t have any header or footer content, because it’s the title page.</p>
 
 <p>For the tocpage.html, which has the <code class="highlighter-rouge">type: frontmatter</code>, this is specified in the stylesheet:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.frontmatter</span> <span class="p">{</span> <span class="nl">page</span><span class="p">:</span> <span class="n">frontmatter</span> <span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.frontmatter</span> <span class="p">{</span> <span class="nl">page</span><span class="p">:</span> <span class="n">frontmatter</span> <span class="p">}</span>
 <span class="nt">body</span><span class="nc">.frontmatter</span> <span class="p">{</span><span class="nl">counter-reset</span><span class="p">:</span> <span class="n">page</span> <span class="m">1</span><span class="p">}</span>
 
 
@@ -933,14 +921,13 @@ $('#toc').on('click', 'a', function() {
     <span class="k">@bottom-left</span> <span class="p">{</span>
         <span class="nl">content</span><span class="p">:</span> <span class="s1">"youremail@domain.com"</span><span class="p">;</span>   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>With <code class="highlighter-rouge">counter(page, lower-roman)</code>, we reset the page count to 1 so that the title page doesn’t start the count. Then we also add some header and footer info. The page numbers start counting in lower-roman numerals.</p>
 
 <p>Finally, for the first page (which doesn’t have a specific name), we restart the counting to 1 again and this time use regular numbers.</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.first_page</span> <span class="p">{</span><span class="nl">counter-reset</span><span class="p">:</span> <span class="n">page</span> <span class="m">1</span><span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="nc">.first_page</span> <span class="p">{</span><span class="nl">counter-reset</span><span class="p">:</span> <span class="n">page</span> <span class="m">1</span><span class="p">}</span>
 
 <span class="nt">h1</span> <span class="p">{</span> <span class="nl">string-set</span><span class="p">:</span> <span class="n">doctitle</span> <span class="n">content</span><span class="p">()</span> <span class="p">}</span>
 
@@ -964,14 +951,13 @@ $('#toc').on('click', 'a', function() {
         <span class="nl">font-size</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You’ll see some other items in there such as <code class="highlighter-rouge">prince-script</code>. This means we’re using JavaScript to run some functions to dynamically generate that content. These JavaScript functions are located in the _includes/head_print.html:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
     <span class="nx">Prince</span><span class="p">.</span><span class="nx">addScriptFunc</span><span class="p">(</span><span class="s2">"datestamp"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="s2">"PDF last generated: September 11, 2017"</span><span class="p">;</span>
+        <span class="k">return</span> <span class="s2">"PDF last generated: November 14, 2017"</span><span class="p">;</span>
     <span class="p">});</span>
 <span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
 </span>
@@ -980,20 +966,17 @@ $('#toc').on('click', 'a', function() {
         <span class="k">return</span> <span class="s2">" User Guide"</span><span class="p">;</span>
     <span class="p">});</span>
 <span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
-</span></code></pre>
-</div>
+</span></code></pre></div></div>
 
 <p>There are a couple of Prince functions that are default functions from Prince. This gets the heading title of the page:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code>        <span class="nx">content</span><span class="err">:</span> <span class="nx">string</span><span class="p">(</span><span class="nx">doctitle</span><span class="p">);</span>
-</code></pre>
-</div>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="nx">content</span><span class="p">:</span> <span class="nx">string</span><span class="p">(</span><span class="nx">doctitle</span><span class="p">);</span>
+</code></pre></div></div>
 
 <p>This gets the current page:</p>
 
-<div class="language-js highlighter-rouge"><pre class="highlight"><code>        <span class="nx">content</span><span class="err">:</span> <span class="s2">"Page "</span> <span class="nx">counter</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
-</code></pre>
-</div>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="nx">content</span><span class="p">:</span> <span class="s2">"Page "</span> <span class="nx">counter</span><span class="p">(</span><span class="nx">page</span><span class="p">);</span>
+</code></pre></div></div>
 
 <p>Because the theme uses JavaScript in the CSS, you have to add the <code class="highlighter-rouge">--javascript</code> tag in the Prince command (detailed later on this page).</p>
 
@@ -1001,7 +984,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Duplicate the pdf-mydocf.sh file in the root directory and customize it for your specific configuration files.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>echo 'Killing all Jekyll instances'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'Killing all Jekyll instances'
 kill -9 $(ps aux | grep '[j]ekyll' | awk '{print $2}')
 clear
 
@@ -1012,8 +995,7 @@ echo "done";
 echo "Building the PDF ...";
 prince --javascript --input-list=_site/pdfconfigs/prince-list.txt -o _pdf/mydoc.pdf;
 echo "done";
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that the first part kills all Jekyll instances. This way you won’t try to serve Jekyll at a port that is already occupied.</p>
 
@@ -1029,19 +1011,18 @@ echo "done";
 
 <p>In the _includes/custom/sidebarconfigs.html file, there’s a section that looks like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">site.product</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="nt">"mydoc"</span><span class="w"> </span><span class="err">%}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">sidebar_pdf</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.data.sidebars.mydoc_sidebar.entries</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if site.product == "mydoc" %}
+{% assign sidebar_pdf = site.data.sidebars.mydoc_sidebar.entries %}
+{% endif %}
 
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">site.product</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="nt">"product1"</span><span class="w"> </span><span class="err">%}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">sidebar_pdf</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.data.sidebars.product1_sidebar.entries</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+{% if site.product == "product1" %}
+{% assign sidebar_pdf = site.data.sidebars.product1_sidebar.entries %}
+{% endif %}
 
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">if</span><span class="w"> </span><span class="err">site.product</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="nt">"product2"</span><span class="w"> </span><span class="err">%}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">sidebar_pdf</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.data.sidebars.product2_sidebar.entries</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endif</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+{% if site.product == "product2" %}
+{% assign sidebar_pdf = site.data.sidebars.product2_sidebar.entries %}
+{% endif %}
+</code></pre></div></div>
 
 <p>Add your own condition here that points to your sidebar.</p>
 
@@ -1051,9 +1032,8 @@ echo "done";
 
 <p>You can add a download button for your PDF using some Bootstrap button code:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">class=</span><span class="s">"noCrossRef"</span> <span class="na">href=</span><span class="s">"/pdf/mydoc.pdf"</span><span class="nt">&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">aria-label=</span><span class="s">"Left Align"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> PDF Download<span class="nt">&lt;/button&gt;&lt;/a&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">class=</span><span class="s">"noCrossRef"</span> <span class="na">href=</span><span class="s">"/pdf/mydoc.pdf"</span><span class="nt">&gt;&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">aria-label=</span><span class="s">"Left Align"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download-alt"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span> PDF Download<span class="nt">&lt;/button&gt;&lt;/a&gt;</span>
+</code></pre></div></div>
 
 <p>Here’s what that looks like:</p>
 
@@ -1063,9 +1043,8 @@ echo "done";
 
 <p>If you have JavaScript on any of your pages, Prince will note errors in Terminal like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>error: TypeError: value is not an object
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>error: TypeError: value is not an object
+</code></pre></div></div>
 
 <p>However, the PDF will still build.</p>
 
@@ -1073,11 +1052,10 @@ echo "done";
 
 <p>Then surround the JavaScript with conditional tags like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">unless</span><span class="w"> </span><span class="err">site.output</span><span class="w"> </span><span class="err">==</span><span class="w"> </span><span class="nt">"pdf"</span><span class="w"> </span><span class="err">%}</span><span class="w">
-</span><span class="err">javascript</span><span class="w"> </span><span class="err">content</span><span class="w"> </span><span class="err">here</span><span class="w"> </span><span class="err">...</span><span class="w">
-</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endunless</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
-</span></code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% unless site.output == "pdf" %}
+javascript content here ...
+{% endunless %}
+</code></pre></div></div>
 
 <p>For more detail about using <code class="highlighter-rouge">unless</code> in conditional logic, see <a href="mydoc_conditional_logic.html">Conditional logic</a>. What this code means is “run this code unless this value is the case.”</p>
 
@@ -1085,16 +1063,14 @@ echo "done";
 
 <p>The theme relies on Bootstrap’s CSS for styling. However, for print media, Bootstrap applies the following style:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}
+</code></pre></div></div>
 <p>This is minified, but basically the <code class="highlighter-rouge">*</code> (asterisk) means select all, and applied the color #000 (black). As a result, the Bootstrap style strips out all color from the PDF (for Bootstrap elements).</p>
 
 <p>This is problematic for code snippets that have syntax highlighting. I decided to remove this de-coloring from the print output. I commented out the Bootstrap style:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@media print{*,:after,:before{/*color:#000!important;*/text-shadow:none!important;/*background:0 0!important*/;-webkit-box-shadow:none!important;box-shadow:none!important}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@media print{*,:after,:before{/*color:#000!important;*/text-shadow:none!important;/*background:0 0!important*/;-webkit-box-shadow:none!important;box-shadow:none!important}
+</code></pre></div></div>
 
 <p>If you update Bootrap, make sure you make this edit. (Sorry, admittedly I couldn’t figure out how to simply overwrite the <code class="highlighter-rouge">*</code> selector with a later style.)</p>
 
@@ -1132,7 +1108,7 @@ echo "done";
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

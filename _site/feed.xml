@@ -5,9 +5,417 @@
         <description></description>
         <link>http://idratherbewriting.com/</link>
         <atom:link href="http://idratherbewriting.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 11 Sep 2017 01:07:22 +0900</pubDate>
-        <lastBuildDate>Mon, 11 Sep 2017 01:07:22 +0900</lastBuildDate>
-        <generator>Jekyll v3.3.1</generator>
+        <pubDate>Tue, 14 Nov 2017 00:22:34 +0900</pubDate>
+        <lastBuildDate>Tue, 14 Nov 2017 00:22:34 +0900</lastBuildDate>
+        <generator>Jekyll v3.6.2</generator>
+        
+        <item>
+            <title>IndieSquareからBCHを救済する方法</title>
+            <description>&lt;p&gt;ここ数日、圧倒的勢いでビットコインキャッシュ（BCH）が値上がりしています。
+そこで気になるのが分裂後特に気にもせず各種ウォレットに放置されているBCHたち。
+8月の時点でBCHの価値向上や値上がりを予想していた人は少なかったと思いますので、放置されたBCHは多いのではないかと思います。
+私も、IndieSquareというウォレットに8月の分裂当時0.1 BTC入れていましたが、額が少ないこともあり気にしていませんでした。
+しかしながら、今現在の価値で計算すると0.1 BTCでも数万円、ちょっと無視したくない金額です。
+そもそも、IndieSquareにはBCHが表示されないので、画面だけ見ていると本当にBCHがあるのかよくわかりません。（あとで説明しますが、ちゃんとあります！）
+まずはそのあたりから調べてみましょう。そして他のウォレットに送金できるところまで確認しましょう。&lt;/p&gt;
+
+&lt;p&gt;今回はIndieSquareを使って説明しますが、他のウォレットでも基本的な考え方は同じですので、調べる際の参考にでもなればと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;indiesquare発行アドレスのbchを確認する&quot;&gt;IndieSquare発行アドレスのBCHを確認する&lt;/h2&gt;
+
+&lt;p&gt;BlockChairというサイトで、アドレスのBCH保持量を確認できます。このサイトにIndieSquareのアドレスを入力して、BCHがあることを確認しましょう。&lt;br /&gt;
+https://blockchair.com/&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blockchair.com/bitcoin-cash/address/16ChynQi7CDP3XMLrok8mGQeZHPmarrFM5&quot;&gt;私のウォレット&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/my_blockchair.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;大体0.098 BCHがあることが確認できました。確かに0.1 BTC入れて、多少送金手数料で使ったので、このアドレスにはこの程度入れていたはずです！&lt;br /&gt;
+このアドレスにBCHがあることがわかりましたが、IndieSquareアプリからBCHを送金することはできません。&lt;br /&gt;
+次は他のウォレットを使い送金できるようにしましょう。&lt;/p&gt;
+
+&lt;h2 id=&quot;electrumに秘密鍵をインポートする&quot;&gt;Electrumに秘密鍵をインポートする&lt;/h2&gt;
+
+&lt;h3 id=&quot;electrum-cashをダウンロードする&quot;&gt;Electrum Cashをダウンロードする&lt;/h3&gt;
+
+&lt;p&gt;私はBCH用WalletにElectrum Cashを使うことにしました。&lt;br /&gt;
+BTC用のElectrumを用いていると上書きされてしまうなどの不具合があるようですが、私は初めて使うので問題ないためこれにしました。&lt;br /&gt;
+もし以前にElectrumを使ったことがある場合は他のWalletを使うほうが安全かもしれません。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://electroncash.org/&quot;&gt;https://electroncash.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ダウンロード後、実行前に必ずハッシュを確認します！&lt;br /&gt;
+ハッシュとは非常に簡単に言えばファイルが同一のものかを判別するための仕組みです。&lt;br /&gt;
+秘密鍵をインポートする以上、使うのは信頼できるソフトウェアである必要があります。&lt;br /&gt;
+ファイルが悪意ある書き換えなく、発行元のオリジナルと差異がないことを確認するためにハッシュを比較します。&lt;/p&gt;
+
+&lt;p&gt;ハッシュを比較する方法は複数あり、環境によって確認方法も多岐にわたるため方法は各自Googleで調べていただければと思います。&lt;br /&gt;
+&lt;a href=&quot;https://www.google.co.jp/search?q=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5+%E6%AF%94%E8%BC%83&amp;amp;oq=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E3%80%80%E6%AF%94%E8%BC%83&amp;amp;aqs=chrome..69i57j0l5.2295j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;Google参考検索結果&lt;/a&gt;&lt;br /&gt;
+暗号化方式はSHA-1を使っているようなので、アルゴリズムにはSHA-1を指定するのがポイントです。&lt;br /&gt;
+確認したハッシュが、下記のGithubにある該当のハッシュと同一ならば、ひとまず大丈夫ですので実行・インストールを行います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/fyookball/keys-n-hashes/tree/master/sigs-and-sums&quot;&gt;https://github.com/fyookball/keys-n-hashes/tree/master/sigs-and-sums&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;indiesquareの秘密鍵を確認&quot;&gt;IndieSquareの秘密鍵を確認&lt;/h3&gt;
+&lt;p&gt;IndieSquare Walletの秘密鍵を確認します。&lt;br /&gt;
+当然ですが、他の人に秘密鍵が割れてしまうとウォレットの資産を取られてしまうので、ここからの作業は確実に一人で行います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wallet.counterwallet.io/&quot;&gt;https://wallet.counterwallet.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;上記サイトにアクセスし、IndieSquareのseedの単語を12個入力します。&lt;br /&gt;
+seedはIndieSquareのアプリのmenu &amp;gt; 設定 &amp;gt; 復元パスフレーズで確認できます。&lt;/p&gt;
+
+&lt;p&gt;ログイン後、Address ActionsのShow Private Keyより、秘密鍵を確認できます。&lt;/p&gt;
+
+&lt;h3 id=&quot;electrumへ秘密鍵をインポート&quot;&gt;Electrumへ秘密鍵をインポート&lt;/h3&gt;
+&lt;p&gt;いよいよ秘密鍵のインポートです。&lt;br /&gt;
+ウォレットに名前をつけ、順番に進めていくと次のような画面にたどり着くと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/wallet_type.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ここではStandard walletを選び次へ進みます。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/keystore.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;鍵のタイプはUse public or private key　を選びます。&lt;/p&gt;
+
+&lt;p&gt;なお、seed(12個)をElectrumに直接インポートできるのではないかと思ったのですが、うまく行きませんでした。&lt;br /&gt;
+暗号方式の違いかと思い複数試したのですが、そもそもIndieSquareが何を使っているか少し調べた程度では解決しませんでした。&lt;br /&gt;
+若干手間ではありますが秘密鍵をインポートするのが確実だと思います。&lt;/p&gt;
+
+&lt;p&gt;次にウォレットをパスフレーズで保護します。&lt;br /&gt;
+しなくても次に進めますが、当然しておいたほうがセキュリティは増します。&lt;/p&gt;
+
+&lt;p&gt;これでElectrumに秘密鍵のインポートが完了し、BCHの送金ができるようになりました！&lt;br /&gt;
+確かに先程BlockChairで確認した残高と同じ量のBCHが確認できますね。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/successful_import.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://askmona.org/5732&quot;&gt;Book of OrbsからBCHを抜き出す方法は？&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zaif.jp?ac=f7ujnq95ac&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_728x90.png?ac=f7ujnq95ac&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+            <pubDate>Sun, 12 Nov 2017 00:00:00 +0900</pubDate>
+            <link>http://idratherbewriting.com/bch_from_indiesquare.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/bch_from_indiesquare.html</guid>
+            
+            
+        </item>
+        
+        <item>
+            <title>競馬解析アプリ開発日誌</title>
+            <description>&lt;h2 id=&quot;アプリ開発の経緯&quot;&gt;アプリ開発の経緯&lt;/h2&gt;
+&lt;p&gt;2016年度、競馬に関する研究をぼちぼちやっておりました。
+しかしながら11月から始まったトランプラリー、翌年には暗号通貨への投資も始め、全く競馬に回せるリソース（資金と時間）がなくなりました。
+これ自体は正しい選択でした。株でも暗号通貨でも、多くのお金を得ることができました。
+競馬ではかなり望み薄の金額ですし、ひょっとしたら失っていたかもしれません。&lt;/p&gt;
+
+&lt;p&gt;だが、研究成果を無駄にして良いものか？きちんとエッジとなる強みは見つけていました。
+これはあまり他の人が気づいていない傾向のような気がします。
+そう思っているときは得てして危ないのが投資の世界ですが、知ってしまった以上やってみたくなるのが性です。&lt;/p&gt;
+
+&lt;p&gt;資金をきちんと用意して、己の戦略を信じて馬券を購入し続ければプラス収支にできるのではないか？
+そもそも競馬は楽しい。馬と人間たちのドラマがある。今年は推しの2歳馬も出走する。&lt;/p&gt;
+
+&lt;p&gt;ということで、以前の研究成果をブラッシュアップして馬券を買ってみたいと思います。
+今まではR Studio上でデータを手でいじって色々見ていましたが、流石にその方法は限界です。
+去年までと違うのは、Webアプリを開発する経験を積み、DB周りの知識も多少なりとも増強したところです。&lt;/p&gt;
+
+&lt;p&gt;要件を整理し、ポチポチ操作で自分の知りたい情報を取れるアプリケーションを作成しましょう。&lt;/p&gt;
+
+&lt;h3 id=&quot;俺専用馬柱&quot;&gt;俺専用馬柱&lt;/h3&gt;
+
+&lt;p&gt;対象レースを指定すると、自分の欲しい情報（エッジ）を整理して一覧表示してくれる機能です。&lt;br /&gt;
+これに関してはひとまず、早急に作れるR Shiny Appを作ります。データは簡便のためファイルで済ませます。
+その後DBをきちんと定義し、Djangoに移植します。&lt;/p&gt;
+
+&lt;h3 id=&quot;分析のブラッシュアップバックテストの充実&quot;&gt;分析のブラッシュアップ、バックテストの充実&lt;/h3&gt;
+&lt;p&gt;これに関しては一旦後回しとしたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;1012&quot;&gt;10/12&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rからpythonを叩く機能の実装&lt;/li&gt;
+  &lt;li&gt;レース情報の取得→ファイル保存&lt;/li&gt;
+  &lt;li&gt;レースに出走する馬情報の取得→ファイル保存&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Rとpython間のデータのやり取りは効率的ではないので、ファイルにいちいち保存します。
+これも効率的とは言い難いですが、早急に作る必要があるためこの方針を取ります。
+昔書いた資材を出来ればR6クラス化、パッケージ化したいですが、期限内にやるのは難しそうです。
+source()を用いて対応するつもりです。
+いずれはやらないとDjango化するときに困りますね。分析も全部pythonで書けよという話ですが・・・&lt;/p&gt;
+
+&lt;h2 id=&quot;1014&quot;&gt;10/14&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;以前作成したソースコードの確認&lt;/li&gt;
+  &lt;li&gt;ソースコードをShinyアプリケーション用にmodify&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ソース修正の際に以下の壁にぶつかりました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://notchained.hatenablog.com/entry/2015/12/11/000809&quot;&gt;小ネタ：Rでパッケージ読み込み時に日本語のメッセージを出す&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Shinyアプリはパッケージではないだろう？とも思いますが、同じエラーが出るので修正する必要があります。&lt;br /&gt;
+と思ったら、Shinyでは日本語が一切使えないらしいです・・・古い記事ですが・・・&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.slideshare.net/wdkz/shiny-16178934&quot;&gt;Shiny-Serverあれこれ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;今までRを使っていて日本語を使うという場面がまったくなかったので気づかなかったのですが、今回はとってきたデータに日本語文字列が含まれる以上日本語をコード内に仕込めないのは困ります。&lt;br /&gt;
+回避策としては、ファイルから日本語を読み込めば使えるはずですが、非常に面倒でバカバカしい作業です。&lt;br /&gt;
+さすがにShinyをすっ飛ばしてDjangoを使うことを検討した方がいいかもしれません。&lt;br /&gt;
+しかしチュートリアルから始めないとまともに作業できないので、明日のレースはもちろん、来週末にも間に合わないでしょう。&lt;br /&gt;
+株の振り返り記事や暗号通貨の投資戦略、その他の記事も書きたいのにこちらを優先している手前、これ以上タスクがかさむのは困ります。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;明日は府中に、来週末は新潟に行きます。府中は、馬の写真を撮る練習、新潟は推しを見に行くのが目的です。  &lt;br /&gt;
+詰めていった結果、三連単でオッズを作るのが最も正しい戦い方だと気づいてはいるのですが、私の戦略では多点買わないといけないので一回の投資が6000円からとかになってしまいます。&lt;br /&gt;
+全然分析できていないので複勝や馬単で少額遊びたいと思います。勝負の準備ができていないので仕方ないです。&lt;/p&gt;
+
+&lt;h2 id=&quot;114&quot;&gt;11/4&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;日本語文字列に関する問題を消極的に解決&lt;/li&gt;
+  &lt;li&gt;ダッシュボードデザインの適用&lt;/li&gt;
+  &lt;li&gt;テーブル表示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;記録をつけるのをサボっていましたが、競馬をやったり@tipnemでXEMのバラまきなどをしていたせいです。&lt;br /&gt;
+ちなみに馬券は大いに負けています。推し馬の単勝へ大金を投じているので負けると全く回収できません。そして新馬戦以来2連敗で馬券内なしです。辛い。&lt;br /&gt;
+推し以外も少しだけ買っているのですが、単勝10倍~20倍レンジの馬が2着止まりのケースが2回もありました。これも辛い。&lt;/p&gt;
+
+&lt;p&gt;本題ですが、まず日本語の問題が解決しました。&lt;br /&gt;
+Macに移動したら問題なくすべてのコードが動きました。根本は解決していないので消極的な解決策ですが、これで進められます。&lt;br /&gt;
+Macだと日本語をコード内に仕込んでいても別に大丈夫でした。情報があまりないので調べてまとめるのもありかもしれません。&lt;/p&gt;
+
+&lt;p&gt;ダッシュボードの見栄えを整えました。&lt;br /&gt;
+ShinyDashboardライブラリは非常に素晴らしいと思いました。&lt;br /&gt;
+インストールしてチュートリアルどおりのコードを貼り付けるだけで見栄えが非常に良くなります。&lt;br /&gt;
+まともなフロント開発技術をもっていない私としてはとても助かります。&lt;/p&gt;
+
+&lt;p&gt;テーブル表示をする部分を実装しました。問題なく動いたので、いよいよデータを整形する部分を作ります。&lt;br /&gt;
+たくさんカラムがあるので取捨選択がまず一手間です。&lt;br /&gt;
+そして、去年実装したコードの内容把握とリファクタリングがなかなか大変です。&lt;br /&gt;
+まずは、取捨選択を終えてスコープを絞るところまでやりたいです。&lt;/p&gt;
+</description>
+            <pubDate>Sat, 04 Nov 2017 00:00:00 +0900</pubDate>
+            <link>http://idratherbewriting.com/horse_app_develop.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/horse_app_develop.html</guid>
+            
+            
+        </item>
+        
+        <item>
+            <title>2017年9月度株式投資成績</title>
+            <description>&lt;h2 id=&quot;概況所持銘柄&quot;&gt;概況/所持銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;284314&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;347500&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;63186&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1036&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;348086&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;695586&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;24836&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;242.000&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;399&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15700&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;631.990&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;967&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;33501&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;406&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10257&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9324&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;安田倉庫&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;722.860&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;904&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;18114&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9980&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;マルコ&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;536.860&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;393&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;-14386&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/figure/b8e0b64f3309edc6ba1f037a75614cf5/unnamed-chunk-4-1.png&quot; alt=&quot;plot of chunk unnamed-chunk-4&quot; /&gt;&lt;img src=&quot;/figure/b8e0b64f3309edc6ba1f037a75614cf5/unnamed-chunk-4-2.png&quot; alt=&quot;plot of chunk unnamed-chunk-4&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;なし&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
+
+&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
+&lt;p&gt;微妙に値段が下がっていますが、やはり気にするような展開ではないです。&lt;br /&gt;
+この銘柄に関してはもう毎月こんな感じですが、とりあえず優待配当取りで放置です。&lt;/p&gt;
+
+&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
+&lt;p&gt;爆進してついに1000円をうかがう勢いです。&lt;br /&gt;
+配当/優待利回りを考えると1000円でも何の不思議もないのですが、持続性に疑問を持つのは当然です。&lt;br /&gt;
+今回の上げは少なくとも年末の優待が維持されるのがほぼ確定になったことが大きな要因でしょう。&lt;br /&gt;
+BRHDと合わせて、鉄板ガチホですね。&lt;/p&gt;
+
+&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
+&lt;p&gt;若干落ちていますが、先月１枚処分していますし、特に苦しい展開ではないです。&lt;/p&gt;
+
+&lt;h3 id=&quot;9324-安田倉庫&quot;&gt;9324 安田倉庫&lt;/h3&gt;
+&lt;p&gt;伸びて900円台に到達しました。&lt;br /&gt;
+倉庫株自体は結構全体的に上がっているようです。&lt;br /&gt;
+安田倉庫は若干で遅れた気がしないでもないですが、きちんと上がってくれて良かったです。&lt;br /&gt;
+横浜に良い不動産を持っているというのはなかなか強いですね。&lt;br /&gt;
+株式を購入するときはその会社の持っている不動産をきちんと評価することでより正確な判断ができそうです。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、値段が上がるということは購入時に決めた売却水準に近づいているということでもあります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fmhk23.github.io/StockReport2017Jun.html&quot;&gt;2017年6月度株式投資成績&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;出口戦略&lt;br /&gt;
+売り時は2つを考えています。&lt;/p&gt;
+
+  &lt;p&gt;株価が4桁突入&lt;br /&gt;
+以前の株価を考えると、調子が良い時は4桁、悪いときは600円程度と考えて良さそうです。&lt;br /&gt;
+ここまで値段が上がれば業績関わらず利益確定で売ってしまって良いと思います。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;高値圏に突入しつつあるので4桁にこだわらず、降りどきを間違えないようにしたいです。&lt;/p&gt;
+
+&lt;h3 id=&quot;9980マルコ&quot;&gt;9980　マルコ&lt;/h3&gt;
+&lt;p&gt;先月から売るか持ち続けるか迷っていたのですが、結局持つことにしました。&lt;br /&gt;
+理由は以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;年2回優待をもらえるため粘りやすい。&lt;/li&gt;
+  &lt;li&gt;優待に額面通りの価値は明らかにないけれども、個人的にもらいたいものがある。&lt;/li&gt;
+  &lt;li&gt;低位株で、ここから損をしたとしてもたかが知れている。&lt;/li&gt;
+  &lt;li&gt;10月以降のCMなど、まだ待っている材料がある。&lt;/li&gt;
+  &lt;li&gt;株の保有金額がかなり少なくなっており、維持したい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;8月にやったこと9月に向けて&quot;&gt;8月にやったこと・9月に向けて&lt;/h2&gt;
+&lt;p&gt;ゾーンの新刊を読み進めました。&lt;br /&gt;
+なんだか以前と同じことが書いてあるだけのような気がしないでもないです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;チャートの分析の勉強を本格的に始めました。&lt;br /&gt;
+ファンダメンタルズ重視で、テクニカルは二の次というスタンスで始めた株式投資ですが、暗号通貨で生き残るために必要と感じたからです。&lt;br /&gt;
+6月と言っていることが違いますが、(参考 &lt;a href=&quot;https://fmhk23.github.io/InvestingCCRule.html&quot;&gt;暗号通貨投資のMy鉄則&lt;/a&gt;)考えを改めました。&lt;br /&gt;
+テクニカルをきちんとやることで良いトレードができる可能性が上がると感じています。&lt;br /&gt;
+そして、株への適用と暗号通貨への適用とで、チューニングこそ必要ですが基本は同じなので勉強すると一石二鳥です。&lt;br /&gt;
+まずは入門としてこの本を読んでいます。&lt;/p&gt;
+
+&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&amp;amp;t=2323k-22&amp;amp;m=amazon&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;IS1=1&amp;amp;detail=1&amp;amp;asins=4798142697&amp;amp;linkId=3747a79d7062672efe02c0564253343f&amp;amp;bc1=000000&amp;amp;lt1=_blank&amp;amp;fc1=333333&amp;amp;lc1=0066c0&amp;amp;bg1=ffffff&amp;amp;f=ifr&quot;&gt;
+    &lt;/iframe&gt;
+
+&lt;p&gt;勉強の戦略としてはまず基本を固めまくるつもりです。基礎固めの速さと正確さこそ自分の強みなので、ここを活かします。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;また、購入できる銘柄がないか調べてはいるのですが、日経平均自体が高値圏にあることもありなかなかこれはと思うものがありません。&lt;br /&gt;
+しかし切り売りしてきて保有銘柄が減ってきていますし、余剰利益があるので年末に向けてもう一勝負するチャンスがあります。&lt;br /&gt;
+しかし半端な銘柄ではやる意義が薄いので、自分が勝負に出る価値があると信じられる銘柄を探り当てなければなりません。&lt;/p&gt;
+
+&lt;h4 id=&quot;暗号通貨投資&quot;&gt;暗号通貨投資&lt;/h4&gt;
+
+&lt;p&gt;いよいよASICによるマイニングを開始しました。 
+これについては別のページで書きたいですが、秘密にしておきたいとっておきの内容などもあり書くかはわかりません。&lt;br /&gt;
+実はチャート分析をしなければならないと感じたのはマイニングを開始したからなので、そういう意味でもマイニングを始めた価値はあったのかな？と思います。&lt;/p&gt;
+
+</description>
+            <pubDate>Sat, 30 Sep 2017 00:00:00 +0900</pubDate>
+            <link>http://idratherbewriting.com/StockReport2017Sep.html</link>
+            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Sep.html</guid>
+            
+            
+        </item>
         
         <item>
             <title>2017年8月度株式投資成績</title>
@@ -1198,376 +1606,6 @@ NanoWalletについては、サービスから各種設定ができます。&lt;
             <guid isPermaLink="true">http://idratherbewriting.com/NEM_MultiSig.html</guid>
             
             <category>NEM</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>CentOS7でR環境構築</title>
-            <description>&lt;h3 id=&quot;ページを作成した理由&quot;&gt;ページを作成した理由&lt;/h3&gt;
-&lt;p&gt;AWS上のCentOS7に最新バージョンでないRをインストールする必要があった。それなりに苦労したので、手順を残しておく。&lt;br /&gt;
-基本的なことだが、管理者権限が必要になるであろう部分が多いが省略していることに注意。&lt;/p&gt;
-
-&lt;h3 id=&quot;一般的な方法&quot;&gt;一般的な方法&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install R
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;なのだが、yumでRが見つからないと言われてしまった。またやや古いバージョンをインストールする必要があるため、ソースコードからビルドすることにした。&lt;/p&gt;
-
-&lt;h3 id=&quot;ソースコードの入手&quot;&gt;ソースコードの入手&lt;/h3&gt;
-
-&lt;p&gt;CRANからtar.gzをwgetする。&lt;br /&gt;
-https://cran.ism.ac.jp/src/base/&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;x.xを適宜かえること。&lt;/p&gt;
-
-&lt;h3 id=&quot;ビルドインストール&quot;&gt;ビルド/インストール&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tar.gzの解凍&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar.zxvf R-3.x.x.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;インストール&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;上記コマンドだけなのだが、いくつか頻出のエラーがある模様。&lt;/p&gt;
-
-&lt;h4 id=&quot;with-xyes問題&quot;&gt;–with x=yes問題&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;configure: error: --with-x=yes (default) and X11 headers/libs are not available 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;様々な質問サイトやブログなどを見ても、このエラーは結構多い感じ。
-with-xとは、X Windows Syetemのこと。これがないとMarkdownでのPDFやhtmlの生成などに差し障るらしい。&lt;br /&gt;
-yesではなく、noのオプションを付ければこのエラーを解消できる。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure --with-x=no
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;私はMarkdown使わないし解決策と言われていることをしてもうまく行かなかったのでnoでインストールすることにした。一応、自分の動かしたかったコードを問題なく実行できている。&lt;/p&gt;
-
-&lt;p&gt;–with-readlineのエラーが出た場合は、下記のコマンドでインストールを推奨。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install readline-devel
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;いろいろ足りないと言われる問題&quot;&gt;いろいろ足りないと言われる問題&lt;/h4&gt;
-&lt;p&gt;都度エラーメッセージを見ながらインストールするしかない。環境によって何が足りないかは変わるだろうが、一例で自分の遭遇したリストを記載。開発用パッケージ-develをインストールしないとエラーが解消されないようだったので、開発用も入れた。（むしろ開発用だけでもいいのかな？）&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;bzip2&lt;/li&gt;
-  &lt;li&gt;bzip2-devel&lt;/li&gt;
-  &lt;li&gt;xz(liblzmaがないと言われたらこれ)&lt;/li&gt;
-  &lt;li&gt;xz-devel&lt;/li&gt;
-  &lt;li&gt;libcurl&lt;/li&gt;
-  &lt;li&gt;libcurl-devel&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;最後に、PATHが通っていなかったら通す。これでRコマンドが使えるようになる。&lt;br /&gt;
-.RProfileファイルは、ユーザーのホーム画面に置いておけば読み込んでくれる。&lt;/p&gt;
-
-&lt;h3 id=&quot;余談&quot;&gt;余談&lt;/h3&gt;
-
-&lt;p&gt;Rのインストール前にpythonをアップデートしていたため、yumが動かない問題に遭遇し時間を食ってしまった。&lt;br /&gt;
-新しいバージョンのpythonインストール完了後、古いpythonを使うようyumの設定ファイルに記載しないといけないというのは知っていた。(yumはpythonを使っており、どのpythonを使うか指定しないとうまく動作しない。あまり詳しくないが依存関係がある模様。)&lt;br /&gt;
-しかしurlgrabberがないというエラーが出てyumが動かず困ってしまった。yum updateやyum installなどの主要な機能が軒並み使えない。&lt;br /&gt;
-調べてもなかなか解決策にたどり着けなかったが、urlgrabberの設定ファイルを確認してpythonのバージョン指定を古いpythonにしたらエラーが解消された。&lt;/p&gt;
-
-&lt;p&gt;CentOSの環境構築を行う場合、pythonのアップデートはできるだけ後回しにしたほうが問題は少ないかもしれないと思った。yumが動かないまま放置するわけにはいかないので、いずれ解決しないといけないけど、環境構築でハマり続けると精神的にも(進捗/時間)的にも辛い。だからハマるのは避けたいし、万が一ハマるとしても他が終わった後のほうがいい。&lt;/p&gt;
-
-&lt;h3 id=&quot;参考になりそうなurl集&quot;&gt;参考になりそうなURL集&lt;/h3&gt;
-
-&lt;p&gt;英語&lt;br /&gt;
-&lt;a href=&quot;http://stackoverflow.com/questions/17473547/error-with-readline-yes-default-and-headers-libs-are-not-available&quot;&gt;error: –with-readline=yes (default) and headers/libs are not available&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;日本語&lt;br /&gt;
-&lt;a href=&quot;http://www.okadajp.org/RWiki/?R%20%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB#if8c08b4&quot;&gt;Rのインストール&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stat.biopapyrus.net/dev/r-install.html&quot;&gt;Rインストール&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://qiita.com/tomotagwork/items/9e86d2fc67a7c7b644d5&quot;&gt;オフラインでのR環境構築 on RHEL&lt;/a&gt;&lt;/p&gt;
-</description>
-            <pubDate>Sun, 21 May 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/RonCentOS7.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/RonCentOS7.html</guid>
-            
-            
-        </item>
-        
-        <item>
-            <title>2017年4月度株式投資成績</title>
-            <description>&lt;h2 id=&quot;概況&quot;&gt;概況&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;377757&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;415600&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;37843&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;561041&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;976641&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-5190&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;所持銘柄&quot;&gt;所持銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;242.000&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;392&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;631.990&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;723&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9101&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;699.860&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;793&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9314&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;374&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;400&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;7714&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9696&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ウィザス&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;392.430&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;376&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-3286&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2686&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ジーフット&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;765.86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;734&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-165&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-504&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-2603&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;332.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;360&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;135&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;415&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;2164&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9765&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;オオバ&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;484.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;495&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;50&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;115&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;849&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
-
-&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
-&lt;p&gt;既に利幅をとっていますし悪い景色も見えていません。&lt;br /&gt;
-ガチホールド、放置。&lt;/p&gt;
-
-&lt;h3 id=&quot;2686-ジーフット&quot;&gt;2686 ジーフット&lt;/h3&gt;
-&lt;p&gt;下げトレンドと、前年比の売上がなかなか振るわないので損切りしました。&lt;/p&gt;
-
-&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
-&lt;p&gt;開示と4月で全体的に相場が振るわなかったこともあり大きくさげました。&lt;br /&gt;
-この銘柄はまだまだホールドする予定なので100円程度下がってもどうということはないのですが、反省点は買い増しできなかったことです。&lt;br /&gt;
-優待と配当だけで値幅取れる銘柄なのですが、業績がめちゃくちゃいいわけでもないので強気の投資、という訳にはいきませんでした。 
-買値以下には下がらなかったことも、リスクを取りたくない気持ちを増大させてしまいました。&lt;/p&gt;
-
-&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
-&lt;p&gt;今月は特別好調なのはこの銘柄くらいでした。&lt;br /&gt;
-利幅はそこそことれているので売りたい気持ちに駆られますが、少なくとも次の配当まではホールドしたいです。&lt;br /&gt;
-もともとは6月の配当に向けて上がっていくだろうという考えもあり購入したのでそろそろ売るのも悪くないので、どちらにするかは力を入れて検討したいところです。&lt;/p&gt;
-
-&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
-&lt;p&gt;利益が出ていて株数も確保できていたので一度100株だけ利確売り。&lt;br /&gt;
-でもやっぱりこの銘柄に投資したいとの考えから200株をより高値で買い増し。&lt;br /&gt;
-一応これを書いている時点で利益はでていますが、他の投資のほうが儲かったのは確かだし、そもそも動きに一貫性がなく反省です。&lt;br /&gt;
-ただし売った銘柄を買い増すリスクを許容する動きができたのは良かったとも思います。&lt;/p&gt;
-
-&lt;h3 id=&quot;9696-ウィザス&quot;&gt;9696 ウィザス&lt;/h3&gt;
-&lt;p&gt;何らかの特別悪い材料が出るか、買値＋アルファを取れるまで凍結するつもりです。&lt;/p&gt;
-
-&lt;h3 id=&quot;9765-オオバ&quot;&gt;9765 オオバ&lt;/h3&gt;
-&lt;p&gt;下げトレンドなので何らかの銘柄を減らそうという考えに至り、&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;利益がぎりぎり確保できていた&lt;/li&gt;
-  &lt;li&gt;正直買う前の調査不足があった&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;以上の理由から売りました。&lt;br /&gt;
-もっと下で拾い直せればハッピーだったのですが、うまくいきませんでした。&lt;br /&gt;
-まあ似たようなケースは今後もあると思うので再度チャレンジします。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;4月にやったこと5月に向けて&quot;&gt;4月にやったこと・5月に向けて&lt;/h2&gt;
-
-&lt;h3 id=&quot;インプット&quot;&gt;インプット&lt;/h3&gt;
-
-&lt;p&gt;主な活動として本を2冊読みました。今は冊数を増やすよりも同じ本を何度も読んでいます。&lt;/p&gt;
-
-&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&amp;amp;t=2323k-22&amp;amp;m=amazon&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;IS1=1&amp;amp;detail=1&amp;amp;asins=4939103579&amp;amp;linkId=5bb9c387ef62d2771aec837778507257&amp;amp;bc1=000000&amp;amp;lt1=_blank&amp;amp;fc1=333333&amp;amp;lc1=0066c0&amp;amp;bg1=ffffff&amp;amp;f=ifr&quot;&gt;
-    &lt;/iframe&gt;
-
-&lt;p&gt;主に投資心理面。何度も読み返したり重要だと思われる点を書き写しています。&lt;br /&gt;
-この本に書いてあることをきちんと習得することが大事だと思うので、習熟度を上げてレビューを書きたいと思います。&lt;/p&gt;
-
-&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&amp;amp;t=2323k-22&amp;amp;m=amazon&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;IS1=1&amp;amp;detail=1&amp;amp;asins=4478100713&amp;amp;linkId=0ef02d730ed5973af35dc24aef75fab8&amp;amp;bc1=000000&amp;amp;lt1=_blank&amp;amp;fc1=333333&amp;amp;lc1=0066c0&amp;amp;bg1=ffffff&amp;amp;f=ifr&quot;&gt;
-    &lt;/iframe&gt;
-
-&lt;p&gt;購入した理由はより深いレベルで企業の分析をしたいと思ったから。&lt;br /&gt;
-この本に書いてあるようなことをきちんとやるのは当然として、早くやることが大事だなあと思います。&lt;br /&gt;
-理解するとかそういうレベルではなく自動でできるようにしないといけないです。&lt;/p&gt;
-
-&lt;h3 id=&quot;仮想通貨&quot;&gt;仮想通貨&lt;/h3&gt;
-&lt;p&gt;このページではあえて仮想通貨のことは書いていないのですが、4月は投資していたコインが猛烈な上昇を見せました。&lt;br /&gt;
-株式は5000円程度のマイナスでしたがそんなの全く気にならないくらい・・&lt;/p&gt;
-
-&lt;p&gt;もちろん、きちんと先行リスクをとっていたので利益を取れたというのはあるのですが、運が良かったというのも多分にあるので、このラッキーをきちんと活かして資産形成を進めていきたいです。&lt;br /&gt;
-今後も跳ね上がるチャンスがありえると考えて、できるだけ仮想通貨の数量を減らさず裁定取引で原資を回収します。&lt;br /&gt;
-日本円で利確するのも良いですが、税金のこともケアしながら基本的にBTCで増やしたいです。（ここらへんは本当にシビア・・・）&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
-            <pubDate>Sun, 30 Apr 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Apr.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Apr.html</guid>
-            
-            
-        </item>
-        
-        <item>
-            <title>Mac OS XでPostgreSQLをセットアップ</title>
-            <description>&lt;p&gt;PostgreSQLのインストール手順をメモ。&lt;/p&gt;
-
-&lt;h3 id=&quot;ダウンロードインストール&quot;&gt;ダウンロード&amp;amp;インストール&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.postgresql.org/download/macosx/&quot;&gt;https://www.postgresql.org/download/macosx/&lt;/a&gt;&lt;br /&gt;
-今回はインストーラーを落としてきて普通にインストールする。(Homebrewを使う方法などもあるらしい。)&lt;/p&gt;
-
-&lt;h3 id=&quot;psqlのパスを通す&quot;&gt;psqlのパスを通す&lt;/h3&gt;
-&lt;p&gt;パスを通さないとpsqlコマンドが使えない。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dba.stackexchange.com/questions/3005/how-to-run-psql-on-mac-os-x&quot;&gt;How to run psql on Mac OS X?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;好きなエディタを使って編集する。&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo emacs .bash_profile&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;下記を書き足して保存。&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;PATH=&quot;/Library/PostgreSQL/9.6/bin/:${PATH}&quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;上記パスはMacにおけるデフォルトなので、変更がなければバージョン変更だけですむはず。
-ちなみにemacsの終了は C-x C-c。(Control + x、Control + c)&lt;/p&gt;
-
-&lt;h3 id=&quot;postgresapp&quot;&gt;Postgres.app&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://postgresapp.com/&quot;&gt;postgres.app&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;まだインストールしただけだが、このツールも便利そう。&lt;/p&gt;
-</description>
-            <pubDate>Sat, 15 Apr 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/PostgresonMac.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/PostgresonMac.html</guid>
-            
-            <category>PostgreSQL</category>
             
             
         </item>

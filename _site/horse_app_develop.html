@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  競馬">
+<title>競馬解析アプリ開発日誌 | Far More High Kulture</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.comfeed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Far More High Kulture</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="news_archive.html">アーカイブ</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/fmhk23" target="_blank">Github Repo</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="競馬解析アプリ開発日誌">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">Menu </li>
+    
+    
+    
+    <li>
+        <a href="#">About this site</a>
+        <ul>
+            
+            
+            
+            <li><a href="news_archive.html">アーカイブ</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Rプログラミング</a>
+        <ul>
+            
+            
+            
+            <li><a href="RonCentOS7.html">CentOS7でR環境構築</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">データベース/SQL</a>
+        <ul>
+            
+            
+            
+            <li><a href="PostgresonMac.html">Mac OS XでPostgreSQLをセットアップ</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">セミナー参加記録</a>
+        <ul>
+            
+            
+            
+            <li><a href="170222Seminar.html">産総研バイタルセンシング(2017年2月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">暗号通貨に関する情報</a>
+        <ul>
+            
+            
+            
+            <li><a href="NEM_MultiSig.html">NanoWalletと二段階認証、MultiSigについて</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">暗号通貨への投資</a>
+        <ul>
+            
+            
+            
+            <li><a href="WhyCC.html">なぜ暗号通貨投資をするのか</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="InvestingCCRule.html">暗号通貨投資のMy鉄則</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">株式への投資</a>
+        <ul>
+            
+            
+            
+            <li><a href="StockReport2017Feb.html">2017年2月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Mar.html">2017年3月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Apr.html">2017年4月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017May.html">2017年5月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Jun.html">2017年6月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Jul.html">2017年7月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Aug.html">2017年8月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Sep.html">2017年9月</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">株主総会記録</a>
+        <ul>
+            
+            
+            
+            <li><a href="170328BroadLeaf.html">ブロードリーフ(2017年3月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">競馬</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="horse_app_develop.html">競馬解析アプリ開発日誌</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">競馬解析アプリ開発日誌</h1>
+        <p class="post-meta"><time datetime="2017-11-04T00:00:00+09:00" itemprop="datePublished">Nov 4, 2017</time> /
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+
+        <h2 id="アプリ開発の経緯">アプリ開発の経緯</h2>
+<p>2016年度、競馬に関する研究をぼちぼちやっておりました。
+しかしながら11月から始まったトランプラリー、翌年には暗号通貨への投資も始め、全く競馬に回せるリソース（資金と時間）がなくなりました。
+これ自体は正しい選択でした。株でも暗号通貨でも、多くのお金を得ることができました。
+競馬ではかなり望み薄の金額ですし、ひょっとしたら失っていたかもしれません。</p>
+
+<p>だが、研究成果を無駄にして良いものか？きちんとエッジとなる強みは見つけていました。
+これはあまり他の人が気づいていない傾向のような気がします。
+そう思っているときは得てして危ないのが投資の世界ですが、知ってしまった以上やってみたくなるのが性です。</p>
+
+<p>資金をきちんと用意して、己の戦略を信じて馬券を購入し続ければプラス収支にできるのではないか？
+そもそも競馬は楽しい。馬と人間たちのドラマがある。今年は推しの2歳馬も出走する。</p>
+
+<p>ということで、以前の研究成果をブラッシュアップして馬券を買ってみたいと思います。
+今まではR Studio上でデータを手でいじって色々見ていましたが、流石にその方法は限界です。
+去年までと違うのは、Webアプリを開発する経験を積み、DB周りの知識も多少なりとも増強したところです。</p>
+
+<p>要件を整理し、ポチポチ操作で自分の知りたい情報を取れるアプリケーションを作成しましょう。</p>
+
+<h3 id="俺専用馬柱">俺専用馬柱</h3>
+
+<p>対象レースを指定すると、自分の欲しい情報（エッジ）を整理して一覧表示してくれる機能です。<br />
+これに関してはひとまず、早急に作れるR Shiny Appを作ります。データは簡便のためファイルで済ませます。
+その後DBをきちんと定義し、Djangoに移植します。</p>
+
+<h3 id="分析のブラッシュアップバックテストの充実">分析のブラッシュアップ、バックテストの充実</h3>
+<p>これに関しては一旦後回しとしたいと思います。</p>
+
+<h2 id="1012">10/12</h2>
+
+<ul>
+  <li>Rからpythonを叩く機能の実装</li>
+  <li>レース情報の取得→ファイル保存</li>
+  <li>レースに出走する馬情報の取得→ファイル保存</li>
+</ul>
+
+<p>Rとpython間のデータのやり取りは効率的ではないので、ファイルにいちいち保存します。
+これも効率的とは言い難いですが、早急に作る必要があるためこの方針を取ります。
+昔書いた資材を出来ればR6クラス化、パッケージ化したいですが、期限内にやるのは難しそうです。
+source()を用いて対応するつもりです。
+いずれはやらないとDjango化するときに困りますね。分析も全部pythonで書けよという話ですが・・・</p>
+
+<h2 id="1014">10/14</h2>
+
+<ul>
+  <li>以前作成したソースコードの確認</li>
+  <li>ソースコードをShinyアプリケーション用にmodify</li>
+</ul>
+
+<p>ソース修正の際に以下の壁にぶつかりました。</p>
+
+<p><a href="http://notchained.hatenablog.com/entry/2015/12/11/000809">小ネタ：Rでパッケージ読み込み時に日本語のメッセージを出す</a></p>
+
+<p>Shinyアプリはパッケージではないだろう？とも思いますが、同じエラーが出るので修正する必要があります。<br />
+と思ったら、Shinyでは日本語が一切使えないらしいです・・・古い記事ですが・・・</p>
+
+<p><a href="https://www.slideshare.net/wdkz/shiny-16178934">Shiny-Serverあれこれ</a></p>
+
+<p>今までRを使っていて日本語を使うという場面がまったくなかったので気づかなかったのですが、今回はとってきたデータに日本語文字列が含まれる以上日本語をコード内に仕込めないのは困ります。<br />
+回避策としては、ファイルから日本語を読み込めば使えるはずですが、非常に面倒でバカバカしい作業です。<br />
+さすがにShinyをすっ飛ばしてDjangoを使うことを検討した方がいいかもしれません。<br />
+しかしチュートリアルから始めないとまともに作業できないので、明日のレースはもちろん、来週末にも間に合わないでしょう。<br />
+株の振り返り記事や暗号通貨の投資戦略、その他の記事も書きたいのにこちらを優先している手前、これ以上タスクがかさむのは困ります。</p>
+
+<hr />
+
+<p>明日は府中に、来週末は新潟に行きます。府中は、馬の写真を撮る練習、新潟は推しを見に行くのが目的です。  <br />
+詰めていった結果、三連単でオッズを作るのが最も正しい戦い方だと気づいてはいるのですが、私の戦略では多点買わないといけないので一回の投資が6000円からとかになってしまいます。<br />
+全然分析できていないので複勝や馬単で少額遊びたいと思います。勝負の準備ができていないので仕方ないです。</p>
+
+<h2 id="114">11/4</h2>
+
+<ul>
+  <li>日本語文字列に関する問題を消極的に解決</li>
+  <li>ダッシュボードデザインの適用</li>
+  <li>テーブル表示</li>
+</ul>
+
+<p>記録をつけるのをサボっていましたが、競馬をやったり@tipnemでXEMのバラまきなどをしていたせいです。<br />
+ちなみに馬券は大いに負けています。推し馬の単勝へ大金を投じているので負けると全く回収できません。そして新馬戦以来2連敗で馬券内なしです。辛い。<br />
+推し以外も少しだけ買っているのですが、単勝10倍~20倍レンジの馬が2着止まりのケースが2回もありました。これも辛い。</p>
+
+<p>本題ですが、まず日本語の問題が解決しました。<br />
+Macに移動したら問題なくすべてのコードが動きました。根本は解決していないので消極的な解決策ですが、これで進められます。<br />
+Macだと日本語をコード内に仕込んでいても別に大丈夫でした。情報があまりないので調べてまとめるのもありかもしれません。</p>
+
+<p>ダッシュボードの見栄えを整えました。<br />
+ShinyDashboardライブラリは非常に素晴らしいと思いました。<br />
+インストールしてチュートリアルどおりのコードを貼り付けるだけで見栄えが非常に良くなります。<br />
+まともなフロント開発技術をもっていない私としてはとても助かります。</p>
+
+<p>テーブル表示をする部分を実装しました。問題なく動いたので、いよいよデータを整形する部分を作ります。<br />
+たくさんカラムがあるので取捨選択がまず一手間です。<br />
+そして、去年実装したコードの内容把握とリファクタリングがなかなか大変です。<br />
+まずは、取捨選択を終えてスコープを絞るところまでやりたいです。</p>
+
+    </div>
+
+
+
+</article>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Far More High Kulture. All rights reserved. <br />
+ Site last generated: Nov 14, 2017 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>

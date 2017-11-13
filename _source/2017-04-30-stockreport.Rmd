@@ -18,6 +18,8 @@ options(digits = 7)
 suppressMessages(library(data.table))
 suppressMessages(library(dplyr))
 suppressMessages(library(stringr))
+suppressMessages(library(purrr))
+suppressMessages(library(purrrlyr))
 suppressMessages(library(quantmod))
 
 #保有
@@ -53,7 +55,7 @@ Sold <- data.frame(
 Sold$`利益` <- (Sold$`取得単価` - Sold$`売却額`) * Sold$`数量` * -1 - Sold$`地方税` -Sold$`国税` -Sold$`手数料`
 
 #Soldの現金化
-Obtained_money <- Sold %>% purrr::by_row(function(x){
+Obtained_money <- Sold %>% by_row(function(x){
   return(x$`取得単価` * x$`数量` + x$`利益`)
 }) %>% dplyr::rename(total = .out)
 Sold_money<- sum(as.numeric(Obtained_money$total))

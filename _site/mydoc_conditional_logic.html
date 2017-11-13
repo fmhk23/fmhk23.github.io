@@ -740,25 +740,23 @@ $('#toc').on('click', 'a', function() {
 
 <p>Here’s an example of conditional logic based on a value in the page’s frontmatter. Suppose you have the following in your frontmatter:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>platform: mac
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>platform: mac
+</code></pre></div></div>
 
 <p>On a page in my site (it can be HTML or markdown), you can conditionalize content using the following:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">platform</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"mac"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">platform</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"mac"</span><span class="w"> </span><span class="p">%}</span>
 Here's some info about the Mac.
 <span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">platform</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"windows"</span><span class="w"> </span><span class="p">%}</span>
 Here's some info about Windows ...
 <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This uses simple <code class="highlighter-rouge">if-elsif</code> logic to determine what is shown (note the spelling of <code class="highlighter-rouge">elsif</code>). The <code class="highlighter-rouge">else</code> statement handles all other conditions not handled by the <code class="highlighter-rouge">if</code> statements.</p>
 
 <p>Here’s an example of <code class="highlighter-rouge">if-else</code> logic inside a list:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>To bake a casserole:
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To bake a casserole:
 
 1. Gather the ingredients.
 <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"writer"</span><span class="w"> </span><span class="p">%}</span>
@@ -767,8 +765,7 @@ Here's some info about Windows ...
 3. Add in an extra can of beans.
 <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
 3. Bake in oven for 45 min.
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You don’t need the <code class="highlighter-rouge">elsif</code> or <code class="highlighter-rouge">else</code>. You could just use an <code class="highlighter-rouge">if</code> (but be sure to close it with <code class="highlighter-rouge">endif</code>).</p>
 
@@ -778,19 +775,17 @@ Here's some info about Windows ...
 
 <p>For example, here’s an example using <code class="highlighter-rouge">or</code>:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"vegan"</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"vegetarian"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"vegan"</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"vegetarian"</span><span class="w"> </span><span class="p">%}</span>
     Then run this...
 <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that you have to specify the full condition each time. You can’t shorten the above logic to the following:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"vegan"</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="s2">"vegetarian"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">audience</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"vegan"</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="s2">"vegetarian"</span><span class="w"> </span><span class="p">%}</span>
     // run this.
 <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This won’t work.</p>
 
@@ -798,11 +793,10 @@ Here's some info about Windows ...
 
 <p>You can also use <code class="highlighter-rouge">unless</code> in your logic, like this:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">output</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"pdf"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">output</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"pdf"</span><span class="w"> </span><span class="p">%}</span>
 ...do this
 <span class="p">{%</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>When figuring out this logic, read it like this: “Run the code here <em>unless</em> this condition is satisfied.”.”</p>
 
@@ -812,15 +806,14 @@ Here's some info about Windows ...
 
 <p>Here’s an example of using conditional logic based on a value in a data file:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">options</span><span class="p">.</span><span class="nv">output</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">options</span><span class="p">.</span><span class="nv">output</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">%}</span>
 show this content...
 <span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">data</span><span class="p">.</span><span class="nv">options</span><span class="p">.</span><span class="nv">output</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"beta"</span><span class="w"> </span><span class="p">%}</span>
 show this content...
 <span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
 this shows if neither of the above two if conditions are met.
 <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>To use this, I would need to have a _data folder called options where the <code class="highlighter-rouge">output</code> property is stored.</p>
 
@@ -832,17 +825,15 @@ this shows if neither of the above two if conditions are met.
 
 <p>In your alpha configuration file, specify the data source like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>data_source: data_amydoc_content_reuselpha
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>data_source: data_amydoc_content_reuselpha
+</code></pre></div></div>
 
 <p>Then create a folder called _data_alpha.</p>
 
 <p>For your beta configuratoin file, specify the data source like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>data_source: data_beta
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>data_source: data_beta
+</code></pre></div></div>
 
 <p>Then create a folder called _data_beta.</p>
 
@@ -876,7 +867,7 @@ this shows if neither of the above two if conditions are met.
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

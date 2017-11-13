@@ -757,7 +757,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>For example, the sidebar.html file contains the following code:</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">external_url</span><span class="w"> </span><span class="p">%}</span>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">external_url</span><span class="w"> </span><span class="p">%}</span>
     &lt;li&gt;&lt;a href="<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">external_url</span><span class="p">}}</span>" target="_blank"&gt;<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;```
 
 
@@ -773,20 +773,18 @@ For example, the sidebar.html file contains the following code:
 ```liquid
 <span class="p">{%</span><span class="w"> </span><span class="kr">elsif</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
    &lt;li class="active"&gt;&lt;a href="<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"/"</span><span class="p">}}</span>"&gt;<span class="p">{{</span><span class="nv">folderitem</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>&lt;/a&gt;&lt;/li&gt;
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>If the <code class="highlighter-rouge">page.url</code> matches the <code class="highlighter-rouge">subfolderitem.url</code>, then an <code class="highlighter-rouge">active</code> class gets applied. If not, the <code class="highlighter-rouge">active</code> class does not get applied.</p>
 
-<p>The <code class="highlighter-rouge">page.url</code> in Jekyll is a site-wide variable. If you insert <code class="highlighter-rouge"><span class="p">{</span><span class="err">{page.url</span><span class="p">}</span><span class="err">}</span></code> on a page, it will render as follows: /mydoc_sidebar_navigation.html. The <code class="highlighter-rouge">url</code> attribute in the sidebar item must match the page URL in order to get the <code class="highlighter-rouge">active</code> class applied.</p>
+<p>The <code class="highlighter-rouge">page.url</code> in Jekyll is a site-wide variable. If you insert <code class="highlighter-rouge">{{page.url}}</code> on a page, it will render as follows: /mydoc_sidebar_navigation.html. The <code class="highlighter-rouge">url</code> attribute in the sidebar item must match the page URL in order to get the <code class="highlighter-rouge">active</code> class applied.</p>
 
 <p>This is why the <code class="highlighter-rouge">url</code> value in the sidebar data file looks something like this:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code>    <span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">Understanding how the sidebar works</span>
-      <span class="s">permalink</span><span class="pi">:</span> <span class="s">mydoc_understand_sidebar.html</span>
-      <span class="s">output</span><span class="pi">:</span> <span class="s">web, pdf</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Understanding how the sidebar works</span>
+      <span class="na">permalink</span><span class="pi">:</span> <span class="s">mydoc_understand_sidebar.html</span>
+      <span class="na">output</span><span class="pi">:</span> <span class="s">web, pdf</span>
+</code></pre></div></div>
 
 <p>Note that the url does not include the project folder where the file is stored. This is because the site uses permalinks, which pulls the topics out of subfolders and places them into the root directory when the site builds.</p>
 
@@ -816,7 +814,7 @@ For example, the sidebar.html file contains the following code:
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

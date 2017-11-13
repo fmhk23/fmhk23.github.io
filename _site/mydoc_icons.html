@@ -732,14 +732,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>Here’s an example of how to scale up a camera icon:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;</span> normal size (1x)
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro"</span><span class="nt">&gt;&lt;/i&gt;</span> normal size (1x)
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-lg
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-2x
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro fa-3x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-3x
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro fa-4x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-4x
 <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-camera-retro fa-5x"</span><span class="nt">&gt;&lt;/i&gt;</span> fa-5x
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Here’s what they render to:</p>
 
@@ -752,9 +751,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>With Font Awesome, you always use the <code class="highlighter-rouge">i</code> tag with the appropriate class. You also implement <code class="highlighter-rouge">fa</code> as a base class first. You can use font awesome icons inside other elements. Here I’m using a Font Awesome class inside a Bootstrap alert:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;b&gt;</span>Warning: <span class="nt">&lt;/b&gt;</span>This is a special warning message.
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-exclamation-circle"</span><span class="nt">&gt;&lt;/i&gt;</span> <span class="nt">&lt;b&gt;</span>Warning: <span class="nt">&lt;/b&gt;</span>This is a special warning message.
+</code></pre></div></div>
 
 <p>Here’s the result:</p>
 
@@ -762,41 +760,36 @@ $('#toc').on('click', 'a', function() {
 
 <p>The notes, tips, warnings, etc., are pre-coded with Font Awesome and stored in the alerts.yml file. That file includes the following:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">tip</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-success"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-check-square-o"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Tip:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
-<span class="s">note</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-info"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-info-circle"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Note:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
-<span class="s">important</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-warning"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-warning"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Important:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
-<span class="s">warning</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-danger"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-exclamation-circle"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Warning:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
-<span class="s">end</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;/div&gt;'</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">tip</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-success"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-check-square-o"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Tip:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
+<span class="na">note</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-info"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-info-circle"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Note:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
+<span class="na">important</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-warning"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-warning"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Important:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
+<span class="na">warning</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="alert</span><span class="nv"> </span><span class="s">alert-danger"</span><span class="nv"> </span><span class="s">role="alert"&gt;&lt;i</span><span class="nv"> </span><span class="s">class="fa</span><span class="nv"> </span><span class="s">fa-exclamation-circle"&gt;&lt;/i&gt;</span><span class="nv"> </span><span class="s">&lt;b&gt;Warning:</span><span class="nv"> </span><span class="s">&lt;/b&gt;'</span>
+<span class="na">end</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;/div&gt;'</span>
 
-<span class="s">callout_danger</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-danger"&gt;'</span>
-<span class="s">callout_default</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-default"&gt;'</span>
-<span class="s">callout_primary</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-primary"&gt;'</span>
-<span class="s">callout_success</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-success"&gt;'</span>
-<span class="s">callout_info</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-info"&gt;'</span>
-<span class="s">callout_warning</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-warning"&gt;'</span>
+<span class="na">callout_danger</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-danger"&gt;'</span>
+<span class="na">callout_default</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-default"&gt;'</span>
+<span class="na">callout_primary</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-primary"&gt;'</span>
+<span class="na">callout_success</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-success"&gt;'</span>
+<span class="na">callout_info</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-info"&gt;'</span>
+<span class="na">callout_warning</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;div</span><span class="nv"> </span><span class="s">class="bs-callout</span><span class="nv"> </span><span class="s">bs-callout-warning"&gt;'</span>
 
-<span class="s">hr_faded</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;hr</span><span class="nv"> </span><span class="s">class="faded"/&gt;'</span>
-<span class="s">hr_shaded</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;hr</span><span class="nv"> </span><span class="s">class="shaded"/&gt;'</span>
-</code></pre>
-</div>
+<span class="na">hr_faded</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;hr</span><span class="nv"> </span><span class="s">class="faded"/&gt;'</span>
+<span class="na">hr_shaded</span><span class="pi">:</span> <span class="s1">'</span><span class="s">&lt;hr</span><span class="nv"> </span><span class="s">class="shaded"/&gt;'</span>
+</code></pre></div></div>
 
 <p>This means you can insert a tip, note, warning, or important alert simply by using these tags.</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">note</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your note here."</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">note</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your note here."</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">tip</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your tip here."</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">tip</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your tip here."</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">important</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your important info here."</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">important</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your important info here."</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">warning</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your warning here."</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">warning</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="na">content</span><span class="o">=</span><span class="s2">"Add your warning here."</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
 
 <p>Here’s the result:</p>
 
@@ -814,9 +807,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>You can innovate with your own combinations. Here’s a similar approach with a file download icon:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-download fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> This is a special tip about some file to download....<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-download fa-lg"</span><span class="nt">&gt;&lt;/i&gt;</span> This is a special tip about some file to download....<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
 
 <p>And the result:</p>
 
@@ -826,9 +818,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you want to make your fonts even larger than the 5x style, add a custom style to your stylesheet like this:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.fa-10x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span><span class="m">1700%</span><span class="p">;}</span>
-</code></pre>
-</div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.fa-10x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span><span class="m">1700%</span><span class="p">;}</span>
+</code></pre></div></div>
 
 <p>Then any element with the attribute <code class="highlighter-rouge">fa-10x</code> will be enlarged 1700%.</p>
 
@@ -838,18 +829,16 @@ $('#toc').on('click', 'a', function() {
 
 <p>Although the Glyphicon Halflings library doesn’t provide the scalable classes like Font Awesome, there’s a <a href="http://stackoverflow.com/questions/24960201/how-do-i-make-glyphicons-bigger-change-size">StackOverflow trick</a>  to make the icons behave in a similar way. This theme’s stylesheet (customstyles.css) includes the following to the stylesheet:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.gi-2x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.gi-2x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;}</span>
 <span class="nc">.gi-3x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">3em</span><span class="p">;}</span>
 <span class="nc">.gi-4x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">4em</span><span class="p">;}</span>
 <span class="nc">.gi-5x</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span> <span class="m">5em</span><span class="p">;}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Now you just add <code class="highlighter-rouge">gi-5x</code> or whatever to change the size of the font icon:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-globe gi-5x"</span><span class="nt">&gt;&lt;/span&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-globe gi-5x"</span><span class="nt">&gt;&lt;/span&gt;</span>
+</code></pre></div></div>
 
 <p>And here’s the result:</p>
 
@@ -859,28 +848,25 @@ $('#toc').on('click', 'a', function() {
 
 <p>Here’s another example:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download"</span><span class="nt">&gt;&lt;/span&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download"</span><span class="nt">&gt;&lt;/span&gt;</span>
+</code></pre></div></div>
 
 <p><span class="glyphicon glyphicon-download"></span></p>
 
 <p>And magnified:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download gi-3x"</span><span class="nt">&gt;&lt;/span&gt;</span>
-</code></pre>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-download gi-3x"</span><span class="nt">&gt;&lt;/span&gt;</span>
+</code></pre></div></div>
 
 <p><span class="glyphicon glyphicon-download gi-3x"></span></p>
 
 <p>You can also put glyphicons inside other elements:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-exclamation-sign"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;b&gt;</span>Error:<span class="nt">&lt;/b&gt;</span> Enter a valid email address
 <span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <div class="alert alert-danger" role="alert">
   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -891,19 +877,17 @@ $('#toc').on('click', 'a', function() {
 
 <p>The previously shown alerts might be fine for short messages, but with longer notes, the solid color takes up a bit of space. In this theme, you also have the option of using callouts, which are pretty common in Bootstrap’s documentation but surprisingly not offered as an explicit element. Their styles have been copied into this theme, in a way similar to the alerts:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bs-callout bs-callout-info"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bs-callout bs-callout-info"</span><span class="nt">&gt;</span>
  This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. <span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-question-sign"></span> This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. This is a special info message. </div>
 
 <p>And here’s the shortcode:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">{site.data.alerts.callout_info</span><span class="p">}</span><span class="err">This</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">special</span><span class="w"> </span><span class="err">callout</span><span class="w"> </span><span class="err">information</span><span class="w"> </span><span class="err">message.</span><span class="w">
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{site.data.alerts.callout_info}This is a special callout information message.
 
-</span></code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Here’s the result:</p>
 
@@ -1483,7 +1467,7 @@ Callouts are explained in a bit more detail in [Alerts][mydoc_alerts].
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 16, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 16, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

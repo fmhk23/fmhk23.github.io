@@ -734,17 +734,16 @@ $('#toc').on('click', 'a', function() {
 
 <p>Make sure each page has frontmatter at the top like this:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
-<span class="s">title</span><span class="pi">:</span> <span class="s">Alerts</span>
-<span class="s">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">formatting</span><span class="pi">]</span>
-<span class="s">keywords</span><span class="pi">:</span> <span class="s">notes, tips, cautions, warnings, admonitions</span>
-<span class="s">last_updated</span><span class="pi">:</span> <span class="s">July 3, 2016</span>
-<span class="s">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">insert</span><span class="nv"> </span><span class="s">notes,</span><span class="nv"> </span><span class="s">tips,</span><span class="nv"> </span><span class="s">warnings,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">important</span><span class="nv"> </span><span class="s">alerts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">content."</span>
-<span class="s">sidebar</span><span class="pi">:</span> <span class="s">mydoc_sidebar</span>
-<span class="s">permalink</span><span class="pi">:</span> <span class="s">mydoc_alerts.html</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Alerts</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">formatting</span><span class="pi">]</span>
+<span class="na">keywords</span><span class="pi">:</span> <span class="s">notes, tips, cautions, warnings, admonitions</span>
+<span class="na">last_updated</span><span class="pi">:</span> <span class="s">July 3, 2016</span>
+<span class="na">summary</span><span class="pi">:</span> <span class="s2">"</span><span class="s">You</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">insert</span><span class="nv"> </span><span class="s">notes,</span><span class="nv"> </span><span class="s">tips,</span><span class="nv"> </span><span class="s">warnings,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">important</span><span class="nv"> </span><span class="s">alerts</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">content."</span>
+<span class="na">sidebar</span><span class="pi">:</span> <span class="s">mydoc_sidebar</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">mydoc_alerts.html</span>
 <span class="nn">---</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Frontmatter is always formatted with three hyphens at the top and bottom. Your frontmatter must have a <code class="highlighter-rouge">title</code> and <code class="highlighter-rouge">permalink</code> value. All the other values are optional.</p>
 
@@ -812,14 +811,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>By default, everything in your project is included in the output. You can exclude all files that don’t belong to that project by specifying the file name, the folder name, or by using wildcards in your configuration file:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">exclude</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">exclude</span><span class="pi">:</span>
 
 <span class="pi">-</span> <span class="s">filename.md</span>
 <span class="pi">-</span> <span class="s">subfolder_name/</span>
 <span class="pi">-</span> <span class="s">mydoc_*</span>
 <span class="pi">-</span> <span class="s">gitignore</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Wildcards will exclude every match after the <code class="highlighter-rouge">*</code>.</p>
 
@@ -833,9 +831,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you use Markdown, you can also include HTML formatting where needed. But if you’re format is HTML, you must add a <code class="highlighter-rouge">markdown="1"</code> attribute to the element in order to use Markdown inside that HTML element:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div markdown="1"&gt;This is a [link](http://exmaple.com).&lt;/div&gt;
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div markdown="1"&gt;This is a [link](http://exmaple.com).&lt;/div&gt;
+</code></pre></div></div>
 
 <p>For your Markdown files, note that a space or two indent will set text off as code or blocks, so avoid spacing indents unless intentional.</p>
 
@@ -853,15 +850,14 @@ $('#toc').on('click', 'a', function() {
 
 <p>You can use standard Multimarkdown syntax for tables. You can also use fenced code blocks with lexers specifying the type of code. The configuration file shows the Markdown processor and extensiosn:</p>
 
-<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
-<span class="s">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
-<span class="s">kramdown</span><span class="pi">:</span>
- <span class="s">input</span><span class="pi">:</span> <span class="s">GFM</span>
- <span class="s">auto_ids</span><span class="pi">:</span> <span class="s">true</span>
- <span class="s">hard_wrap</span><span class="pi">:</span> <span class="s">false</span>
- <span class="s">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
-</code></pre>
-</div>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">kramdown</span><span class="pi">:</span>
+ <span class="na">input</span><span class="pi">:</span> <span class="s">GFM</span>
+ <span class="na">auto_ids</span><span class="pi">:</span> <span class="no">true</span>
+ <span class="na">hard_wrap</span><span class="pi">:</span> <span class="no">false</span>
+ <span class="na">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+</code></pre></div></div>
 
 <h2 id="automatic-mini-tocs">Automatic mini-TOCs</h2>
 
@@ -873,9 +869,8 @@ $('#toc').on('click', 'a', function() {
 
 <p>Use pound signs before the heading title to designate the level. Note that kramdown requires headings to have one space before and after the heading. Without this space above and below, the heading won’t render into HTML.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>## Second-level heading
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Second-level heading
+</code></pre></div></div>
 
 <p><strong>Result:</strong></p>
 
@@ -883,18 +878,16 @@ $('#toc').on('click', 'a', function() {
 
 <hr />
 
-<div class="highlighter-rouge"><pre class="highlight"><code>### Third-level heading
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>### Third-level heading
+</code></pre></div></div>
 <p><strong>Result:</strong></p>
 
 <h3 id="third-level-heading">Third-level heading</h3>
 
 <hr />
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#### Fourth-level heading
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#### Fourth-level heading
+</code></pre></div></div>
 
 <p><strong>Result:</strong></p>
 
@@ -904,15 +897,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>If you want to use a specific ID tag with your heading, add it like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>## Headings with ID Tags {#someIdTag}
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Headings with ID Tags {#someIdTag}
+</code></pre></div></div>
 
 <p>Then you can reference it with a link like this on the same page:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[Some link](#someIdTag)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Some link](#someIdTag)
+</code></pre></div></div>
 
 <p><strong>Result:</strong></p>
 
@@ -962,7 +953,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 16, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 16, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

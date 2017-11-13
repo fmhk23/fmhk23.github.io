@@ -729,7 +729,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>First create an include that contains your series button:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"seriesContext"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"seriesContext"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">class=</span><span class="s">"btn btn-primary dropdown-toggle"</span><span class="nt">&gt;</span>Series Demo <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;&lt;/button&gt;</span>
         <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
@@ -748,8 +748,7 @@ $('#toc').on('click', 'a', function() {
         <span class="nt">&lt;/ol&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Change “ACME series” to the name of your series.</p>
 
@@ -761,7 +760,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>Now create another include for the Next button at the bottom of the page. Copy the following code, changing the series name to your series’name:</p>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>{% assign series_pages = site.tags.series_acme %}
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>{% assign series_pages = site.tags.series_acme %}
     {% for p in pages %}
     {% if p.series == "ACME series" %}
     {% assign nextTopic = page.weight | plus: "1"  %}
@@ -771,8 +770,7 @@ $('#toc').on('click', 'a', function() {
     {% endif %}
     {% endfor %}
 <span class="nt">&lt;/p&gt;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Change “acme” to the name of your series.</p>
 
@@ -782,28 +780,26 @@ $('#toc').on('click', 'a', function() {
 
 <p>Now add the following frontmatter to each page in the series:</p>
 
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="err">series:</span><span class="w"> </span><span class="s2">"ACME series"</span><span class="w">
-</span><span class="err">weight:</span><span class="w"> </span><span class="mf">1.0</span><span class="w">
-</span></code></pre>
-</div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">series</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACME series"</span><span class="w">
+</span><span class="err">weight</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="w">
+</span></code></pre></div></div>
 
 <p>With weights, Jekyll will treat 10 as coming after 1. If you have more than 10 items, consider changing <code class="highlighter-rouge">plus: "1.0"</code> to <code class="highlighter-rouge">plus: "0.1"</code>.</p>
 
-<p>Additionally, if your page names are prefaced with numbers, such as “1. Download the code,” then the <code class="highlighter-rouge"><span class="p">{</span><span class="err">{p.weight</span><span class="p">}</span><span class="err">}</span></code> will create a duplicate number. In that case, just remove the <code class="highlighter-rouge"><span class="p">{</span><span class="err">{p.weight</span><span class="p">}</span><span class="err">}</span></code> from both code samples here.</p>
+<p>Additionally, if your page names are prefaced with numbers, such as “1. Download the code,” then the <code class="highlighter-rouge">{{p.weight}}</code> will create a duplicate number. In that case, just remove the <code class="highlighter-rouge">{{p.weight}}</code> from both code samples here.</p>
 
 <h2 id="4-add-links-to-the-series-button-and-next-button-on-each-page">4. Add links to the series button and next button on each page.</h2>
 
 <p>On each series page, add a link to the series button at the top and a link to the next button at the bottom.</p>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>&lt;!-- your frontmatter goes here --&gt;
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- your frontmatter goes here --&gt;
 
 <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">custom/series_acme</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
 
 &lt;!-- your page content goes here ... --&gt;
 
 <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="na">custom/series_acme_next</span><span class="p">.</span><span class="na">html</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="changing-the-series-drop-down-color">Changing the series drop-down color</h2>
 
@@ -837,7 +833,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Sep 11, 2017 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

@@ -241,6 +241,13 @@
             
             
             
+            
+            
+            <li><a href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></li>
+            
+            
+            
+            
         </ul>
         
         
@@ -313,6 +320,20 @@
             
             
             
+            
+            
+            <li><a href="StockReport2017Aug.html">2017年8月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Sep.html">2017年9月</a></li>
+            
+            
+            
+            
         </ul>
         
         
@@ -324,6 +345,21 @@
             
             
             <li><a href="170328BroadLeaf.html">ブロードリーフ(2017年3月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">競馬</a>
+        <ul>
+            
+            
+            
+            <li><a href="horse_app_develop.html">競馬解析アプリ開発日誌</a></li>
             
             
             
@@ -370,11 +406,10 @@
 
 <h3 id="一般的な方法">一般的な方法</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>yum install R
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install R
 make
 make install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>なのだが、yumでRが見つからないと言われてしまった。またやや古いバージョンをインストールする必要があるため、ソースコードからビルドすることにした。</p>
 
@@ -383,9 +418,8 @@ make install
 <p>CRANからtar.gzをwgetする。<br />
 https://cran.ism.ac.jp/src/base/</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://cran.ism.ac.jp/src/base/R-3.x.x.tar.gz
+</code></pre></div></div>
 <p>x.xを適宜かえること。</p>
 
 <h3 id="ビルドインストール">ビルド/インストール</h3>
@@ -394,42 +428,37 @@ https://cran.ism.ac.jp/src/base/</p>
   <li>tar.gzの解凍</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>tar.zxvf R-3.x.x.tar.gz
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tar.zxvf R-3.x.x.tar.gz
+</code></pre></div></div>
 
 <ul>
   <li>インストール</li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./configure
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
 make
 make install
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>上記コマンドだけなのだが、いくつか頻出のエラーがある模様。</p>
 
 <h4 id="with-xyes問題">–with x=yes問題</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>configure: error: --with-x=yes (default) and X11 headers/libs are not available 
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>configure: error: --with-x=yes (default) and X11 headers/libs are not available 
+</code></pre></div></div>
 <p>様々な質問サイトやブログなどを見ても、このエラーは結構多い感じ。
 with-xとは、X Windows Syetemのこと。これがないとMarkdownでのPDFやhtmlの生成などに差し障るらしい。<br />
 yesではなく、noのオプションを付ければこのエラーを解消できる。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./configure --with-x=no
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure --with-x=no
+</code></pre></div></div>
 
 <p>私はMarkdown使わないし解決策と言われていることをしてもうまく行かなかったのでnoでインストールすることにした。一応、自分の動かしたかったコードを問題なく実行できている。</p>
 
 <p>–with-readlineのエラーが出た場合は、下記のコマンドでインストールを推奨。</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>yum install readline-devel
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install readline-devel
+</code></pre></div></div>
 
 <h4 id="いろいろ足りないと言われる問題">いろいろ足りないと言われる問題</h4>
 <p>都度エラーメッセージを見ながらインストールするしかない。環境によって何が足りないかは変わるだろうが、一例で自分の遭遇したリストを記載。開発用パッケージ-develをインストールしないとエラーが解消されないようだったので、開発用も入れた。（むしろ開発用だけでもいいのかな？）</p>
@@ -483,7 +512,7 @@ yesではなく、noのオプションを付ければこのエラーを解消で
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: Sep 11, 2017 <br />
+ Site last generated: Nov 14, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
