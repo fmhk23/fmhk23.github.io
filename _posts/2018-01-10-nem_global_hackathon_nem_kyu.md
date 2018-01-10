@@ -1,6 +1,6 @@
 ---
 title: "NEM Global Hackathon NEM-KYU"
-date: "2017/01/10"
+date: "2018/01/10"
 output: rmarkdown::html_vignette
 sidebar: base_sidebar
 permalink: nem_global_hackathon_nem_kyu.html
@@ -11,7 +11,8 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-<a href ="https://hackathon.nem.io/", target = "blank">NEM Global Hackathon</a>にNEM-KYUというアプリケーションのアイデアで参加してみたところ、1次,2次予選を通過したのでそれについてまとめます。
+[NEM Global Hackathon](https://hackathon.nem.io/)
+にNEM-KYUというアプリケーションのアイデアで参加してみたところ、1次,2次予選を通過したのでそれについてまとめます。
 自分のタスク整理の意味合いも大きいです。  
 
 ## NEM-KYU 提出原稿

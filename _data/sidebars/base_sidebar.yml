@@ -38,6 +38,14 @@ entries:
       url: /170222Seminar.html
       output: web, pdf
 
+  - title: NEMを使った開発
+    output: web, pdf
+    folderitems:
+
+      - title: NEM Global HAckathon NEM-KYU
+        url: /nem_global_hackathon_nem_kyu.html
+        output: web, pdf
+
   - title: 暗号通貨に関する情報
     output: web, pdf
     folderitems:
