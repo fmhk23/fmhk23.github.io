@@ -35,7 +35,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.comfeed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -231,6 +231,28 @@
         
     
     <li>
+        <a href="#">NEMを使った開発</a>
+        <ul>
+            
+            
+            
+            <li><a href="nem_global_hackathon_nem_kyu.html">NEM Global HAckathon NEM-KYU</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="nem_global_hackathon_management.html">NEM Global HAckathon 開発日誌</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
         <a href="#">暗号通貨に関する情報</a>
         <ul>
             
@@ -409,6 +431,26 @@
         
 
 
+    <h2><a class="post-link" href="nem_global_hackathon_management.html">NEM Global Hackathon　開発日誌</a></h2>
+        <span class="post-meta">Jan 11, 2018 /
+            </span>
+        <p> 1/10  紹介記事の作成 AWS setup pyenv/python3.6.4インストール  まず紹介記事を書いてアイデア等をツイッターでいろいろな人に見てもらえたのは良かったです。 実装面ではほぼゼロです。 1/11  pyenv virtualenvで環境切り分け  flask_trainigとnem-kyuの2つを作りました。 おそらく何らかの設定ミスでdeactivateで抜け出せません。 別の環境に抜け出すことはできるのですが、本筋ではないしハマリポイントになりそうなので一旦置いておきます。 AWSに開発環境があると、外出時も開発できて便利です。  Flask練習 まずはサンプルコードを動かして動くのを確認。  Bootstarpなどの設定をしていたらタイミング悪くgithubが落ちていて作業が止まってしまいました。 足踏みをしましたが、FlaskとBootstrapについてだいたい理解できたので良いこととします。 頭での理解と、実際の作業にはギャップがありますから、サンプルを動かせたのは大きいです。とりあえず、コンフォートゾーンから一歩足を踏み出した感があります。せっかくの短期開発、やったことのないものに触れてみるのは大事です。 現時点での優先度とかタスクを整理します。 絶対に必要 testnet内で  companyのアドレス、ネームスペース、モザイクの発行 employeeのアドレス（サンプルとして3人）  機能  employeeからcompanyへのモザイク送信機能  Nanowalletからモザイク送信でも理屈上できるが流石にイケていないので、アプリからトランザクション発行できるようにしたいが、秘密鍵の管理が厄介です。 company側に渡すわけには行かないので、companyの管理下へのログイン認証などは無意味です。... </p>
+
+
+
+        
+
+
+    <h2><a class="post-link" href="nem_global_hackathon_nem_kyu.html">NEM Global Hackathon NEM-KYU</a></h2>
+        <span class="post-meta">Jan 10, 2018 /
+            </span>
+        <p> NEM Global Hackathon にNEM-KYUというアプリケーションのアイデアで参加してみたところ、1次,2次予選を通過したのでそれについてまとめます。 自分のタスク整理の意味合いも大きいです。 NEM-KYU 提出原稿 NEM-KYU is simple application for Attendance Management and Emergency Contact. Basic idea/Problems this app solves In Japan, most workers can’t take all of their paid holidays. Though there are many possible reasons, it is because :  no punishment... </p>
+
+
+
+        
+
+
     <h2><a class="post-link" href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></h2>
         <span class="post-meta">Nov 12, 2017 /
             </span>
@@ -531,28 +573,6 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 
         
 
-
-    <h2><a class="post-link" href="StockReport2017May.html">2017年5月度株式投資成績</a></h2>
-        <span class="post-meta">May 31, 2017 /
-            </span>
-        <p> 概況    投資金額 保有総額 含み益 利益確定 配当/優待 現金 総資産 前月比     414571.5 461400 46828.5 5140.5 0 <td style="text-align:... </p>
-
-
-
-        
-
-
-    <h2><a class="post-link" href="NEM_MultiSig.html">NanoWalletと二段階認証、MultiSigについて</a></h2>
-        <span class="post-meta">May 25, 2017 /
-            
-                <a href="tag_NEM.html">NEM</a>
-                </span>
-        <p> このページの情報は古いものです。最新情報はForum等を確認してください。 NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみました。 結論から言うと、いわゆる普通の二段階認証はありません。マルチシグを使えば似たようなことができます。 Why no 2FA option on the nano wallet? このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてあります。 これを読めばもう長々と語ることはないのですが、できるだけ周辺知識も含めて日本語でまとめます。 MultiSigって何？ MultiSigについては、日本語だとこのサイトがわかりやすいと思います。 Multisig(マルチシグ)って何？ 特徴としては  秘密鍵がひとつではなく複数に分割される。 複数の鍵の署名が揃うとトランザクションが発行される。つまり、送金できる。 2-of-3に分割した場合、3つのうち2つの鍵の署名があればいい。（この数字の関係は調整可能）  この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできません。 もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しいです。 NEMチュートリアルのMultiSigのページを読む NanoWallet Guide 5.1にMultiSigについて記載があります。そんなに長い文章ではないので、そのまま転載すると  The more advanced and most secure way of securing your funds is... </p>
-
-
-
-        
-
         <p><a href="feed.xml"" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe</a></p>
 
 <hr />
@@ -575,8 +595,8 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2017 Far More High Kulture. All rights reserved. <br />
- Site last generated: Nov 14, 2017 <br />
+               &copy;2018 Far More High Kulture. All rights reserved. <br />
+ Site last generated: Jan 12, 2018 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

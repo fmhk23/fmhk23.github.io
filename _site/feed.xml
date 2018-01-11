@@ -3,11 +3,260 @@
     <channel>
         <title></title>
         <description></description>
-        <link>http://idratherbewriting.com/</link>
-        <atom:link href="http://idratherbewriting.com/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 14 Nov 2017 00:22:34 +0900</pubDate>
-        <lastBuildDate>Tue, 14 Nov 2017 00:22:34 +0900</lastBuildDate>
+        <link>http://localhost:4005/</link>
+        <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 12 Jan 2018 02:58:56 +0900</pubDate>
+        <lastBuildDate>Fri, 12 Jan 2018 02:58:56 +0900</lastBuildDate>
         <generator>Jekyll v3.6.2</generator>
+        
+        <item>
+            <title>NEM Global Hackathon　開発日誌</title>
+            <description>&lt;h2 id=&quot;110&quot;&gt;1/10&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;紹介記事の作成&lt;/li&gt;
+  &lt;li&gt;AWS setup pyenv/python3.6.4インストール&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まず紹介記事を書いてアイデア等をツイッターでいろいろな人に見てもらえたのは良かったです。&lt;br /&gt;
+実装面ではほぼゼロです。&lt;/p&gt;
+
+&lt;h2 id=&quot;111&quot;&gt;1/11&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pyenv virtualenvで環境切り分け&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;flask_trainigとnem-kyuの2つを作りました。&lt;br /&gt;
+おそらく何らかの設定ミスでdeactivateで抜け出せません。&lt;br /&gt;
+別の環境に抜け出すことはできるのですが、本筋ではないしハマリポイントになりそうなので一旦置いておきます。&lt;/p&gt;
+
+&lt;p&gt;AWSに開発環境があると、外出時も開発できて便利です。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Flask練習
+まずはサンプルコードを動かして動くのを確認。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bootstarpなどの設定をしていたらタイミング悪くgithubが落ちていて作業が止まってしまいました。&lt;br /&gt;
+足踏みをしましたが、FlaskとBootstrapについてだいたい理解できたので良いこととします。&lt;br /&gt;
+頭での理解と、実際の作業にはギャップがありますから、サンプルを動かせたのは大きいです。とりあえず、コンフォートゾーンから一歩足を踏み出した感があります。せっかくの短期開発、やったことのないものに触れてみるのは大事です。&lt;/p&gt;
+
+&lt;p&gt;現時点での優先度とかタスクを整理します。&lt;/p&gt;
+
+&lt;h3 id=&quot;絶対に必要&quot;&gt;絶対に必要&lt;/h3&gt;
+
+&lt;h4 id=&quot;testnet内で&quot;&gt;testnet内で&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;companyのアドレス、ネームスペース、モザイクの発行&lt;/li&gt;
+  &lt;li&gt;employeeのアドレス（サンプルとして3人）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;機能&quot;&gt;機能&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;employeeからcompanyへのモザイク送信機能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nanowalletからモザイク送信でも理屈上できるが流石にイケていないので、アプリからトランザクション発行できるようにしたいが、秘密鍵の管理が厄介です。&lt;br /&gt;
+company側に渡すわけには行かないので、companyの管理下へのログイン認証などは無意味です。&lt;br /&gt;
+秘密鍵を利用者の端末に置いてそれを見に行くとかも危険すぎます。&lt;br /&gt;
+今の時点で考えた対応は2つ&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;まずは秘密鍵をべた書きで作り、機能を完成させて妙案を待つ&lt;/li&gt;
+  &lt;li&gt;送信はNanowallet,MobileWalletから限定にする&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;モザイク受取後にカレンダーをアップデートする機能&lt;/li&gt;
+  &lt;li&gt;カレンダーを表示する機能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;要旨には有給申請された時同僚にメールを送るって書いたけど、カレンダーで全社員の予定を一括で表示するほうが見栄えがする気がします。&lt;br /&gt;
+カレンダーはgoogleカレンダーAPIとかで実装？要検討。&lt;/p&gt;
+
+&lt;p&gt;これで最低限の基本機能、有給申請とそれに伴うcompany側のプログラムの実行（カレンダー更新）ができるようになります。&lt;/p&gt;
+
+&lt;h4 id=&quot;非機能&quot;&gt;非機能&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;見た目を何とかする&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;テンプレートを探すより自前で書くほうが早いかも？&lt;br /&gt;
+しかし困ったことにHTML/CSSの知識はない。&lt;br /&gt;
+絶対に必要ではあるが、機能の後でいい。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;データベース準備&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;会社側では送信元アドレスと社員番号や氏名との照らし合わせが必要なはず。&lt;br /&gt;
+他にも必要な場面はありそう。ここは慣れ親しんだpostgreSQLかもしくは簡単にSQLiteとかでもいいかな。まだ未定。&lt;/p&gt;
+
+&lt;p&gt;とりあえずここまでをファーストで作って、テストしつつ機能追加という作戦でいきます。追加しうる機能については明日整理します。&lt;br /&gt;
+ファーストだけだとNEMの強みや特徴を全く出せていないので、最低限のものだけでの提出は避けたいですが、どうなることやら。&lt;/p&gt;
+</description>
+            <pubDate>Thu, 11 Jan 2018 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/nem_global_hackathon_management.html</link>
+            <guid isPermaLink="true">http://localhost:4005/nem_global_hackathon_management.html</guid>
+            
+            
+        </item>
+        
+        <item>
+            <title>NEM Global Hackathon NEM-KYU</title>
+            <description>&lt;p&gt;&lt;a href=&quot;https://hackathon.nem.io/&quot;&gt;NEM Global Hackathon&lt;/a&gt;
+にNEM-KYUというアプリケーションのアイデアで参加してみたところ、1次,2次予選を通過したのでそれについてまとめます。
+自分のタスク整理の意味合いも大きいです。&lt;/p&gt;
+
+&lt;h2 id=&quot;nem-kyu-提出原稿&quot;&gt;NEM-KYU 提出原稿&lt;/h2&gt;
+
+&lt;p&gt;NEM-KYU is simple application for Attendance Management and Emergency Contact.&lt;/p&gt;
+
+&lt;h3 id=&quot;basic-ideaproblems-this-app-solves&quot;&gt;Basic idea/Problems this app solves&lt;/h3&gt;
+&lt;p&gt;In Japan, most workers can’t take all of their paid holidays.&lt;br /&gt;
+Though there are many possible reasons, it is because :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;no punishment to company even if their workers can’t take enough paid holidays&lt;/li&gt;
+  &lt;li&gt;no friendly system for telling that workers want a holiday. In many cases they must make a phone call/e-mail or talk with their boss directly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In NEM-KYU, workers get “Company_NAME:paid-holiday” mosaic at the beginning of the year.&lt;br /&gt;
+When one wants a holiday, he just needs to send a mosaic to company address. (Company has its own address and name-space.)&lt;br /&gt;
+By triggering mosaic-receive, it can run any program like sending messages to his colleagues.&lt;/p&gt;
+
+&lt;p&gt;Additionally, since NEM-KYU is on public-chain, any people can check mosaic transfer to company address, which means people can know if it is worker friendly company or not.&lt;/p&gt;
+
+&lt;p&gt;Moreover, it enables such futuristic systems very easily:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;trade paid-holidays and XEM with his colleagues&lt;/li&gt;
+  &lt;li&gt;get XEM refunds for expired holidays from company&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;NEM-KYU is useful in Emergency contact, too.&lt;br /&gt;
+At the time of disaster, company wants to know if their colleagues are safe or not as soon as possible.&lt;br /&gt;
+In such cases, workers can tell by sending “Company_NAME:Safe” mosaic to company address.&lt;/p&gt;
+
+&lt;p&gt;Since it is completely same system with Attendance management, workers don’t need another training for using specific system.&lt;br /&gt;
+If necessary, he can add messages.&lt;br /&gt;
+If their family/friends knows his address, they can know if he is safe by checking the transactions from the address.&lt;br /&gt;
+No need to contact directly, which causes traffic jam in network.&lt;/p&gt;
+
+&lt;p&gt;In this hackathon, I develop basic functions for attendance management.&lt;/p&gt;
+
+&lt;h2 id=&quot;和訳意訳補足&quot;&gt;和訳(意訳＋補足)&lt;/h2&gt;
+&lt;p&gt;NEM-KYU(年休→NEN-KYU→NEM-KYU)は勤怠管理と非常時の連絡用のシンプルなアプリケーションです。&lt;/p&gt;
+
+&lt;h3 id=&quot;基本的なアイデア解決できる課題&quot;&gt;基本的なアイデア/解決できる課題&lt;/h3&gt;
+&lt;p&gt;日本では、多くの人が有給の全てを使いきれません。&lt;br /&gt;
+この問題には様々な背景があるでしょうが、次の2点は問題でしょう。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;労働者が有給を使い切らずとも会社に実質的に懲罰がない&lt;/li&gt;
+  &lt;li&gt;有給申請がおっくう。多くの場合、電話やメール、もしくは直接上司に話さなければならない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;NEM-KYUでは、Company_NAME：paid-holidayというモザイクを年のはじめに配布します。&lt;br /&gt;
+有給を申請する時は、会社のアドレスにモザイクを送るだけです。（会社は独自のアドレス、ネームスペースを持ちます。）&lt;br /&gt;
+会社側では、モザイクの着金をトリガーに同僚に通知をするプログラムを走らせるようなことが可能です。&lt;/p&gt;
+
+&lt;p&gt;NEM-KYUはパブリックチェーン上で動くため、誰でもモザイクの移動を確認できます。&lt;br /&gt;
+つまり、その会社の有給消化率が可視化されます。これは求職者などにとって非常に有用でしょう。&lt;/p&gt;
+
+&lt;p&gt;さらには、次のような未来的な機能も簡単に実装できます。&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;有給を同僚のXEMとトレードする。&lt;/li&gt;
+  &lt;li&gt;有給の期限が切れた時、会社からXEM建てで払い戻しを受ける。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;NEM-KYUは勤怠管理だけでなく、大地震などの際の緊急連絡にも使えます。&lt;br /&gt;
+災害時には、会社はメンバーの安否確認を一刻も早くしなければなりません。&lt;br /&gt;
+そのようなケースでも、”Company_NAME:Safe”モザイクを会社のアドレスに送ることで無事を知らせることができます。&lt;br /&gt;
+勤怠管理と全く同じ仕組みなので、特定のシステムを使うための新たなトレーニングをする必要はありません。&lt;br /&gt;
+もちろん、必要ならばメッセージを追加することが可能です。&lt;br /&gt;
+もしも、家族や友人がアドレスを知っていれば、そのアドレスのトランザクションをチェックすることで無事を知ることができます。&lt;br /&gt;
+直接メールや電話でやり取りする必要が無いので、ネットワークの混雑を引き起こしにくいです。&lt;/p&gt;
+
+&lt;p&gt;このハッカソンでは、勤怠管理のための基本的な機能を実装しようと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;nem-global-hackathonの公式説明&quot;&gt;NEM Global Hackathonの公式説明&lt;/h2&gt;
+&lt;p&gt;NEM-KYU will allow employees in Japan to track their paid leave days and also request for paid leave days by sending a mosaic to the company address.&lt;/p&gt;
+
+&lt;p&gt;It will also enable futuristic systems that allow people to trade paid-holidays and XEMs with colleages or get XEM refunds for expired holidays from the company.&lt;/p&gt;
+
+&lt;p&gt;NEM-KYU will also allow for workers to keep their employers updated on their safety in times of an emergency.&lt;/p&gt;
+
+&lt;h2 id=&quot;目標&quot;&gt;目標&lt;/h2&gt;
+&lt;p&gt;最低限、きちんと要件を満たして提出すること。&lt;br /&gt;
+これを出来ないのならば他の選ばれなかった方に申し訳が立たないです。&lt;br /&gt;
+それでいて、完走するだけでも十分な価値、実績になるでしょう。&lt;br /&gt;
+私はハッカソンの経験がないので、短期間で開発しきる経験値を詰むことには意味があります。&lt;br /&gt;
+またNEMの技術の需要拡大は今後大いに有り得ることであり、それに向けての投資にもなります。&lt;/p&gt;
+
+&lt;p&gt;ブロックチェーン以外の技術的では、Webアプリ開発の実戦経験を増やします。&lt;br /&gt;
+今までは得意のRとShinyというコンフォートゾーンから戦っていましたが、ここを抜け出すことも一つの目標です。&lt;br /&gt;
+といっても全く触れたことのない技術でやると間に合わないので、ある程度できるpython3を軸に、フレームワークはFlaskというのを使ってみようと思います。&lt;/p&gt;
+
+&lt;h2 id=&quot;スケジュール&quot;&gt;スケジュール&lt;/h2&gt;
+
+&lt;h3 id=&quot;デザイン開発-110-117&quot;&gt;デザイン＆開発 1/10-1/17&lt;/h3&gt;
+&lt;p&gt;まずはどの機能実装してどれは切るかの整理。&lt;br /&gt;
+その後Web app開発とNEM APIで苦しむことになるのかな。&lt;/p&gt;
+
+&lt;h3 id=&quot;テスト-118-125&quot;&gt;テスト 1/18-1/25&lt;/h3&gt;
+&lt;p&gt;1/18までに動くものがないと駄目なのかはよくわからないです。&lt;br /&gt;
+ただ、現実的にはそこまでに動くものが必要でしょう。&lt;br /&gt;
+テストはツイッターとかTelegramとかで呼びかければ協力してくれる人がいるかな？&lt;br /&gt;
+お礼はtipnemでできるしお手軽ですね。&lt;/p&gt;
+
+&lt;h3 id=&quot;プロダクト提出-126-131&quot;&gt;プロダクト提出 1/26-1/31&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;スクショ4枚&lt;/li&gt;
+  &lt;li&gt;ビデオ(3分迄)&lt;/li&gt;
+  &lt;li&gt;アプリのインストールファイル&lt;/li&gt;
+  &lt;li&gt;450ワード以内の説明文&lt;/li&gt;
+  &lt;li&gt;Githubへのリンク&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ビデオを撮るのが一番大変そうです。&lt;br /&gt;
+パワポみたいなスライド＋英語の喋りを入れれば形になるでしょうが、あまりこういう作業をしたことがないので不安要素ではあります。&lt;/p&gt;
+
+&lt;h2 id=&quot;評価ポイント&quot;&gt;評価ポイント&lt;/h2&gt;
+
+&lt;h3 id=&quot;nem-integration-20&quot;&gt;NEM Integration 20%&lt;/h3&gt;
+&lt;p&gt;ネームスペース、アドレス、モザイクが鍵になります。&lt;br /&gt;
+マルチシグは絶対応用できるけど今回活用するところまで作り込むのはスコープから外します。&lt;/p&gt;
+
+&lt;h3 id=&quot;user-interface10&quot;&gt;User Interface　10%&lt;/h3&gt;
+&lt;p&gt;UI/UXについてはあまり勉強したことがないのでこれを機に少し気を使える用になれればと思います。&lt;/p&gt;
+
+&lt;h3 id=&quot;user-experience-10&quot;&gt;User Experience 10%&lt;/h3&gt;
+&lt;p&gt;人間工学に基づいて評価されるそうですが、知らないのでここでの加点は当てにできなさそうです。&lt;/p&gt;
+
+&lt;h3 id=&quot;usefulness-20&quot;&gt;Usefulness 20%&lt;/h3&gt;
+&lt;p&gt;きちんと利用シーンを考えられるかですが、これについては提出段階で固まっています。&lt;/p&gt;
+
+&lt;h3 id=&quot;compatibility-20&quot;&gt;Compatibility 20%&lt;/h3&gt;
+&lt;p&gt;既存システムとうまく連携できるか。&lt;br /&gt;
+既存がどんなものを使っているのかあまり知らないのでその点は不透明ながらも、ブロックチェーン外のプログラムとの連携は当然必要になるのでそこはきれいに作りたいです。&lt;/p&gt;
+
+&lt;h3 id=&quot;open-source-20&quot;&gt;Open Source 20%&lt;/h3&gt;
+&lt;p&gt;隠す意味が全く無いので当然オープンソースにします。&lt;/p&gt;
+
+&lt;h2 id=&quot;進捗管理タスク管理&quot;&gt;進捗管理・タスク管理&lt;/h2&gt;
+&lt;p&gt;Git/Githubは使うとして、考えた内容などはこのページgithub.ioにどんどん書いていこうと思います。&lt;/p&gt;
+
+</description>
+            <pubDate>Wed, 10 Jan 2018 00:00:00 +0900</pubDate>
+            <link>http://localhost:4005/nem_global_hackathon_nem_kyu.html</link>
+            <guid isPermaLink="true">http://localhost:4005/nem_global_hackathon_nem_kyu.html</guid>
+            
+            
+        </item>
         
         <item>
             <title>IndieSquareからBCHを救済する方法</title>
@@ -98,8 +347,8 @@ seedはIndieSquareのアプリのmenu &amp;gt; 設定 &amp;gt; 復元パスフ�
 &lt;p&gt;&lt;a href=&quot;https://zaif.jp?ac=f7ujnq95ac&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_728x90.png?ac=f7ujnq95ac&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
             <pubDate>Sun, 12 Nov 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/bch_from_indiesquare.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/bch_from_indiesquare.html</guid>
+            <link>http://localhost:4005/bch_from_indiesquare.html</link>
+            <guid isPermaLink="true">http://localhost:4005/bch_from_indiesquare.html</guid>
             
             
         </item>
@@ -203,8 +452,8 @@ ShinyDashboardライブラリは非常に素晴らしいと思いました。&lt
 まずは、取捨選択を終えてスコープを絞るところまでやりたいです。&lt;/p&gt;
 </description>
             <pubDate>Sat, 04 Nov 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/horse_app_develop.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/horse_app_develop.html</guid>
+            <link>http://localhost:4005/horse_app_develop.html</link>
+            <guid isPermaLink="true">http://localhost:4005/horse_app_develop.html</guid>
             
             
         </item>
@@ -411,8 +660,8 @@ BRHDと合わせて、鉄板ガチホですね。&lt;/p&gt;
 
 </description>
             <pubDate>Sat, 30 Sep 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Sep.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Sep.html</guid>
+            <link>http://localhost:4005/StockReport2017Sep.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Sep.html</guid>
             
             
         </item>
@@ -639,8 +888,8 @@ BRHDと合わせて、鉄板ガチホですね。&lt;/p&gt;
 やはり現金のバックグラウンドは必要です。。。&lt;/p&gt;
 </description>
             <pubDate>Thu, 31 Aug 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Aug.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Aug.html</guid>
+            <link>http://localhost:4005/StockReport2017Aug.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Aug.html</guid>
             
             
         </item>
@@ -869,8 +1118,8 @@ BRHDと合わせて、鉄板ガチホですね。&lt;/p&gt;
 —&lt;/p&gt;
 </description>
             <pubDate>Mon, 31 Jul 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Jul.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Jul.html</guid>
+            <link>http://localhost:4005/StockReport2017Jul.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Jul.html</guid>
             
             
         </item>
@@ -1145,8 +1394,8 @@ BRHDと合わせて、鉄板ガチホですね。&lt;/p&gt;
 &lt;hr /&gt;
 </description>
             <pubDate>Fri, 30 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017Jun.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017Jun.html</guid>
+            <link>http://localhost:4005/StockReport2017Jun.html</link>
+            <guid isPermaLink="true">http://localhost:4005/StockReport2017Jun.html</guid>
             
             
         </item>
@@ -1270,8 +1519,8 @@ ASICは中国から輸入するのが入手経路の基本になるため、日�
 &lt;p&gt;&lt;a href=&quot;https://zaif.jp?ac=f7ujnq95ac&quot; rel=&quot;nofollow&quot;&gt;&lt;img src=&quot;https://d2p8taqyjofgrq.cloudfront.net/images/affiliate/banner/zaif_D_728x90.png?ac=f7ujnq95ac&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
             <pubDate>Sat, 17 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/InvestingCCRule.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/InvestingCCRule.html</guid>
+            <link>http://localhost:4005/InvestingCCRule.html</link>
+            <guid isPermaLink="true">http://localhost:4005/InvestingCCRule.html</guid>
             
             <category>暗号通貨</category>
             
@@ -1321,291 +1570,10 @@ ICOで資金調達しているのを見ると、株式って今後必要なの�
 &lt;/ul&gt;
 </description>
             <pubDate>Fri, 16 Jun 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/WhyCC.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/WhyCC.html</guid>
+            <link>http://localhost:4005/WhyCC.html</link>
+            <guid isPermaLink="true">http://localhost:4005/WhyCC.html</guid>
             
             <category>暗号通貨</category>
-            
-            
-        </item>
-        
-        <item>
-            <title>2017年5月度株式投資成績</title>
-            <description>&lt;h2 id=&quot;概況&quot;&gt;概況&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;投資金額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;保有総額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;含み益&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益確定&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;配当/優待&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;現金&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;総資産&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;前月比&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;414571.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;461400&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;46828.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5140.5&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;0&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;444367&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;905767&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-70874&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;所持銘柄&quot;&gt;所持銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;月末単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;1726&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;BRHD&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;242.000&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;391&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;14900.0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;3673&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ブロードリーフ&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;631.990&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;717&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8501.0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;4767&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;TOW&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;699.860&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;818&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;11814.0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;405&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;300&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;15085.5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9324&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;安田倉庫&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;722.860&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;727&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;414.0&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;9696&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ウィザス&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;392.430&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;373&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;200&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;-3886.0&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;売却銘柄&quot;&gt;売却銘柄&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;コード&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;名前&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;取得単価&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;売却額&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;地方税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;国税&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;手数料&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;数量&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;利益&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;8410&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;セブン銀行&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;354.715&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;420&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;320&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;982&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;86&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;100&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;5140.5&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;まず、現金8万円を暗号通貨に回しました。もともと10万で始めた暗号通貨投資ですが、4,5月の値上がりは凄まじいものがありました。&lt;br /&gt;
-一旦値上がりは落ち着いた感がありますが、暗号通貨により今までにない新たな価値観が生み出されれば、今の値段水準ではすまないはずです。そのため投じる資金量を増やして、情報収集なども今まで以上に力を入れていくべきだと判断しました。&lt;br /&gt;
-もちろん、株式投資もやめません。ただし、今まで以上にお互いの役割（攻めの暗号通貨、守りの株式、現金）を考えて進めていくことになります。&lt;/p&gt;
-
-&lt;h2 id=&quot;個別銘柄レビュー&quot;&gt;個別銘柄レビュー&lt;/h2&gt;
-
-&lt;h3 id=&quot;1726-brhd&quot;&gt;1726 BRHD&lt;/h3&gt;
-&lt;p&gt;決算発表がありました。悪くない内容だったと思います。  しかし、ここは決算が良かったからすぐに値段が上がるというわけでもない、というのがここ半年の傾向です。&lt;br /&gt;
-今までは遅れて上がっていたのですが、割合値段が高い水準に入った（？）のか、なかなか反応がありません。まあ、好決算＝株価上昇ではないのは株式投資の常識なのですが。
-高め圏かも？、といっても慌てふためいて売るような感じでもないです。取得時の値段を考えると、配当＋優待利回りが十分に良いので、やはりガチホールドですね。&lt;br /&gt;
-200以上にすると大きく利回りが落ちるので、ここから枚数を増やすのは得策ではないでしょう。その分の値上がり益は、他の銘柄で狙えばよいのです。&lt;/p&gt;
-
-&lt;h3 id=&quot;3673-ブロードリーフ&quot;&gt;3673 ブロードリーフ&lt;/h3&gt;
-&lt;p&gt;また決算発表で下げて、その後、おそらく優待での買い支えで上がるパターンを喰らいました・・・&lt;br /&gt;
-決算にサプライズ要素はまったくなかったと思います。&lt;br /&gt;
-先月、下げたら買うべきだと書いたのですが、買っていません。だんだん下値が切り上がってきているのです。&lt;br /&gt;
-戦略としては相変わらずのガチホールド、もし許容できる原因で暴落すれば買い、で継続的にウォッチします。&lt;br /&gt;
-*許容できないのは利益大幅減や優待廃止です。&lt;/p&gt;
-
-&lt;h3 id=&quot;4767-tow&quot;&gt;4767 TOW&lt;/h3&gt;
-&lt;p&gt;引き続き、手堅く伸びてくれています。&lt;br /&gt;
-6月は配当権利確定月です。配当落ちはあるでしょうが、値段次第では逆に拾うのもありかなと思っています。&lt;/p&gt;
-
-&lt;h3 id=&quot;8410-セブン銀行&quot;&gt;8410 セブン銀行&lt;/h3&gt;
-&lt;p&gt;420円で一旦100株利確しました。&lt;br /&gt;
-4月に追加した377円から見て10%、平均取得単価から18%程度、複数単元の一枚を手放すタイミングとしては十分じゃないでしょうか。&lt;br /&gt;
-引き続き、この会社の成長に期待しているので保有していく予定です。&lt;br /&gt;
-*計算のあやで利益が小数点以下を含む数値になってしまいました。このレポートでは大筋で問題がなければ良いので、このまま行きます。&lt;/p&gt;
-
-&lt;h3 id=&quot;9324-安田倉庫&quot;&gt;9324 安田倉庫&lt;/h3&gt;
-&lt;p&gt;暗号通貨の値上がりを受けて、資産のリバランスをしたくなりました。とはいっても安易に暗号通貨を手放すと後々の利益を逸するだろうということから、暗号通貨を売ってではなく、手持ち現金を使って株を買っただけですが・・・&lt;br /&gt;
-銘柄選定としては、暗号通貨で集中したリスクを取っている以上、固い銘柄がほしくなります。その点、安田倉庫は倉庫株特有の資産の多さ(=低いPBR)と旧財閥系の安定感があります。配当と優待もつきます。値段も数年スパンで見てそこそこ安い水準に感じました。&lt;br /&gt;
-さらには、医薬品分野に強いという特徴を持っているのもいいです。当初、リバランスをする際にバイオ株などをあさりました。暗号通貨に流入している日本人の金はどこから来ているのか？と考えたときに、バイオって最近イケイケでもないしここらへんを好む人は暗号通貨も好みそうだと思いました。その人達がバイオ株を売って得た資金で暗号通貨を買っているのではないかと。 &lt;br /&gt;
-しかしながらバイオ株が特別安いというわけでもなく、何より欲しい銘柄が一つもありませんでした。&lt;br /&gt;
-この推論は外れだったのでしょうが、ポートフォリオ内に医薬品関連が全くないし、入れてもいいと思っていた時に安田倉庫を思い出しました。安定感＋事業内容が私の希望にあっていました。&lt;br /&gt;
-旧倉庫をホテルに改装するという戦略も、うまくハマっているようです。&lt;br /&gt;
-優待はお米券ですが、この戦略の一貫で作られた函館のホテルの割引券がつくようです。来年、函館へ旅行するつもりなのでこれは地味にうれしいですね。ヤフオクで落とせばいいような内容ではあるんですが、銘柄に問題がなければ現物を持ってこの優待をもらうのも悪くないでしょう。&lt;br /&gt;
-今月は、主に買った理由を書いたので、来月は事業とか資産の詳細、この株券の出口戦略について、思ったことを書いておきたいです。&lt;/p&gt;
-
-&lt;h3 id=&quot;9696-ウィザス&quot;&gt;9696 ウィザス&lt;/h3&gt;
-&lt;p&gt;特に大きな値動きもなく、放置です。&lt;br /&gt;
-決算は、簡単に言えば投資が響いて増収減益と言うところでしょうか。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;5月にやったこと6月に向けて&quot;&gt;5月にやったこと・6月に向けて&lt;/h2&gt;
-
-&lt;p&gt;来月はボーナス月ですが、パソコンを購入したこと、暗号通貨にも資金投入する必要があることから、当初の予定よりは少ない金額を株式投資に回すことになりそうです。&lt;br /&gt;
-もともとは30万円を注入すると決めていましたが、株資金として増やせる日本円は10万円に満たないくらいでしょうか。。。&lt;br /&gt;
-これでは強気の投資はできないですが、目下株価は高め圏で推移しているのでちょうどいいかもしれません。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;暗号通貨パワーのお陰で、現時点での投資資産の時価総額は本年度の目標(100万円→210万円)をとっくに達成しています。&lt;br /&gt;
-（今後、暗号通貨＆株が大暴落すれば当然未達になりますが）&lt;br /&gt;
-肝はリバランス、どこまでリスクを取れるか、ローリスクで株と暗号通貨の枚数を増やせるかの３つです。&lt;/p&gt;
-
-&lt;h3 id=&quot;インプット&quot;&gt;インプット&lt;/h3&gt;
-
-&lt;p&gt;決算をできるだけ読んで、ウォッチ銘柄をいくつか入れ替えました。内容の理解度に不満があるのと、読むのに時間がかかるので、早く正確に読めるようになる必要があります。&lt;br /&gt;
-これはトレーニングと知識の補強でどうにかなりそうなので、継続してやっていきます。&lt;br /&gt;
-また、決算、税金に関する知識を増強することがアドバンテージだと感じたので、簿記くらいはやっておくかということで勉強をはじめました。&lt;br /&gt;
-参考書や問題集も受験料も安いし勉強するのが楽でいいですね。。。&lt;br /&gt;
-まずはこれを読み終えたので、とっとと問題集でもやります。&lt;/p&gt;
-
-&lt;iframe style=&quot;width:120px;height:240px;&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; src=&quot;https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;amp;t=2323k-22&amp;amp;m=amazon&amp;amp;o=9&amp;amp;p=8&amp;amp;l=as1&amp;amp;IS1=1&amp;amp;detail=1&amp;amp;asins=B00FEGO498&amp;amp;linkId=cce9a38253bb395a5269fce3174bb513&amp;amp;bc1=000000&amp;amp;lt1=_blank&amp;amp;fc1=333333&amp;amp;lc1=0066c0&amp;amp;bg1=ffffff&amp;amp;f=ifr&quot;&gt;
-    &lt;/iframe&gt;
-
-&lt;h3 id=&quot;暗号通貨&quot;&gt;暗号通貨&lt;/h3&gt;
-&lt;p&gt;今月から暗号通貨についてもまとめていくことにします。&lt;br /&gt;
-もはや無視できるサイズではないのと、意外と暗号通貨投資ブログって需要があるみたいな話を聞いたので、月イチ更新ですがやっていこうと思います。&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
-            <pubDate>Wed, 31 May 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/StockReport2017May.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/StockReport2017May.html</guid>
-            
-            
-        </item>
-        
-        <item>
-            <title>NanoWalletと二段階認証、MultiSigについて</title>
-            <description>&lt;p&gt;&lt;em&gt;このページの情報は古いものです。最新情報はForum等を確認してください。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;NanoWalletを使っていて、二段階認証ってないのかな？と疑問に思って調べてみました。&lt;br /&gt;
-結論から言うと、いわゆる普通の二段階認証はありません。マルチシグを使えば似たようなことができます。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/nem/comments/6amxdn/why_no_2fa_option_on_the_nano_wallet/&quot;&gt;Why no 2FA option on the nano wallet?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;このサイトの質問がまさに私の疑問で、解答としてMultiSigを使えばいいよということが書いてあります。&lt;br /&gt;
-これを読めばもう長々と語ることはないのですが、できるだけ周辺知識も含めて日本語でまとめます。&lt;/p&gt;
-
-&lt;h3 id=&quot;multisigって何&quot;&gt;MultiSigって何？&lt;/h3&gt;
-&lt;p&gt;MultiSigについては、日本語だとこのサイトがわかりやすいと思います。&lt;br /&gt;
-&lt;a href=&quot;http://coinandpeace.hatenablog.com/entry/what_is_multisig&quot;&gt;Multisig(マルチシグ)って何？&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;特徴としては&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;秘密鍵がひとつではなく複数に分割される。&lt;/li&gt;
-  &lt;li&gt;複数の鍵の署名が揃うとトランザクションが発行される。つまり、送金できる。&lt;/li&gt;
-  &lt;li&gt;2-of-3に分割した場合、3つのうち2つの鍵の署名があればいい。（この数字の関係は調整可能）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;この仕組みを使えば、複数の鍵の内ひとつが流出したとしても、残りの鍵をきちんと守れればトランザクションを発行できず、不正送金はできません。&lt;br /&gt;
-もちろん多くの鍵をとられればアウトだが、非常に困難だしそのような状況で守るのはそもそも難しいです。&lt;/p&gt;
-
-&lt;h3 id=&quot;nemチュートリアルのmultisigのページを読む&quot;&gt;NEMチュートリアルのMultiSigのページを読む&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.nem.io/nanowallet-tutorial/&quot;&gt;NanoWallet Guide&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;5.1にMultiSigについて記載があります。そんなに長い文章ではないので、そのまま転載すると&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The more advanced and most secure way of securing your funds is multi-signature. NEM’s current implementation of multisig is “M-of-N”, meaning M can be any number equal to or less than N, i.e., 1-of-4, 2-of-3, 4-of-9, 11-of-12 and so on. NEM also allows “N-of-N” accounts, i.e., 1-of-1, 2-of-2, 5-of-5, 10-of-10 and so on.
-NEM’s multisig is supported by all NEM wallets including NCC, Android, iOS, Nano, and NEMpay. Multisig accounts are as easy to set up as a few clicks and even have push notifications sent to your mobile or desktop wallet notifying you to sign.
-If you are interested in multi-signature accounts, you can read more about it here. And you can watch a series of demo videos here.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;M-of-NとN-of-Nの2つの実装があるようです。&lt;br /&gt;
-M-of-Nは、N個の鍵のうちM個の署名があればトランザクションが発行可能、&lt;br /&gt;
-N-of-Nは、N個の鍵のうちすべての署名が必要。
-多少の操作は必要ですが、いろいろなウォレット（NCC, Android, iOS, Nano, and NEMpay）で使えます。&lt;/p&gt;
-
-&lt;h3 id=&quot;どうやって運用する&quot;&gt;どうやって運用する？&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ocknamo.com/entry/2016/11/11/040226&quot;&gt;NEM MobileWalletによるマルチシグの実行方法&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;上記サイトにMobileWalletのマルチシグについて記載があります。&lt;br /&gt;
-NanoWalletについては、サービスから各種設定ができます。&lt;/p&gt;
-
-&lt;p&gt;実際の運用では、&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;NanoWallet
-メインのアカウント。マルチシグアカウントにはしない。&lt;br /&gt;
-マルチシグネチャを設定、下記2つの公開鍵を設定し、2-of-3でトランザクションを発行できるようにする。&lt;/li&gt;
-  &lt;li&gt;MobileWallet
-マルチシグアカウント。スマホで、二段階認証アプリのような役割を果たす。&lt;/li&gt;
-  &lt;li&gt;NanoWallet(2)
-マルチシグアカウント。上記のNanoWalletとは別の安全なストレージに保存しておく。&lt;br /&gt;
-2-of-2だと、スマホを盗られたりなくした時詰むのでバックアップ用として想定。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;それぞれのウォレットに少量のXEMを送ったり（全くないと不便なので）、マルチシグ宣言するのにもXEMが必要だったりと、塵も積もれば山となる形式でそこそこの量のXEMが必要です。&lt;br /&gt;
-現在、XEMの送金手数料が割高に感じるのと、メインウォレットにそこまでの堅牢性を求めていないとの理由から上記構成は試していません。&lt;br /&gt;
-自分としては手数料は今後安くなるような方策が取られるんじゃないかと踏んでいるので、その際に試してみたいと思います。&lt;/p&gt;
-</description>
-            <pubDate>Thu, 25 May 2017 00:00:00 +0900</pubDate>
-            <link>http://idratherbewriting.com/NEM_MultiSig.html</link>
-            <guid isPermaLink="true">http://idratherbewriting.com/NEM_MultiSig.html</guid>
-            
-            <category>NEM</category>
             
             
         </item>

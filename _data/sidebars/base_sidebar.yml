@@ -46,6 +46,10 @@ entries:
         url: /nem_global_hackathon_nem_kyu.html
         output: web, pdf
 
+      - title: NEM Global HAckathon 開発日誌
+        url: /nem_global_hackathon_management.html
+        output: web, pdf
+
   - title: 暗号通貨に関する情報
     output: web, pdf
     folderitems:
