@@ -3,7 +3,7 @@ title: "NEM Global Hackathon NEM-KYU"
 date: "2018/01/10"
 output: rmarkdown::html_vignette
 sidebar: base_sidebar
-permalink: nem_global_hackathon_nem_kyu.html
+permalink: nem_global_hackathon_management.html
 keywords: ブロックチェーン
 vignette: >
   %\VignetteIndexEntry{Vignette Title}

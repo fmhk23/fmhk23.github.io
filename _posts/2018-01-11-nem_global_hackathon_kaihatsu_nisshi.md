@@ -1,6 +1,6 @@
 ---
 title: "NEM Global Hackathon　開発日誌"
-date: "2018/01/10"
+date: "2018/01/11"
 output: rmarkdown::html_vignette
 sidebar: base_sidebar
 permalink: nem_global_hackathon_nem_kyu.html
