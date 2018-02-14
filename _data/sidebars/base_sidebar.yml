@@ -42,12 +42,12 @@ entries:
     output: web, pdf
     folderitems:
 
-      - title: NEM Global HAckathon NEM-KYU
+      - title: NEM Global Hackathon NEM-KYU
         url: /nem_global_hackathon_nem_kyu.html
         output: web, pdf
 
-      - title: NEM Global HAckathon 開発日誌
-        url: /nem_global_hackathon_management.html
+      - title: NEM Global Hackathon 完了報告
+        url: /nem_global_hackathon_complete.html
         output: web, pdf
 
   - title: 暗号通貨に関する情報
