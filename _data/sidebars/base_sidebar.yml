@@ -58,6 +58,10 @@ entries:
         url: /NEM_MultiSig.html
         output: web, pdf
 
+      - title: NEMのモザイクとは何か
+        url: /what_is_mosaic.html
+        output: web, pdf
+
       - title: IndieSquareからBCHを救済する方法
         url: /bch_from_indiesquare.html
         output: web, pdf

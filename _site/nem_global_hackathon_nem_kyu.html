@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  ブロックチェーン">
+<title>NEM Global Hackathon NEM-KYU | Far More High Kulture</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4005feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Far More High Kulture</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="news_archive.html">アーカイブ</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/fmhk23" target="_blank">Github Repo</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="NEM Global Hackathon NEM-KYU">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">Menu </li>
+    
+    
+    
+    <li>
+        <a href="#">About this site</a>
+        <ul>
+            
+            
+            
+            <li><a href="news_archive.html">アーカイブ</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Rプログラミング</a>
+        <ul>
+            
+            
+            
+            <li><a href="RonCentOS7.html">CentOS7でR環境構築</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">データベース/SQL</a>
+        <ul>
+            
+            
+            
+            <li><a href="PostgresonMac.html">Mac OS XでPostgreSQLをセットアップ</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">セミナー参加記録</a>
+        <ul>
+            
+            
+            
+            <li><a href="170222Seminar.html">産総研バイタルセンシング(2017年2月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">NEMを使った開発</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="nem_global_hackathon_nem_kyu.html">NEM Global HAckathon NEM-KYU</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="nem_global_hackathon_management.html">NEM Global HAckathon 開発日誌</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">暗号通貨に関する情報</a>
+        <ul>
+            
+            
+            
+            <li><a href="NEM_MultiSig.html">NanoWalletと二段階認証、MultiSigについて</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="bch_from_indiesquare.html">IndieSquareからBCHを救済する方法</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">暗号通貨への投資</a>
+        <ul>
+            
+            
+            
+            <li><a href="WhyCC.html">なぜ暗号通貨投資をするのか</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="InvestingCCRule.html">暗号通貨投資のMy鉄則</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">株式への投資</a>
+        <ul>
+            
+            
+            
+            <li><a href="StockReport2017Feb.html">2017年2月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Mar.html">2017年3月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Apr.html">2017年4月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017May.html">2017年5月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Jun.html">2017年6月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Jul.html">2017年7月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Aug.html">2017年8月</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="StockReport2017Sep.html">2017年9月</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">株主総会記録</a>
+        <ul>
+            
+            
+            
+            <li><a href="170328BroadLeaf.html">ブロードリーフ(2017年3月)</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">競馬</a>
+        <ul>
+            
+            
+            
+            <li><a href="horse_app_develop.html">競馬解析アプリ開発日誌</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">NEM Global Hackathon NEM-KYU</h1>
+        <p class="post-meta"><time datetime="2018-01-10T00:00:00+09:00" itemprop="datePublished">Jan 10, 2018</time> /
+            
+            
+            
+
+        </p>
+
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        
+
+        <p><a href="https://hackathon.nem.io/">NEM Global Hackathon</a>
+にNEM-KYUというアプリケーションのアイデアで参加してみたところ、1次,2次予選を通過したのでそれについてまとめます。
+自分のタスク整理の意味合いも大きいです。</p>
+
+<h2 id="nem-kyu-提出原稿">NEM-KYU 提出原稿</h2>
+
+<p>NEM-KYU is simple application for Attendance Management and Emergency Contact.</p>
+
+<h3 id="basic-ideaproblems-this-app-solves">Basic idea/Problems this app solves</h3>
+<p>In Japan, most workers can’t take all of their paid holidays.<br />
+Though there are many possible reasons, it is because :</p>
+
+<ul>
+  <li>no punishment to company even if their workers can’t take enough paid holidays</li>
+  <li>no friendly system for telling that workers want a holiday. In many cases they must make a phone call/e-mail or talk with their boss directly.</li>
+</ul>
+
+<p>In NEM-KYU, workers get “Company_NAME:paid-holiday” mosaic at the beginning of the year.<br />
+When one wants a holiday, he just needs to send a mosaic to company address. (Company has its own address and name-space.)<br />
+By triggering mosaic-receive, it can run any program like sending messages to his colleagues.</p>
+
+<p>Additionally, since NEM-KYU is on public-chain, any people can check mosaic transfer to company address, which means people can know if it is worker friendly company or not.</p>
+
+<p>Moreover, it enables such futuristic systems very easily:</p>
+
+<ul>
+  <li>trade paid-holidays and XEM with his colleagues</li>
+  <li>get XEM refunds for expired holidays from company</li>
+</ul>
+
+<p>NEM-KYU is useful in Emergency contact, too.<br />
+At the time of disaster, company wants to know if their colleagues are safe or not as soon as possible.<br />
+In such cases, workers can tell by sending “Company_NAME:Safe” mosaic to company address.</p>
+
+<p>Since it is completely same system with Attendance management, workers don’t need another training for using specific system.<br />
+If necessary, he can add messages.<br />
+If their family/friends knows his address, they can know if he is safe by checking the transactions from the address.<br />
+No need to contact directly, which causes traffic jam in network.</p>
+
+<p>In this hackathon, I develop basic functions for attendance management.</p>
+
+<h2 id="和訳意訳補足">和訳(意訳＋補足)</h2>
+<p>NEM-KYU(年休→NEN-KYU→NEM-KYU)は勤怠管理と非常時の連絡用のシンプルなアプリケーションです。</p>
+
+<h3 id="基本的なアイデア解決できる課題">基本的なアイデア/解決できる課題</h3>
+<p>日本では、多くの人が有給の全てを使いきれません。<br />
+この問題には様々な背景があるでしょうが、次の2点は問題でしょう。</p>
+
+<ul>
+  <li>労働者が有給を使い切らずとも会社に実質的に懲罰がない</li>
+  <li>有給申請がおっくう。多くの場合、電話やメール、もしくは直接上司に話さなければならない</li>
+</ul>
+
+<p>NEM-KYUでは、Company_NAME：paid-holidayというモザイクを年のはじめに配布します。<br />
+有給を申請する時は、会社のアドレスにモザイクを送るだけです。（会社は独自のアドレス、ネームスペースを持ちます。）<br />
+会社側では、モザイクの着金をトリガーに同僚に通知をするプログラムを走らせるようなことが可能です。</p>
+
+<p>NEM-KYUはパブリックチェーン上で動くため、誰でもモザイクの移動を確認できます。<br />
+つまり、その会社の有給消化率が可視化されます。これは求職者などにとって非常に有用でしょう。</p>
+
+<p>さらには、次のような未来的な機能も簡単に実装できます。</p>
+<ul>
+  <li>有給を同僚のXEMとトレードする。</li>
+  <li>有給の期限が切れた時、会社からXEM建てで払い戻しを受ける。</li>
+</ul>
+
+<p>NEM-KYUは勤怠管理だけでなく、大地震などの際の緊急連絡にも使えます。<br />
+災害時には、会社はメンバーの安否確認を一刻も早くしなければなりません。<br />
+そのようなケースでも、”Company_NAME:Safe”モザイクを会社のアドレスに送ることで無事を知らせることができます。<br />
+勤怠管理と全く同じ仕組みなので、特定のシステムを使うための新たなトレーニングをする必要はありません。<br />
+もちろん、必要ならばメッセージを追加することが可能です。<br />
+もしも、家族や友人がアドレスを知っていれば、そのアドレスのトランザクションをチェックすることで無事を知ることができます。<br />
+直接メールや電話でやり取りする必要が無いので、ネットワークの混雑を引き起こしにくいです。</p>
+
+<p>このハッカソンでは、勤怠管理のための基本的な機能を実装しようと思います。</p>
+
+<h2 id="nem-global-hackathonの公式説明">NEM Global Hackathonの公式説明</h2>
+<p>NEM-KYU will allow employees in Japan to track their paid leave days and also request for paid leave days by sending a mosaic to the company address.</p>
+
+<p>It will also enable futuristic systems that allow people to trade paid-holidays and XEMs with colleages or get XEM refunds for expired holidays from the company.</p>
+
+<p>NEM-KYU will also allow for workers to keep their employers updated on their safety in times of an emergency.</p>
+
+<h2 id="目標">目標</h2>
+<p>最低限、きちんと要件を満たして提出すること。<br />
+これを出来ないのならば他の選ばれなかった方に申し訳が立たないです。<br />
+それでいて、完走するだけでも十分な価値、実績になるでしょう。<br />
+私はハッカソンの経験がないので、短期間で開発しきる経験値を詰むことには意味があります。<br />
+またNEMの技術の需要拡大は今後大いに有り得ることであり、それに向けての投資にもなります。</p>
+
+<p>ブロックチェーン以外の技術的では、Webアプリ開発の実戦経験を増やします。<br />
+今までは得意のRとShinyというコンフォートゾーンから戦っていましたが、ここを抜け出すことも一つの目標です。<br />
+といっても全く触れたことのない技術でやると間に合わないので、ある程度できるpython3を軸に、フレームワークはFlaskというのを使ってみようと思います。</p>
+
+<h2 id="スケジュール">スケジュール</h2>
+
+<h3 id="デザイン開発-110-117">デザイン＆開発 1/10-1/17</h3>
+<p>まずはどの機能実装してどれは切るかの整理。<br />
+その後Web app開発とNEM APIで苦しむことになるのかな。</p>
+
+<h3 id="テスト-118-125">テスト 1/18-1/25</h3>
+<p>1/18までに動くものがないと駄目なのかはよくわからないです。<br />
+ただ、現実的にはそこまでに動くものが必要でしょう。<br />
+テストはツイッターとかTelegramとかで呼びかければ協力してくれる人がいるかな？<br />
+お礼はtipnemでできるしお手軽ですね。</p>
+
+<h3 id="プロダクト提出-126-131">プロダクト提出 1/26-1/31</h3>
+
+<ul>
+  <li>スクショ4枚</li>
+  <li>ビデオ(3分迄)</li>
+  <li>アプリのインストールファイル</li>
+  <li>450ワード以内の説明文</li>
+  <li>Githubへのリンク</li>
+</ul>
+
+<p>ビデオを撮るのが一番大変そうです。<br />
+パワポみたいなスライド＋英語の喋りを入れれば形になるでしょうが、あまりこういう作業をしたことがないので不安要素ではあります。</p>
+
+<h2 id="評価ポイント">評価ポイント</h2>
+
+<h3 id="nem-integration-20">NEM Integration 20%</h3>
+<p>ネームスペース、アドレス、モザイクが鍵になります。<br />
+マルチシグは絶対応用できるけど今回活用するところまで作り込むのはスコープから外します。</p>
+
+<h3 id="user-interface10">User Interface　10%</h3>
+<p>UI/UXについてはあまり勉強したことがないのでこれを機に少し気を使える用になれればと思います。</p>
+
+<h3 id="user-experience-10">User Experience 10%</h3>
+<p>人間工学に基づいて評価されるそうですが、知らないのでここでの加点は当てにできなさそうです。</p>
+
+<h3 id="usefulness-20">Usefulness 20%</h3>
+<p>きちんと利用シーンを考えられるかですが、これについては提出段階で固まっています。</p>
+
+<h3 id="compatibility-20">Compatibility 20%</h3>
+<p>既存システムとうまく連携できるか。<br />
+既存がどんなものを使っているのかあまり知らないのでその点は不透明ながらも、ブロックチェーン外のプログラムとの連携は当然必要になるのでそこはきれいに作りたいです。</p>
+
+<h3 id="open-source-20">Open Source 20%</h3>
+<p>隠す意味が全く無いので当然オープンソースにします。</p>
+
+<h2 id="進捗管理タスク管理">進捗管理・タスク管理</h2>
+<p>Git/Githubは使うとして、考えた内容などはこのページgithub.ioにどんどん書いていこうと思います。</p>
+
+
+    </div>
+
+
+
+</article>
+
+
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2018 Far More High Kulture. All rights reserved. <br />
+ Site last generated: Jan 12, 2018 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>
